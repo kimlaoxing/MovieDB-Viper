@@ -73,5 +73,4 @@ extension DefaultRouter: HomeTabRoute {
     public func toDetailMovie(id: Int) {
         toDetailMovie(with: PushTransition(), id: id)
     }
-    
 }

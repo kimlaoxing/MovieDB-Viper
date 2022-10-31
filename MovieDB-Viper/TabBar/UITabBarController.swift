@@ -1,10 +1,3 @@
-//
-//  UITabBarController.swift
-//  MovieDB-Viper
-//
-//  Created by Kevin Maulana on 31/10/22.
-//
-
 import UIKit
 import Components
 
