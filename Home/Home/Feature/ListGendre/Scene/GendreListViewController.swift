@@ -38,15 +38,18 @@ extension GendreListViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "GendreListTableViewCell",
                                                  for: indexPath) as! GendreListTableViewCell
         let row = indexPath.row
-        let news = presenter?.getGendre(index: row)
-        if let data = news {
+        let gendre = presenter?.getGendre(index: row)
+        if let data = gendre {
             cell.setContent(with: data)
         }
         return cell
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("your id is")
+        let row = indexPath.row
+        let data = presenter?.getGendre(index: row)
+        let name = data?.name ?? ""
+        self.presenter?.toMovieListEachGendre(with: name)
     }
 }
 

@@ -11,5 +11,5 @@ import UIKit
 public protocol HomeTabRoute {
     func makeHomeTab() -> UIViewController
     func toDetailMovie(id: Int)
-    func toMovieListGendre(id: Int)
+    func toMovieListGendre(gendre: String)
 }

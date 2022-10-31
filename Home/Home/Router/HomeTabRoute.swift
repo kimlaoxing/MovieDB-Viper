@@ -32,21 +32,26 @@ extension HomeTabRoute where Self: Router {
         return navigation
     }
     
-    func toDetailMovie(with transition: Transition, id: Int) {
-        print("toDetailMovie with id \(id)")
-        //        let router = DefaultRouter(rootTransition: transition)
-        //        let vc = DetailBaseViewController()
-        //        let vm = DefaultDetailBaseViewModel(id: id)
-        //        vc.viewModel = vm
-        //        vc.hidesBottomBarWhenPushed = true
-        //        router.root = vc
-        //        route(to: vc, as: transition)
+    func toMovieListGendre(with transition: Transition, gendre: String) {
+        let router = DefaultRouter(rootTransition: ModalTransition())
+        let vc = ListMovieViewController()
+        vc.navigationItem.backButtonTitle = ""
+        let presenter: ListMovieEachGendreViewToPresenterProtocol & ListMovieEachGendreInteractorToPresenterProtocol = ListMoviePresenter(router: router, gendre: gendre)
+        let interactor: ListMovieEachGendrePresentorToInteractorProtocol = ListMovieInteractor()
+        
+        vc.presenter = presenter
+        presenter.view = vc
+        presenter.interactor = interactor
+        interactor.presenter = presenter
+        vc.hidesBottomBarWhenPushed = true
+        router.root = vc
+        route(to: vc, as: transition)
     }
 }
 
 extension DefaultRouter: HomeTabRoute {
-    public func toMovieListGendre(id: Int) {
-        print("toMovieListGendre with id \(id)")
+    public func toMovieListGendre(gendre: String) {
+        toMovieListGendre(with: PushTransition(), gendre: gendre)
     }
     
     public func toDetailMovie(id: Int) {

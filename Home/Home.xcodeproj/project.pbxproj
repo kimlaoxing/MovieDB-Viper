@@ -20,6 +20,14 @@
 		EA4841F0290F7422002DB416 /* BaseListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841EF290F7422002DB416 /* BaseListProtocols.swift */; };
 		EA4841F2290F7521002DB416 /* GendreListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841F1290F7521002DB416 /* GendreListInteractor.swift */; };
 		EA4841F4290F76A7002DB416 /* GendreListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841F3290F76A7002DB416 /* GendreListPresenter.swift */; };
+		EA4841FB290F816E002DB416 /* ListMovieEachGendreProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841FA290F816E002DB416 /* ListMovieEachGendreProtocols.swift */; };
+		EA4841FE290F81A9002DB416 /* MovieListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841FD290F81A9002DB416 /* MovieListResponse.swift */; };
+		EA484200290F81BC002DB416 /* MovieCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841FF290F81BC002DB416 /* MovieCategory.swift */; };
+		EA484202290F8220002DB416 /* ListMovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484201290F8220002DB416 /* ListMovieInteractor.swift */; };
+		EA484204290F8350002DB416 /* ListMoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484203290F8350002DB416 /* ListMoviePresenter.swift */; };
+		EA484206290F84A6002DB416 /* ListMovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484205290F84A6002DB416 /* ListMovieViewController.swift */; };
+		EA484208290F850C002DB416 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484207290F850C002DB416 /* BaseView.swift */; };
+		EA48420A290F8534002DB416 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484209290F8534002DB416 /* BaseCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,6 +60,14 @@
 		EA4841EF290F7422002DB416 /* BaseListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListProtocols.swift; sourceTree = "<group>"; };
 		EA4841F1290F7521002DB416 /* GendreListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GendreListInteractor.swift; sourceTree = "<group>"; };
 		EA4841F3290F76A7002DB416 /* GendreListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GendreListPresenter.swift; sourceTree = "<group>"; };
+		EA4841FA290F816E002DB416 /* ListMovieEachGendreProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovieEachGendreProtocols.swift; sourceTree = "<group>"; };
+		EA4841FD290F81A9002DB416 /* MovieListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListResponse.swift; sourceTree = "<group>"; };
+		EA4841FF290F81BC002DB416 /* MovieCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCategory.swift; sourceTree = "<group>"; };
+		EA484201290F8220002DB416 /* ListMovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovieInteractor.swift; sourceTree = "<group>"; };
+		EA484203290F8350002DB416 /* ListMoviePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMoviePresenter.swift; sourceTree = "<group>"; };
+		EA484205290F84A6002DB416 /* ListMovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovieViewController.swift; sourceTree = "<group>"; };
+		EA484207290F850C002DB416 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		EA484209290F8534002DB416 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +165,7 @@
 		EA4841DF290F6EDF002DB416 /* ListMovieEachGendre */ = {
 			isa = PBXGroup;
 			children = (
+				EA4841FC290F819F002DB416 /* Entity */,
 				EA4841F8290F80F7002DB416 /* Scene */,
 				EA4841F7290F80F3002DB416 /* Interactor */,
 				EA4841F6290F80EC002DB416 /* Presenter */,
@@ -216,6 +233,7 @@
 		EA4841F5290F80E7002DB416 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				EA4841FA290F816E002DB416 /* ListMovieEachGendreProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -223,6 +241,7 @@
 		EA4841F6290F80EC002DB416 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				EA484203290F8350002DB416 /* ListMoviePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -230,6 +249,7 @@
 		EA4841F7290F80F3002DB416 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				EA484201290F8220002DB416 /* ListMovieInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -237,6 +257,7 @@
 		EA4841F8290F80F7002DB416 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				EA484205290F84A6002DB416 /* ListMovieViewController.swift */,
 				EA4841F9290F80FB002DB416 /* View */,
 			);
 			path = Scene;
@@ -245,8 +266,19 @@
 		EA4841F9290F80FB002DB416 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EA484207290F850C002DB416 /* BaseView.swift */,
+				EA484209290F8534002DB416 /* BaseCollectionViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		EA4841FC290F819F002DB416 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				EA4841FD290F81A9002DB416 /* MovieListResponse.swift */,
+				EA4841FF290F81BC002DB416 /* MovieCategory.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,11 +390,19 @@
 			files = (
 				EA4841EE290F7215002DB416 /* Gendre.swift in Sources */,
 				EA4841F2290F7521002DB416 /* GendreListInteractor.swift in Sources */,
+				EA484200290F81BC002DB416 /* MovieCategory.swift in Sources */,
 				EA4841D0290F6E5E002DB416 /* HomeTabRoute.swift in Sources */,
 				EA4841E9290F6F5C002DB416 /* GendreListViewController.swift in Sources */,
+				EA48420A290F8534002DB416 /* BaseCollectionViewCell.swift in Sources */,
+				EA4841FE290F81A9002DB416 /* MovieListResponse.swift in Sources */,
+				EA4841FB290F816E002DB416 /* ListMovieEachGendreProtocols.swift in Sources */,
+				EA484204290F8350002DB416 /* ListMoviePresenter.swift in Sources */,
+				EA484206290F84A6002DB416 /* ListMovieViewController.swift in Sources */,
 				EA4841EC290F70F6002DB416 /* GendreListTableViewCell.swift in Sources */,
 				EA4841F4290F76A7002DB416 /* GendreListPresenter.swift in Sources */,
+				EA484208290F850C002DB416 /* BaseView.swift in Sources */,
 				EA4841F0290F7422002DB416 /* BaseListProtocols.swift in Sources */,
+				EA484202290F8220002DB416 /* ListMovieInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

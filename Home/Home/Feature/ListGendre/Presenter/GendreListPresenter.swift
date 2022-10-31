@@ -2,7 +2,7 @@ import Foundation
 import Router
 
 final class GendreListPresenter: BaseListViewToPresenterProtocol {
-   
+    
     weak var view: BasePresenterToViewProtocol?
     var interactor: BaseListPresentorToInteractorProtocol?
     
@@ -25,6 +25,11 @@ final class GendreListPresenter: BaseListViewToPresenterProtocol {
     func getGendre(index: Int) -> GendreResponse.Genre? {
         return interactor?.gendre?[index]
     }
+    
+    func toMovieListEachGendre(with gendre: String) {
+        self.router.toMovieListGendre(gendre: gendre)
+    }
+
 }
 
 extension GendreListPresenter: BaseListInteractorToPresenterProtocol {
