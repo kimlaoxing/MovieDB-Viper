@@ -5,5 +5,6 @@ public struct APIService {
     public static let basePath = "https://api.themoviedb.org/3"
     public static let basePathImage = "https://image.tmdb.org/t/p/w500"
     public static let listGendre = "/genre/movie/list"
+    public static let detailBasePath = "https://api.themoviedb.org/3/movie"
     public static let discover = "/discover/movie"
 }

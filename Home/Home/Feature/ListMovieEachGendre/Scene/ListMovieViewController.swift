@@ -24,6 +24,7 @@ final class ListMovieViewController: UIViewController {
     
     private func subViews() {
         title = "List Movies"
+        view.backgroundColor = .white
         view.addSubviews([
             scrollView.addArrangedSubviews([
                 collection
@@ -72,7 +73,11 @@ extension ListMovieViewController: UICollectionViewDelegateFlowLayout, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("selected")
+        let row = indexPath.row
+        let data = presenter?.getResult(index: row)
+        if let id = data?.id {
+            self.presenter?.toMovieDetail(with: id)
+        }
     }
     
 }

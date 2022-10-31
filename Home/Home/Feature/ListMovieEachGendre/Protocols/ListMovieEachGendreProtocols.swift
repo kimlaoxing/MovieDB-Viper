@@ -27,4 +27,5 @@ protocol ListMovieEachGendreViewToPresenterProtocol: AnyObject {
     func updateView()
     func getResult(index: Int) -> MovieListResponse.Result?
     func getMovieListCount() -> Int?
+    func toMovieDetail(with id: Int)
 }

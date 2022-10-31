@@ -22,6 +22,7 @@ final class GendreListViewController: UIViewController {
     
     private func subViews() {
         title = "Gendre List"
+        view.backgroundColor = .white
         view.addSubviews([tableView])
     }
     

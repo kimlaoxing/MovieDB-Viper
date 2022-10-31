@@ -30,6 +30,10 @@ final class ListMoviePresenter: ListMovieEachGendreViewToPresenterProtocol {
     func updateView() {
         interactor?.fetchListMovie(with: 1, gendres: gendre)
     }
+    
+    func toMovieDetail(with id: Int) {
+        self.router.toDetailMovie(id: id)
+    }
 }
 
 extension ListMoviePresenter: ListMovieEachGendreInteractorToPresenterProtocol {
