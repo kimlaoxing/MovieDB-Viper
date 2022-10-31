@@ -10,8 +10,6 @@ extension SceneDelegate {
         let mainRouter = DefaultRouter(rootTransition: ModalTransition())
         let tabs = [
             mainRouter.makeHomeTab()
-//            mainRouter.makeFavoriteTab(),
-//            mainRouter.makeProfileTab()
         ]
         let home = TabBar(vc: tabs)
         home.selectedIndex = 0

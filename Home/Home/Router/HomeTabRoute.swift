@@ -6,9 +6,15 @@ extension HomeTabRoute where Self: Router {
     public func makeHomeTab() -> UIViewController {
         let router = DefaultRouter(rootTransition: ModalTransition())
         let vc = BaseViewController()
-        //        let vm = DefaultBaseViewModel(router: router)
-        //        vc.viewModel = vm
         vc.navigationItem.backButtonTitle = ""
+        
+        let presenter: BaseListViewToPresenterProtocol & BaseListInteractorToPresenterProtocol = GendreListPresenter(router: router)
+        let interactor: BaseListPresentorToInteractorProtocol = GendreListInteractor()
+        
+        vc.presenter = presenter
+        presenter.view = vc
+        presenter.interactor = interactor
+        interactor.presenter = presenter
         router.root = vc
         
         let navigation = UINavigationController(rootViewController: vc)
@@ -28,13 +34,13 @@ extension HomeTabRoute where Self: Router {
     
     func toDetailMovie(with transition: Transition, id: Int) {
         print("toDetailMovie with id \(id)")
-//        let router = DefaultRouter(rootTransition: transition)
-//        let vc = DetailBaseViewController()
-//        let vm = DefaultDetailBaseViewModel(id: id)
-//        vc.viewModel = vm
-//        vc.hidesBottomBarWhenPushed = true
-//        router.root = vc
-//        route(to: vc, as: transition)
+        //        let router = DefaultRouter(rootTransition: transition)
+        //        let vc = DetailBaseViewController()
+        //        let vm = DefaultDetailBaseViewModel(id: id)
+        //        vc.viewModel = vm
+        //        vc.hidesBottomBarWhenPushed = true
+        //        router.root = vc
+        //        route(to: vc, as: transition)
     }
 }
 
@@ -45,7 +51,7 @@ extension DefaultRouter: HomeTabRoute {
     
     public func toDetailMovie(id: Int) {
         print("toDetailMovie with id \(id)")
-//        toDetailMovie(with: PushTransition(), id: id)
+        //        toDetailMovie(with: PushTransition(), id: id)
     }
     
 }
