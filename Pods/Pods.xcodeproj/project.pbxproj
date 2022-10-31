@@ -20,22 +20,24 @@
 
 /* Begin PBXBuildFile section */
 		005B319B494ED2DAA239B9939A504DFC /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A09E56E317050E90F049B19AEEAFB7C /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		020BF812D9A063DA899632EC26188871 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B55B06972BACD858EF3F85B2C1D5337 /* Foundation.framework */; };
 		045DE6EBF9B2F63F60F5BE60C1198E06 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8238A628D2AC0C15FF482185EF3FA262 /* RedirectHandler.swift */; };
 		04A896288CE3A59B530250337A5F8362 /* Result+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACC50E375FF59C2D66AC46F1B644476 /* Result+Alamofire.swift */; };
 		0F4037DBF307AC8058BD0A3D35C7E7E9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B55B06972BACD858EF3F85B2C1D5337 /* Foundation.framework */; };
-		0F7041C9D5485212D04590298F181520 /* Pods-MovieDB-Viper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C126EABEAD0527BCC861AF39051CC1C /* Pods-MovieDB-Viper-dummy.m */; };
+		0F7041C9D5485212D04590298F181520 /* Pods-MovieDB-Viper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4534F5B740065C469C7520BD51FADDF /* Pods-MovieDB-Viper-dummy.m */; };
 		17E5507F92F0DF1DD5C3AB12E53F559F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B55B06972BACD858EF3F85B2C1D5337 /* Foundation.framework */; };
 		1976BB7D7E26A12E29283E71154B63B3 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1254AF68566294AC12A8C8B1E7193898 /* SessionDelegate.swift */; };
 		1EE44196E7BCE57AD96A2C751651EF40 /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEFAA9CEDCF64D0DE908A316962FA55E /* AlamofireExtended.swift */; };
 		2BE1B16A552A2E2C33443E17BCEAAE23 /* UIView+Spacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12CA0BD2B59966152766A13A0ADFD37 /* UIView+Spacing.swift */; };
 		2CBE3651CA006E19F5D64A2DE9B9A028 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9D8AB1847BCE497DAFA95ECA7B09FC /* CachedResponseHandler.swift */; };
 		2CCD13099063CD560E3067BD132914FA /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652180D75A3F42DCAA16AC64933FC934 /* Notifications.swift */; };
-		2D38C9F2378A3A6765EC72CC8E606806 /* Pods-MovieDB-Viper-MovieDB-Viper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32BFE3C1720B343C236BAEA7938D1DDA /* Pods-MovieDB-Viper-MovieDB-Viper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D38C9F2378A3A6765EC72CC8E606806 /* Pods-MovieDB-Viper-MovieDB-Viper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 89D447AAFF0EC1C19B69617AF2808C1C /* Pods-MovieDB-Viper-MovieDB-Viper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		33A7D0F2D03004CE256A75E03DF33C70 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938030745C62BA22B8E13C661F895F2F /* RetryPolicy.swift */; };
 		3C4059621E23842C19D4EB5D35B41989 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92B5C73AF6A805E00DFEF401344A7AB /* Validation.swift */; };
-		419D81B214F1C792BFABA432005BA018 /* Pods-MovieDB-Viper-MovieDB-Viper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 207BF63F19377CB6DCCFAF14001D7CEC /* Pods-MovieDB-Viper-MovieDB-Viper-dummy.m */; };
+		419D81B214F1C792BFABA432005BA018 /* Pods-MovieDB-Viper-MovieDB-Viper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F26B2C105A11FDC7E507C1AEE6751C /* Pods-MovieDB-Viper-MovieDB-Viper-dummy.m */; };
+		440F4A2AB7C9DF68D9944E736C80C55A /* Pods-MovieDB-Viper-Home-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D56EA54B454C57FEE6D6F45F02DE4A /* Pods-MovieDB-Viper-Home-dummy.m */; };
 		46A64A43AFA057B6B63C8F0C12F509B4 /* Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E2726CF37EDF749E1D4C539092FAEF /* Combine.swift */; };
-		4A2505A5FA121747C3BC90CA15E4DD0D /* Pods-MovieDB-Viper-Router-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59415D63F00AB7AFD03027DDF73D55EB /* Pods-MovieDB-Viper-Router-dummy.m */; };
+		4A2505A5FA121747C3BC90CA15E4DD0D /* Pods-MovieDB-Viper-Router-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B12518F5796EE1A5C1BAA4EB37174651 /* Pods-MovieDB-Viper-Router-dummy.m */; };
 		4FF0E01EC76ED24FF174230773546D2F /* UIView+Dimension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAC840CE06D45190C04C5C09F3ACED5 /* UIView+Dimension.swift */; };
 		55AABB1FB38F61A3369ACC555FF3046D /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A56A4632D6CE0B1E342C000F0E9CFD2 /* Alamofire-dummy.m */; };
 		57AC0680003F8387FA9466E80B1450AA /* Declayout-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C37ED7204E20A20010C070A408EA82 /* Declayout-dummy.m */; };
@@ -60,11 +62,12 @@
 		99D058E53EFEE3AC4857CDE3DBA5C004 /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79293534A8B8000C88572C89239D12ED /* ParameterEncoder.swift */; };
 		9C9030DEDB0DF955B16FE08C50892D57 /* Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18182739F62B361A337BFD6A409CAC1C /* Concurrency.swift */; };
 		9CA795685EB54E764807B3B0A05253AF /* Declayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 460C9495AE0870BE52622F1D46CF47FD /* Declayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D6A9127928381AC455A1F32604A761B /* Pods-MovieDB-Viper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6433BB75A1904BF3D83EBDEF6A453F0F /* Pods-MovieDB-Viper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D6A9127928381AC455A1F32604A761B /* Pods-MovieDB-Viper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA05D8AEA4CA59FE2BD5291DE2F6B8C8 /* Pods-MovieDB-Viper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A29100AA1876DDEFF6F54694A51FDB0E /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8503F04753C16444CA681366F47DEC31 /* NetworkReachabilityManager.swift */; };
 		A53BDE589BDD6483F3EEDCE5EA1DCCD3 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = D832F2BD173A1E347CFF0582BE98243A /* Protected.swift */; };
+		A7BC9D66ED5865DF5A4C053055E12055 /* Pods-MovieDB-Viper-Home-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47106FB6FA426782AC3B1EE060D52558 /* Pods-MovieDB-Viper-Home-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A91641B9806A966F4E2E205846E0EA84 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA795C0DF3EBD1748248A7E622514E0 /* Constraint.swift */; };
-		AE5692E42B6B7755D05DF56C25110EBA /* Pods-MovieDB-Viper-Router-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57C39B9918393316A14B117C820DCB95 /* Pods-MovieDB-Viper-Router-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE5692E42B6B7755D05DF56C25110EBA /* Pods-MovieDB-Viper-Router-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A43E0612473EBD0AEAC5F0445E6054C4 /* Pods-MovieDB-Viper-Router-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AEEBEEDF25E994EE51724A065CA806C5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B55B06972BACD858EF3F85B2C1D5337 /* Foundation.framework */; };
 		B3658C29BBDE1033F6269A92E612CB30 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB0811FB9A341D94D028C232FE3FD8B /* Request.swift */; };
 		B704B198B9B520D449260877E300D821 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD11CAEFC3FD36438582B188095E929A /* ServerTrustEvaluation.swift */; };
@@ -79,14 +82,21 @@
 		DA34899BEF0668D76CBCE8C4CE47B97B /* RequestTaskMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ECCBC8C635FDD4B1E43C672D1B7DEB1 /* RequestTaskMap.swift */; };
 		DD902FE8D6824681C929D028655AE121 /* RequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3144CC9BF7FD7F01017140C07ABD7254 /* RequestInterceptor.swift */; };
 		E54654D504A42C24F284A68F87F7671D /* OperationQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D292D16B248D9A043943E9174134A42 /* OperationQueue+Alamofire.swift */; };
-		E94BB940465C0B6F7364890DC70ABA76 /* Pods-MovieDB-Viper-Components-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3430A6FC588DA0B3E6400907D936AD08 /* Pods-MovieDB-Viper-Components-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E94BB940465C0B6F7364890DC70ABA76 /* Pods-MovieDB-Viper-Components-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BFB4BBA19780F744CA202AE6BB661512 /* Pods-MovieDB-Viper-Components-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9B4C89E7EB3B27D46AFCA452C3D426F /* MultipartUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4C9A0361BF419E4231A4D0C6F01CA5 /* MultipartUpload.swift */; };
-		EDDA981E408169C4D5FDEF57E8AD01BE /* Pods-MovieDB-Viper-Components-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B36767BC560FA16831F77E91E3174B /* Pods-MovieDB-Viper-Components-dummy.m */; };
+		EDDA981E408169C4D5FDEF57E8AD01BE /* Pods-MovieDB-Viper-Components-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 47F5DBA8CA7D2278F711EA03B538B773 /* Pods-MovieDB-Viper-Components-dummy.m */; };
 		EEC150B66BCCD6C80FDA7E4D1975166B /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC9CFF18A0D32B6B356BC134501F82D /* DispatchQueue+Alamofire.swift */; };
 		F17A4CA4664CABB331D39FE902E06843 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1792490A74AC059EF8BEF6EF171A135F /* Alamofire.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0EE14F681C82CB5129B936F4D135AAC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22569AF7E17069A0364671B0FEAA5CCC;
+			remoteInfo = Declayout;
+		};
 		13E23F5105351BD8690513EA3D080F60 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -101,12 +111,26 @@
 			remoteGlobalIDString = 22569AF7E17069A0364671B0FEAA5CCC;
 			remoteInfo = Declayout;
 		};
+		4B3677DAAE391B1C6E65B7B0B7C0C603 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
+			remoteInfo = Alamofire;
+		};
 		4E38550D631F0DBDDF42EA2B7754A66C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EAAA1AD3A8A1B59AB91319EE40752C6D;
 			remoteInfo = Alamofire;
+		};
+		52C914CA8C5EFFA844301EDC585072F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B990BD87169C76A3ED3FE8A9258D91A3;
+			remoteInfo = "Toast-Swift";
 		};
 		6B5514EB3F9A51ABDE2662C127D2332B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -143,117 +167,133 @@
 			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
 			remoteInfo = SwiftLint;
 		};
+		F288B5B752DBD283388422BE952EEA89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0561159571E9F22CB6FB12486F7C0317 /* Declayout-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Declayout-prefix.pch"; sourceTree = "<group>"; };
+		067B94E38D0765F2E88A341016A57AF9 /* Pods-MovieDB-Viper-Router.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieDB-Viper-Router.release.xcconfig"; sourceTree = "<group>"; };
+		09976AD8AC2E21C5185750B604DA20C1 /* Pods-MovieDB-Viper-Home-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MovieDB-Viper-Home-acknowledgements.markdown"; sourceTree = "<group>"; };
 		0D18AD10721C6552C116BCAB3CFA2DB6 /* Declayout-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Declayout-Info.plist"; sourceTree = "<group>"; };
 		0E30C25C7EC659F116BBF8A53407CE9B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		1254AF68566294AC12A8C8B1E7193898 /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
-		135284542B143BD5218A53054E702C86 /* Pods-MovieDB-Viper-MovieDB-Viper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieDB-Viper-MovieDB-Viper.release.xcconfig"; sourceTree = "<group>"; };
-		13DA83E6659F4E460968D65DE3EDB927 /* Pods-MovieDB-Viper-Components-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieDB-Viper-Components-Info.plist"; sourceTree = "<group>"; };
+		14CD82CB6CE55A9DDEB76D7E124DEED4 /* Pods-MovieDB-Viper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieDB-Viper-Info.plist"; sourceTree = "<group>"; };
+		14EAC1A452320F8659CD826ABEF88AFF /* Pods-MovieDB-Viper-Components-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieDB-Viper-Components-Info.plist"; sourceTree = "<group>"; };
 		1792490A74AC059EF8BEF6EF171A135F /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		18182739F62B361A337BFD6A409CAC1C /* Concurrency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Concurrency.swift; path = Source/Concurrency.swift; sourceTree = "<group>"; };
 		1DDA6F8F356CE9583E76475D704B6459 /* Toast-Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Toast-Swift-dummy.m"; sourceTree = "<group>"; };
 		1FA290321B4CEAA8D67C47D60AEFA2EE /* AuthenticationInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationInterceptor.swift; path = Source/AuthenticationInterceptor.swift; sourceTree = "<group>"; };
-		207BF63F19377CB6DCCFAF14001D7CEC /* Pods-MovieDB-Viper-MovieDB-Viper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MovieDB-Viper-MovieDB-Viper-dummy.m"; sourceTree = "<group>"; };
 		24E3531DDFD92D2F360B1E4D0984C577 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		254FB2E54B617F4CE3CD7DBA3636E568 /* Pods-MovieDB-Viper-Home-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieDB-Viper-Home-Info.plist"; sourceTree = "<group>"; };
 		2915FFE509894469BE332C957E41BCC0 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		2AD7D8D0D74A60A8B9E806BF9889A4A7 /* Declayout */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Declayout; path = Declayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B2D95B0A2A6617C7252D94FD77BDD48 /* Pods-MovieDB-Viper-MovieDB-Viper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieDB-Viper-MovieDB-Viper.debug.xcconfig"; sourceTree = "<group>"; };
 		2BF3B2DD43780EB07116D7467B8D830B /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
-		2C126EABEAD0527BCC861AF39051CC1C /* Pods-MovieDB-Viper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MovieDB-Viper-dummy.m"; sourceTree = "<group>"; };
-		2D75F77D6F23DC9E9EF154516528D06F /* Pods-MovieDB-Viper-Components.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieDB-Viper-Components.release.xcconfig"; sourceTree = "<group>"; };
-		2F6060DAE8BAA766064B6C7DAA024BDA /* Pods-MovieDB-Viper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieDB-Viper.debug.xcconfig"; sourceTree = "<group>"; };
 		3144CC9BF7FD7F01017140C07ABD7254 /* RequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestInterceptor.swift; path = Source/RequestInterceptor.swift; sourceTree = "<group>"; };
-		32BFE3C1720B343C236BAEA7938D1DDA /* Pods-MovieDB-Viper-MovieDB-Viper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MovieDB-Viper-MovieDB-Viper-umbrella.h"; sourceTree = "<group>"; };
-		3430A6FC588DA0B3E6400907D936AD08 /* Pods-MovieDB-Viper-Components-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MovieDB-Viper-Components-umbrella.h"; sourceTree = "<group>"; };
+		32BD8A29FDFA7DA642186E375C2CC607 /* Pods-MovieDB-Viper-Router-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieDB-Viper-Router-acknowledgements.plist"; sourceTree = "<group>"; };
+		3565A30693B20ACF133D068186BE8D50 /* Pods-MovieDB-Viper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MovieDB-Viper.modulemap"; sourceTree = "<group>"; };
 		37DCE47BF8E8EEDF2D57E09A433801A4 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
-		3818CE3C9E81036BF491A4BB152715E3 /* Pods-MovieDB-Viper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieDB-Viper.release.xcconfig"; sourceTree = "<group>"; };
 		39343A32EE1509AA2FE524B5D4DA33EE /* UIView+Center.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Center.swift"; path = "Declayout/Sources/UIView+Center.swift"; sourceTree = "<group>"; };
 		3E841003B724D797A28432DE72A9AB13 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
-		3F2E21557FBF7F835EA3D2565C414AB0 /* Pods-MovieDB-Viper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieDB-Viper-Info.plist"; sourceTree = "<group>"; };
 		3FD11975DE1868C3359A4D6B11E8E048 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
-		40CBE3B3EB049C7FDA0CDDFFD3F1AF0F /* Pods-MovieDB-Viper-Router.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieDB-Viper-Router.debug.xcconfig"; sourceTree = "<group>"; };
 		44D62552A16B049776FEB70835DFA1F5 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
 		460C9495AE0870BE52622F1D46CF47FD /* Declayout-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Declayout-umbrella.h"; sourceTree = "<group>"; };
-		4E9AE86D77D99EFD4A3928E7CAE582A1 /* Pods-MovieDB-Viper-Router-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieDB-Viper-Router-Info.plist"; sourceTree = "<group>"; };
+		4700090B492EEB04BAFC0FDB91454DF3 /* Pods-MovieDB-Viper-Home */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MovieDB-Viper-Home"; path = Pods_MovieDB_Viper_Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47106FB6FA426782AC3B1EE060D52558 /* Pods-MovieDB-Viper-Home-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MovieDB-Viper-Home-umbrella.h"; sourceTree = "<group>"; };
+		47F5DBA8CA7D2278F711EA03B538B773 /* Pods-MovieDB-Viper-Components-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MovieDB-Viper-Components-dummy.m"; sourceTree = "<group>"; };
+		4E7C3A93AE413E88F47FA326FE599DC9 /* Pods-MovieDB-Viper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieDB-Viper.debug.xcconfig"; sourceTree = "<group>"; };
+		509E68E57B461A2DB77ADFF0E9F57082 /* Pods-MovieDB-Viper-Components.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MovieDB-Viper-Components.modulemap"; sourceTree = "<group>"; };
 		52E2726CF37EDF749E1D4C539092FAEF /* Combine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Combine.swift; path = Source/Combine.swift; sourceTree = "<group>"; };
 		558F37FA3A3E9BADBE5AAE2DE3618516 /* Toast-Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Toast-Swift.modulemap"; sourceTree = "<group>"; };
 		55CDBDCF1FA7D1970FC26C1097E76C96 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
-		57C39B9918393316A14B117C820DCB95 /* Pods-MovieDB-Viper-Router-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MovieDB-Viper-Router-umbrella.h"; sourceTree = "<group>"; };
-		58E8EE3DF858419FB5904916F5018132 /* Pods-MovieDB-Viper-Router.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MovieDB-Viper-Router.modulemap"; sourceTree = "<group>"; };
-		59415D63F00AB7AFD03027DDF73D55EB /* Pods-MovieDB-Viper-Router-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MovieDB-Viper-Router-dummy.m"; sourceTree = "<group>"; };
+		59E6B641AD9E6F0538F3D56605DD9CBA /* Pods-MovieDB-Viper-Home.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieDB-Viper-Home.release.xcconfig"; sourceTree = "<group>"; };
 		5A09E56E317050E90F049B19AEEAFB7C /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		5BAC840CE06D45190C04C5C09F3ACED5 /* UIView+Dimension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Dimension.swift"; path = "Declayout/Sources/UIView+Dimension.swift"; sourceTree = "<group>"; };
 		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61209C71D3DE2B7271B0C787A454DC3C /* Pods-MovieDB-Viper */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MovieDB-Viper"; path = Pods_MovieDB_Viper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6433BB75A1904BF3D83EBDEF6A453F0F /* Pods-MovieDB-Viper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MovieDB-Viper-umbrella.h"; sourceTree = "<group>"; };
 		652180D75A3F42DCAA16AC64933FC934 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
-		69B36767BC560FA16831F77E91E3174B /* Pods-MovieDB-Viper-Components-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MovieDB-Viper-Components-dummy.m"; sourceTree = "<group>"; };
 		6CA6ADE178A0D8360A434185113C2349 /* Toast.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Toast.swift; path = Toast/Toast.swift; sourceTree = "<group>"; };
 		6CB0811FB9A341D94D028C232FE3FD8B /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
 		6D983A61A5CF9ACC0252FB805999AC1F /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
-		6F2350365CE970DB887A36452DAB4F00 /* Pods-MovieDB-Viper-MovieDB-Viper-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MovieDB-Viper-MovieDB-Viper-frameworks.sh"; sourceTree = "<group>"; };
+		6DDF4154C9D1CBF72CAA27E97F0B896E /* Pods-MovieDB-Viper-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieDB-Viper-acknowledgements.plist"; sourceTree = "<group>"; };
+		749E4F7D05F94C96BC3AF31CDB628D1E /* Pods-MovieDB-Viper-Router.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieDB-Viper-Router.debug.xcconfig"; sourceTree = "<group>"; };
+		7588A787737F3F424C8D091B37E8A5C5 /* Pods-MovieDB-Viper-Router-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieDB-Viper-Router-Info.plist"; sourceTree = "<group>"; };
+		78F26B2C105A11FDC7E507C1AEE6751C /* Pods-MovieDB-Viper-MovieDB-Viper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MovieDB-Viper-MovieDB-Viper-dummy.m"; sourceTree = "<group>"; };
 		79293534A8B8000C88572C89239D12ED /* ParameterEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoder.swift; path = Source/ParameterEncoder.swift; sourceTree = "<group>"; };
 		7A0AE2F810B3175FCE4CEE0DC5E1F817 /* Toast-Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Toast-Swift-Info.plist"; sourceTree = "<group>"; };
+		7AD290B508C1B00EE0744DB114B5CC3B /* Pods-MovieDB-Viper-Components-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MovieDB-Viper-Components-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7B55B06972BACD858EF3F85B2C1D5337 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7ECCBC8C635FDD4B1E43C672D1B7DEB1 /* RequestTaskMap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestTaskMap.swift; path = Source/RequestTaskMap.swift; sourceTree = "<group>"; };
+		803E273FF081F214C3BD98B373FCCCA9 /* Pods-MovieDB-Viper-Home.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieDB-Viper-Home.debug.xcconfig"; sourceTree = "<group>"; };
 		80A5C2C63A8C404A71458F5B4C03C990 /* AFError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AFError.swift; path = Source/AFError.swift; sourceTree = "<group>"; };
 		8238A628D2AC0C15FF482185EF3FA262 /* RedirectHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RedirectHandler.swift; path = Source/RedirectHandler.swift; sourceTree = "<group>"; };
 		8503F04753C16444CA681366F47DEC31 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		87833230E8C392E8F2F075603175E6F6 /* Pods-MovieDB-Viper-Router-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MovieDB-Viper-Router-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8957D747EEF6A1C8DB322B7F2DD555DA /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
-		898BF2BF1EECD0A641040BAD56953538 /* Pods-MovieDB-Viper-MovieDB-Viper-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MovieDB-Viper-MovieDB-Viper-acknowledgements.markdown"; sourceTree = "<group>"; };
+		89D447AAFF0EC1C19B69617AF2808C1C /* Pods-MovieDB-Viper-MovieDB-Viper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MovieDB-Viper-MovieDB-Viper-umbrella.h"; sourceTree = "<group>"; };
 		8A56A4632D6CE0B1E342C000F0E9CFD2 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
-		8C4B2380DC58B4923564AD5FE24DB22D /* Pods-MovieDB-Viper-Router-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MovieDB-Viper-Router-acknowledgements.markdown"; sourceTree = "<group>"; };
 		8DA96B4AD85A51642C8046290686218C /* Toast-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		8DE95555912344D25BBDBA6E7F4F7AA3 /* Pods-MovieDB-Viper-MovieDB-Viper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieDB-Viper-MovieDB-Viper.release.xcconfig"; sourceTree = "<group>"; };
 		900BCE4A22473DF487FD7926A91A0EDE /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 		9080A3A883AF64264053B7680714B23A /* Pods-MovieDB-Viper-MovieDB-Viper */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MovieDB-Viper-MovieDB-Viper"; path = Pods_MovieDB_Viper_MovieDB_Viper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		90A29271AEC05AD8934E66594E389708 /* Pods-MovieDB-Viper-MovieDB-Viper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MovieDB-Viper-MovieDB-Viper.modulemap"; sourceTree = "<group>"; };
 		910C0E5E1ED9E5D65A81CFE03764051A /* Declayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Declayout.modulemap; sourceTree = "<group>"; };
 		938030745C62BA22B8E13C661F895F2F /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
 		9455D31DEF56F11564FB0524D0A91C3A /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
-		9B1628189166A717820A7EF8DDE55DBB /* Pods-MovieDB-Viper-MovieDB-Viper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieDB-Viper-MovieDB-Viper-Info.plist"; sourceTree = "<group>"; };
 		9D292D16B248D9A043943E9174134A42 /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9ECE39A18337611FF7DC7D1D7792E2AF /* Pods-MovieDB-Viper-Components.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MovieDB-Viper-Components.modulemap"; sourceTree = "<group>"; };
 		9F4A709EE9CE8A20F264A1C70761D832 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		9FA2ED3E01BD61D65DC6202A55742D70 /* Toast-Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-prefix.pch"; sourceTree = "<group>"; };
-		A03A54E546FD6B3677E405D36A27D2EE /* Pods-MovieDB-Viper-MovieDB-Viper-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieDB-Viper-MovieDB-Viper-acknowledgements.plist"; sourceTree = "<group>"; };
+		A02037BE30B70BCEFA7498D91B4A754B /* Pods-MovieDB-Viper-MovieDB-Viper-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieDB-Viper-MovieDB-Viper-acknowledgements.plist"; sourceTree = "<group>"; };
+		A0EA9D5EAFB335F26E758FD1615ECA0F /* Pods-MovieDB-Viper-MovieDB-Viper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MovieDB-Viper-MovieDB-Viper.modulemap"; sourceTree = "<group>"; };
 		A12CA0BD2B59966152766A13A0ADFD37 /* UIView+Spacing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Spacing.swift"; path = "Declayout/Sources/UIView+Spacing.swift"; sourceTree = "<group>"; };
+		A43E0612473EBD0AEAC5F0445E6054C4 /* Pods-MovieDB-Viper-Router-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MovieDB-Viper-Router-umbrella.h"; sourceTree = "<group>"; };
 		A4AB95E842551544B949C232F2FCDD91 /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
 		A509670BD1BCD496362992434BB1E503 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
 		A583C69C91575D608C5B246315318EF7 /* Toast-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Toast-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		A67A7A7563DB56E87493F983228F4D3E /* UIView+Constraintable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Constraintable.swift"; path = "Declayout/Sources/UIView+Constraintable.swift"; sourceTree = "<group>"; };
+		AA4B1EA51798F03D5C90A8AB0319B8F6 /* Pods-MovieDB-Viper-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MovieDB-Viper-acknowledgements.markdown"; sourceTree = "<group>"; };
 		ACA795C0DF3EBD1748248A7E622514E0 /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Declayout/Sources/Constraint.swift; sourceTree = "<group>"; };
 		AD4C9A0361BF419E4231A4D0C6F01CA5 /* MultipartUpload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartUpload.swift; path = Source/MultipartUpload.swift; sourceTree = "<group>"; };
 		ADE865356ADFC28A1A2E8D63BCEE5402 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
+		ADEB082F23AEB690059B8A67706B3E01 /* Pods-MovieDB-Viper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieDB-Viper.release.xcconfig"; sourceTree = "<group>"; };
+		AE4A8946569EB84A22BF40D78D7863DC /* Pods-MovieDB-Viper-Components.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieDB-Viper-Components.release.xcconfig"; sourceTree = "<group>"; };
 		AE4B2FD656D79B0713088F1FC2EEF8CA /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
 		B0F4F1C4BA4338E7EF66374FE31BFF92 /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
-		BD4F5BFF25758609E6B9082BA7D2612C /* Pods-MovieDB-Viper-MovieDB-Viper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieDB-Viper-MovieDB-Viper.debug.xcconfig"; sourceTree = "<group>"; };
+		B12518F5796EE1A5C1BAA4EB37174651 /* Pods-MovieDB-Viper-Router-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MovieDB-Viper-Router-dummy.m"; sourceTree = "<group>"; };
+		B4534F5B740065C469C7520BD51FADDF /* Pods-MovieDB-Viper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MovieDB-Viper-dummy.m"; sourceTree = "<group>"; };
+		B54C11DE009161BE4B9BDCAE386BD161 /* Pods-MovieDB-Viper-Home.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MovieDB-Viper-Home.modulemap"; sourceTree = "<group>"; };
+		BCCEFC7B989C7A8425DC3AC97AE0D0CD /* Pods-MovieDB-Viper-Components.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieDB-Viper-Components.debug.xcconfig"; sourceTree = "<group>"; };
 		BF9D8AB1847BCE497DAFA95ECA7B09FC /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
+		BFB4BBA19780F744CA202AE6BB661512 /* Pods-MovieDB-Viper-Components-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MovieDB-Viper-Components-umbrella.h"; sourceTree = "<group>"; };
 		C0C37ED7204E20A20010C070A408EA82 /* Declayout-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Declayout-dummy.m"; sourceTree = "<group>"; };
-		C9F22A37F7890D66CCE75E2627E97904 /* Pods-MovieDB-Viper-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieDB-Viper-acknowledgements.plist"; sourceTree = "<group>"; };
+		C8F8D852B599A0BFBDD21A72A4B4E8AC /* Pods-MovieDB-Viper-Router.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MovieDB-Viper-Router.modulemap"; sourceTree = "<group>"; };
 		CC027DFFDA9783971359E1AFA4811674 /* Pods-MovieDB-Viper-Router */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MovieDB-Viper-Router"; path = Pods_MovieDB_Viper_Router.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCB6D6950025723B4ABA8B4C388F86C5 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
 		CCC9CFF18A0D32B6B356BC134501F82D /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Alamofire.swift"; path = "Source/DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		D021FA2EEF1DE72DDD16DF650DABF223 /* Alamofire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.debug.xcconfig; sourceTree = "<group>"; };
-		D3137A8EF0D1780AF2B4DC1CD827BF08 /* Pods-MovieDB-Viper-Components-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieDB-Viper-Components-acknowledgements.plist"; sourceTree = "<group>"; };
-		D58DC49DF99B092E6C8AD9C8B7E814E7 /* Pods-MovieDB-Viper-Components-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MovieDB-Viper-Components-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast-Swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Toast-Swift"; path = Toast_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D832F2BD173A1E347CFF0582BE98243A /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
 		D92B5C73AF6A805E00DFEF401344A7AB /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
-		D96DC22C1D050FE3FDF0001FFA9AD308 /* Pods-MovieDB-Viper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MovieDB-Viper.modulemap"; sourceTree = "<group>"; };
+		D9D56EA54B454C57FEE6D6F45F02DE4A /* Pods-MovieDB-Viper-Home-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MovieDB-Viper-Home-dummy.m"; sourceTree = "<group>"; };
+		DA05D8AEA4CA59FE2BD5291DE2F6B8C8 /* Pods-MovieDB-Viper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MovieDB-Viper-umbrella.h"; sourceTree = "<group>"; };
 		DA548B7FA7A3E8F0985EDA412717D61C /* Declayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Declayout.debug.xcconfig; sourceTree = "<group>"; };
 		DACC50E375FF59C2D66AC46F1B644476 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
 		E55E6757FE82DD7BB602309B1EB980CC /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
-		E6AA0B21113E10406474A0F8C3D47F1A /* Pods-MovieDB-Viper-Router.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieDB-Viper-Router.release.xcconfig"; sourceTree = "<group>"; };
 		EEFAA9CEDCF64D0DE908A316962FA55E /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
 		EFFD2E3ED0884903959CC2F62BE10BA6 /* Declayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Declayout.release.xcconfig; sourceTree = "<group>"; };
+		F1C35F9713F97E72EB572A33F3DD5E25 /* Pods-MovieDB-Viper-Components-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieDB-Viper-Components-acknowledgements.plist"; sourceTree = "<group>"; };
 		F4797618331EAECF720E4640CB16C732 /* Pods-MovieDB-Viper-Components */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MovieDB-Viper-Components"; path = Pods_MovieDB_Viper_Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F61D57DB6B4F2E616283B667018AA515 /* Pods-MovieDB-Viper-MovieDB-Viper-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MovieDB-Viper-MovieDB-Viper-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F71F6EDEBB777F6445814234E28722F1 /* Pods-MovieDB-Viper-MovieDB-Viper-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MovieDB-Viper-MovieDB-Viper-frameworks.sh"; sourceTree = "<group>"; };
 		F7D45515AB97C4C869A47BDE52FA8023 /* Toast-Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Toast-Swift-umbrella.h"; sourceTree = "<group>"; };
-		F82D6A091C315A1A89B0592E3B68066B /* Pods-MovieDB-Viper-Components.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MovieDB-Viper-Components.debug.xcconfig"; sourceTree = "<group>"; };
-		FA89787C89BAA265D1275AEBD1FB676D /* Pods-MovieDB-Viper-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MovieDB-Viper-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FB561FD0DE1F966F581BD3F92ED787D3 /* Pods-MovieDB-Viper-Router-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieDB-Viper-Router-acknowledgements.plist"; sourceTree = "<group>"; };
+		FB7C297C712C2232B3AECCB04D523FC6 /* Pods-MovieDB-Viper-Home-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieDB-Viper-Home-acknowledgements.plist"; sourceTree = "<group>"; };
+		FB993B2AAAC4168C2AD29781C1FFAED9 /* Pods-MovieDB-Viper-MovieDB-Viper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MovieDB-Viper-MovieDB-Viper-Info.plist"; sourceTree = "<group>"; };
 		FD11CAEFC3FD36438582B188095E929A /* ServerTrustEvaluation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustEvaluation.swift; path = Source/ServerTrustEvaluation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -308,6 +348,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		45A023F33A1FB0695A93C18A2CAC609D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020BF812D9A063DA899632EC26188871 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		49295CFD7D597798D433CDB43E6CDF65 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,52 +385,6 @@
 			path = "../Target Support Files/SwiftLint";
 			sourceTree = "<group>";
 		};
-		0B5671DEC71148CB4CBC2DC5F7153B07 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
-				2AD7D8D0D74A60A8B9E806BF9889A4A7 /* Declayout */,
-				61209C71D3DE2B7271B0C787A454DC3C /* Pods-MovieDB-Viper */,
-				F4797618331EAECF720E4640CB16C732 /* Pods-MovieDB-Viper-Components */,
-				9080A3A883AF64264053B7680714B23A /* Pods-MovieDB-Viper-MovieDB-Viper */,
-				CC027DFFDA9783971359E1AFA4811674 /* Pods-MovieDB-Viper-Router */,
-				D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast-Swift */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		10F5697E434B88EB6CC379DAD6DA46FE /* Pods-MovieDB-Viper-Components */ = {
-			isa = PBXGroup;
-			children = (
-				9ECE39A18337611FF7DC7D1D7792E2AF /* Pods-MovieDB-Viper-Components.modulemap */,
-				D58DC49DF99B092E6C8AD9C8B7E814E7 /* Pods-MovieDB-Viper-Components-acknowledgements.markdown */,
-				D3137A8EF0D1780AF2B4DC1CD827BF08 /* Pods-MovieDB-Viper-Components-acknowledgements.plist */,
-				69B36767BC560FA16831F77E91E3174B /* Pods-MovieDB-Viper-Components-dummy.m */,
-				13DA83E6659F4E460968D65DE3EDB927 /* Pods-MovieDB-Viper-Components-Info.plist */,
-				3430A6FC588DA0B3E6400907D936AD08 /* Pods-MovieDB-Viper-Components-umbrella.h */,
-				F82D6A091C315A1A89B0592E3B68066B /* Pods-MovieDB-Viper-Components.debug.xcconfig */,
-				2D75F77D6F23DC9E9EF154516528D06F /* Pods-MovieDB-Viper-Components.release.xcconfig */,
-			);
-			name = "Pods-MovieDB-Viper-Components";
-			path = "Target Support Files/Pods-MovieDB-Viper-Components";
-			sourceTree = "<group>";
-		};
-		11A74356E88C464FEC6E90CFA97E3F6F /* Pods-MovieDB-Viper */ = {
-			isa = PBXGroup;
-			children = (
-				D96DC22C1D050FE3FDF0001FFA9AD308 /* Pods-MovieDB-Viper.modulemap */,
-				FA89787C89BAA265D1275AEBD1FB676D /* Pods-MovieDB-Viper-acknowledgements.markdown */,
-				C9F22A37F7890D66CCE75E2627E97904 /* Pods-MovieDB-Viper-acknowledgements.plist */,
-				2C126EABEAD0527BCC861AF39051CC1C /* Pods-MovieDB-Viper-dummy.m */,
-				3F2E21557FBF7F835EA3D2565C414AB0 /* Pods-MovieDB-Viper-Info.plist */,
-				6433BB75A1904BF3D83EBDEF6A453F0F /* Pods-MovieDB-Viper-umbrella.h */,
-				2F6060DAE8BAA766064B6C7DAA024BDA /* Pods-MovieDB-Viper.debug.xcconfig */,
-				3818CE3C9E81036BF491A4BB152715E3 /* Pods-MovieDB-Viper.release.xcconfig */,
-			);
-			name = "Pods-MovieDB-Viper";
-			path = "Target Support Files/Pods-MovieDB-Viper";
-			sourceTree = "<group>";
-		};
 		151851F8C2F099F0499DAF6D46CFDB0B /* Toast-Swift */ = {
 			isa = PBXGroup;
 			children = (
@@ -391,6 +393,37 @@
 			);
 			name = "Toast-Swift";
 			path = "Toast-Swift";
+			sourceTree = "<group>";
+		};
+		19915956293AEB5F84D1E252CEB0D202 /* Pods-MovieDB-Viper-Components */ = {
+			isa = PBXGroup;
+			children = (
+				509E68E57B461A2DB77ADFF0E9F57082 /* Pods-MovieDB-Viper-Components.modulemap */,
+				7AD290B508C1B00EE0744DB114B5CC3B /* Pods-MovieDB-Viper-Components-acknowledgements.markdown */,
+				F1C35F9713F97E72EB572A33F3DD5E25 /* Pods-MovieDB-Viper-Components-acknowledgements.plist */,
+				47F5DBA8CA7D2278F711EA03B538B773 /* Pods-MovieDB-Viper-Components-dummy.m */,
+				14EAC1A452320F8659CD826ABEF88AFF /* Pods-MovieDB-Viper-Components-Info.plist */,
+				BFB4BBA19780F744CA202AE6BB661512 /* Pods-MovieDB-Viper-Components-umbrella.h */,
+				BCCEFC7B989C7A8425DC3AC97AE0D0CD /* Pods-MovieDB-Viper-Components.debug.xcconfig */,
+				AE4A8946569EB84A22BF40D78D7863DC /* Pods-MovieDB-Viper-Components.release.xcconfig */,
+			);
+			name = "Pods-MovieDB-Viper-Components";
+			path = "Target Support Files/Pods-MovieDB-Viper-Components";
+			sourceTree = "<group>";
+		};
+		1D1FC1A6C384355D41BD0FD85A70216E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
+				2AD7D8D0D74A60A8B9E806BF9889A4A7 /* Declayout */,
+				61209C71D3DE2B7271B0C787A454DC3C /* Pods-MovieDB-Viper */,
+				F4797618331EAECF720E4640CB16C732 /* Pods-MovieDB-Viper-Components */,
+				4700090B492EEB04BAFC0FDB91454DF3 /* Pods-MovieDB-Viper-Home */,
+				9080A3A883AF64264053B7680714B23A /* Pods-MovieDB-Viper-MovieDB-Viper */,
+				CC027DFFDA9783971359E1AFA4811674 /* Pods-MovieDB-Viper-Router */,
+				D6043471C96F93DC41F7DD1E0D7D8B35 /* Toast-Swift */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		1FD0C4D680AB4DDF26C610F4FD6BC1BF /* Alamofire */ = {
@@ -438,6 +471,22 @@
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
+		2E1F72CD08780D674AAC6CF6770BB276 /* Pods-MovieDB-Viper-Home */ = {
+			isa = PBXGroup;
+			children = (
+				B54C11DE009161BE4B9BDCAE386BD161 /* Pods-MovieDB-Viper-Home.modulemap */,
+				09976AD8AC2E21C5185750B604DA20C1 /* Pods-MovieDB-Viper-Home-acknowledgements.markdown */,
+				FB7C297C712C2232B3AECCB04D523FC6 /* Pods-MovieDB-Viper-Home-acknowledgements.plist */,
+				D9D56EA54B454C57FEE6D6F45F02DE4A /* Pods-MovieDB-Viper-Home-dummy.m */,
+				254FB2E54B617F4CE3CD7DBA3636E568 /* Pods-MovieDB-Viper-Home-Info.plist */,
+				47106FB6FA426782AC3B1EE060D52558 /* Pods-MovieDB-Viper-Home-umbrella.h */,
+				803E273FF081F214C3BD98B373FCCCA9 /* Pods-MovieDB-Viper-Home.debug.xcconfig */,
+				59E6B641AD9E6F0538F3D56605DD9CBA /* Pods-MovieDB-Viper-Home.release.xcconfig */,
+			);
+			name = "Pods-MovieDB-Viper-Home";
+			path = "Target Support Files/Pods-MovieDB-Viper-Home";
+			sourceTree = "<group>";
+		};
 		367A53CE12E00A7FDADF507983C00706 /* Declayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,6 +499,22 @@
 			);
 			name = Declayout;
 			path = Declayout;
+			sourceTree = "<group>";
+		};
+		43BBCE20F1DE888E0BCBAFB89DCA6AF3 /* Pods-MovieDB-Viper-Router */ = {
+			isa = PBXGroup;
+			children = (
+				C8F8D852B599A0BFBDD21A72A4B4E8AC /* Pods-MovieDB-Viper-Router.modulemap */,
+				87833230E8C392E8F2F075603175E6F6 /* Pods-MovieDB-Viper-Router-acknowledgements.markdown */,
+				32BD8A29FDFA7DA642186E375C2CC607 /* Pods-MovieDB-Viper-Router-acknowledgements.plist */,
+				B12518F5796EE1A5C1BAA4EB37174651 /* Pods-MovieDB-Viper-Router-dummy.m */,
+				7588A787737F3F424C8D091B37E8A5C5 /* Pods-MovieDB-Viper-Router-Info.plist */,
+				A43E0612473EBD0AEAC5F0445E6054C4 /* Pods-MovieDB-Viper-Router-umbrella.h */,
+				749E4F7D05F94C96BC3AF31CDB628D1E /* Pods-MovieDB-Viper-Router.debug.xcconfig */,
+				067B94E38D0765F2E88A341016A57AF9 /* Pods-MovieDB-Viper-Router.release.xcconfig */,
+			);
+			name = "Pods-MovieDB-Viper-Router";
+			path = "Target Support Files/Pods-MovieDB-Viper-Router";
 			sourceTree = "<group>";
 		};
 		43CD06BFDF0C816BABCD956BB8AD65B1 /* Support Files */ = {
@@ -476,15 +541,21 @@
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
-		59F9561ADB94D9BC14850C93824D49AD /* Targets Support Files */ = {
+		547A15A9C6C7904A96BEB3FA73431408 /* Pods-MovieDB-Viper-MovieDB-Viper */ = {
 			isa = PBXGroup;
 			children = (
-				11A74356E88C464FEC6E90CFA97E3F6F /* Pods-MovieDB-Viper */,
-				10F5697E434B88EB6CC379DAD6DA46FE /* Pods-MovieDB-Viper-Components */,
-				B6121D32F510FA07391F3F3A2A397423 /* Pods-MovieDB-Viper-MovieDB-Viper */,
-				BA89B3A2AACACBAFC6A53A56AECC5B7A /* Pods-MovieDB-Viper-Router */,
+				A0EA9D5EAFB335F26E758FD1615ECA0F /* Pods-MovieDB-Viper-MovieDB-Viper.modulemap */,
+				F61D57DB6B4F2E616283B667018AA515 /* Pods-MovieDB-Viper-MovieDB-Viper-acknowledgements.markdown */,
+				A02037BE30B70BCEFA7498D91B4A754B /* Pods-MovieDB-Viper-MovieDB-Viper-acknowledgements.plist */,
+				78F26B2C105A11FDC7E507C1AEE6751C /* Pods-MovieDB-Viper-MovieDB-Viper-dummy.m */,
+				F71F6EDEBB777F6445814234E28722F1 /* Pods-MovieDB-Viper-MovieDB-Viper-frameworks.sh */,
+				FB993B2AAAC4168C2AD29781C1FFAED9 /* Pods-MovieDB-Viper-MovieDB-Viper-Info.plist */,
+				89D447AAFF0EC1C19B69617AF2808C1C /* Pods-MovieDB-Viper-MovieDB-Viper-umbrella.h */,
+				2B2D95B0A2A6617C7252D94FD77BDD48 /* Pods-MovieDB-Viper-MovieDB-Viper.debug.xcconfig */,
+				8DE95555912344D25BBDBA6E7F4F7AA3 /* Pods-MovieDB-Viper-MovieDB-Viper.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-MovieDB-Viper-MovieDB-Viper";
+			path = "Target Support Files/Pods-MovieDB-Viper-MovieDB-Viper";
 			sourceTree = "<group>";
 		};
 		5F5B3B1250C41B6974D0B32FE6747F3C /* Support Files */ = {
@@ -500,6 +571,22 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Toast-Swift";
+			sourceTree = "<group>";
+		};
+		689606B9F550F9CCB2861625334DBA60 /* Pods-MovieDB-Viper */ = {
+			isa = PBXGroup;
+			children = (
+				3565A30693B20ACF133D068186BE8D50 /* Pods-MovieDB-Viper.modulemap */,
+				AA4B1EA51798F03D5C90A8AB0319B8F6 /* Pods-MovieDB-Viper-acknowledgements.markdown */,
+				6DDF4154C9D1CBF72CAA27E97F0B896E /* Pods-MovieDB-Viper-acknowledgements.plist */,
+				B4534F5B740065C469C7520BD51FADDF /* Pods-MovieDB-Viper-dummy.m */,
+				14CD82CB6CE55A9DDEB76D7E124DEED4 /* Pods-MovieDB-Viper-Info.plist */,
+				DA05D8AEA4CA59FE2BD5291DE2F6B8C8 /* Pods-MovieDB-Viper-umbrella.h */,
+				4E7C3A93AE413E88F47FA326FE599DC9 /* Pods-MovieDB-Viper.debug.xcconfig */,
+				ADEB082F23AEB690059B8A67706B3E01 /* Pods-MovieDB-Viper.release.xcconfig */,
+			);
+			name = "Pods-MovieDB-Viper";
+			path = "Target Support Files/Pods-MovieDB-Viper";
 			sourceTree = "<group>";
 		};
 		72A08EBA5E5C34F50C4A26E1F0D2CB13 /* iOS */ = {
@@ -538,37 +625,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		B6121D32F510FA07391F3F3A2A397423 /* Pods-MovieDB-Viper-MovieDB-Viper */ = {
+		CEBD4747BB5CBB59D1D43DF2805CEDA0 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				90A29271AEC05AD8934E66594E389708 /* Pods-MovieDB-Viper-MovieDB-Viper.modulemap */,
-				898BF2BF1EECD0A641040BAD56953538 /* Pods-MovieDB-Viper-MovieDB-Viper-acknowledgements.markdown */,
-				A03A54E546FD6B3677E405D36A27D2EE /* Pods-MovieDB-Viper-MovieDB-Viper-acknowledgements.plist */,
-				207BF63F19377CB6DCCFAF14001D7CEC /* Pods-MovieDB-Viper-MovieDB-Viper-dummy.m */,
-				6F2350365CE970DB887A36452DAB4F00 /* Pods-MovieDB-Viper-MovieDB-Viper-frameworks.sh */,
-				9B1628189166A717820A7EF8DDE55DBB /* Pods-MovieDB-Viper-MovieDB-Viper-Info.plist */,
-				32BFE3C1720B343C236BAEA7938D1DDA /* Pods-MovieDB-Viper-MovieDB-Viper-umbrella.h */,
-				BD4F5BFF25758609E6B9082BA7D2612C /* Pods-MovieDB-Viper-MovieDB-Viper.debug.xcconfig */,
-				135284542B143BD5218A53054E702C86 /* Pods-MovieDB-Viper-MovieDB-Viper.release.xcconfig */,
+				689606B9F550F9CCB2861625334DBA60 /* Pods-MovieDB-Viper */,
+				19915956293AEB5F84D1E252CEB0D202 /* Pods-MovieDB-Viper-Components */,
+				2E1F72CD08780D674AAC6CF6770BB276 /* Pods-MovieDB-Viper-Home */,
+				547A15A9C6C7904A96BEB3FA73431408 /* Pods-MovieDB-Viper-MovieDB-Viper */,
+				43BBCE20F1DE888E0BCBAFB89DCA6AF3 /* Pods-MovieDB-Viper-Router */,
 			);
-			name = "Pods-MovieDB-Viper-MovieDB-Viper";
-			path = "Target Support Files/Pods-MovieDB-Viper-MovieDB-Viper";
-			sourceTree = "<group>";
-		};
-		BA89B3A2AACACBAFC6A53A56AECC5B7A /* Pods-MovieDB-Viper-Router */ = {
-			isa = PBXGroup;
-			children = (
-				58E8EE3DF858419FB5904916F5018132 /* Pods-MovieDB-Viper-Router.modulemap */,
-				8C4B2380DC58B4923564AD5FE24DB22D /* Pods-MovieDB-Viper-Router-acknowledgements.markdown */,
-				FB561FD0DE1F966F581BD3F92ED787D3 /* Pods-MovieDB-Viper-Router-acknowledgements.plist */,
-				59415D63F00AB7AFD03027DDF73D55EB /* Pods-MovieDB-Viper-Router-dummy.m */,
-				4E9AE86D77D99EFD4A3928E7CAE582A1 /* Pods-MovieDB-Viper-Router-Info.plist */,
-				57C39B9918393316A14B117C820DCB95 /* Pods-MovieDB-Viper-Router-umbrella.h */,
-				40CBE3B3EB049C7FDA0CDDFFD3F1AF0F /* Pods-MovieDB-Viper-Router.debug.xcconfig */,
-				E6AA0B21113E10406474A0F8C3D47F1A /* Pods-MovieDB-Viper-Router.release.xcconfig */,
-			);
-			name = "Pods-MovieDB-Viper-Router";
-			path = "Target Support Files/Pods-MovieDB-Viper-Router";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -577,8 +643,8 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
 				87517629B7E6E9138107C6AC35529810 /* Pods */,
-				0B5671DEC71148CB4CBC2DC5F7153B07 /* Products */,
-				59F9561ADB94D9BC14850C93824D49AD /* Targets Support Files */,
+				1D1FC1A6C384355D41BD0FD85A70216E /* Products */,
+				CEBD4747BB5CBB59D1D43DF2805CEDA0 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -614,6 +680,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D38C9F2378A3A6765EC72CC8E606806 /* Pods-MovieDB-Viper-MovieDB-Viper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D8A0BC329FBEC9BAD6A4D7478C4E8DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7BC9D66ED5865DF5A4C053055E12055 /* Pods-MovieDB-Viper-Home-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -700,6 +774,28 @@
 			name = "Pods-MovieDB-Viper-Router";
 			productName = Pods_MovieDB_Viper_Router;
 			productReference = CC027DFFDA9783971359E1AFA4811674 /* Pods-MovieDB-Viper-Router */;
+			productType = "com.apple.product-type.framework";
+		};
+		2B26FDBB1FA39670205281A98D74CDB3 /* Pods-MovieDB-Viper-Home */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4654C2DD9C848CF73983C8A4211808A4 /* Build configuration list for PBXNativeTarget "Pods-MovieDB-Viper-Home" */;
+			buildPhases = (
+				9D8A0BC329FBEC9BAD6A4D7478C4E8DD /* Headers */,
+				C53252EF369DA197F1D3D93A326F8270 /* Sources */,
+				45A023F33A1FB0695A93C18A2CAC609D /* Frameworks */,
+				72950308A68991F9D61CF15D978910FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFDBDC06A9646BB95C544456CE890FB3 /* PBXTargetDependency */,
+				73CA6A847F07624EBD0F56F67A205BAE /* PBXTargetDependency */,
+				50D349CE533C651FC393E5CD86880CC2 /* PBXTargetDependency */,
+				EFAAC8F29C6DB77267F5B5F9A8A00AA5 /* PBXTargetDependency */,
+			);
+			name = "Pods-MovieDB-Viper-Home";
+			productName = Pods_MovieDB_Viper_Home;
+			productReference = 4700090B492EEB04BAFC0FDB91454DF3 /* Pods-MovieDB-Viper-Home */;
 			productType = "com.apple.product-type.framework";
 		};
 		326AAEA4823D384D711709E4135F7D4C /* Pods-MovieDB-Viper-MovieDB-Viper */ = {
@@ -796,7 +892,7 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 0B5671DEC71148CB4CBC2DC5F7153B07 /* Products */;
+			productRefGroup = 1D1FC1A6C384355D41BD0FD85A70216E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -804,6 +900,7 @@
 				22569AF7E17069A0364671B0FEAA5CCC /* Declayout */,
 				8FB58D44538A54862533253FAC97BD7D /* Pods-MovieDB-Viper */,
 				29298599D6D20EB48E8CB7E57B4BD28D /* Pods-MovieDB-Viper-Components */,
+				2B26FDBB1FA39670205281A98D74CDB3 /* Pods-MovieDB-Viper-Home */,
 				326AAEA4823D384D711709E4135F7D4C /* Pods-MovieDB-Viper-MovieDB-Viper */,
 				2A4D24F5D31AAD88953B77EB578C6A6F /* Pods-MovieDB-Viper-Router */,
 				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
@@ -848,6 +945,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		72950308A68991F9D61CF15D978910FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		85841228F85F7445484A2A3C1B6A4FAD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -886,6 +990,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F7041C9D5485212D04590298F181520 /* Pods-MovieDB-Viper-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C53252EF369DA197F1D3D93A326F8270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				440F4A2AB7C9DF68D9944E736C80C55A /* Pods-MovieDB-Viper-Home-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -972,11 +1084,23 @@
 			target = B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */;
 			targetProxy = 98EDDAED852AC9DC98DFEAEE7B06D1AD /* PBXContainerItemProxy */;
 		};
+		50D349CE533C651FC393E5CD86880CC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = F288B5B752DBD283388422BE952EEA89 /* PBXContainerItemProxy */;
+		};
 		6B68D729AFA2C4C8C168541F25CDF39D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
 			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
 			targetProxy = 4E38550D631F0DBDDF42EA2B7754A66C /* PBXContainerItemProxy */;
+		};
+		73CA6A847F07624EBD0F56F67A205BAE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Declayout;
+			target = 22569AF7E17069A0364671B0FEAA5CCC /* Declayout */;
+			targetProxy = 0EE14F681C82CB5129B936F4D135AAC2 /* PBXContainerItemProxy */;
 		};
 		7456ACDF717B992B8B15B2CFF08BC510 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1014,12 +1138,24 @@
 			target = 22569AF7E17069A0364671B0FEAA5CCC /* Declayout */;
 			targetProxy = 267AA8B70CF1E7A8BE44C113C96E000D /* PBXContainerItemProxy */;
 		};
+		EFAAC8F29C6DB77267F5B5F9A8A00AA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Toast-Swift";
+			target = B990BD87169C76A3ED3FE8A9258D91A3 /* Toast-Swift */;
+			targetProxy = 52C914CA8C5EFFA844301EDC585072F6 /* PBXContainerItemProxy */;
+		};
+		FFDBDC06A9646BB95C544456CE890FB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = EAAA1AD3A8A1B59AB91319EE40752C6D /* Alamofire */;
+			targetProxy = 4B3677DAAE391B1C6E65B7B0B7C0C603 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0302FE4BCBB19E968AB506B4A4064DD5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E6AA0B21113E10406474A0F8C3D47F1A /* Pods-MovieDB-Viper-Router.release.xcconfig */;
+			baseConfigurationReference = 067B94E38D0765F2E88A341016A57AF9 /* Pods-MovieDB-Viper-Router.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1057,7 +1193,7 @@
 		};
 		0571FAD019CB9427630736FB10BCF42C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D75F77D6F23DC9E9EF154516528D06F /* Pods-MovieDB-Viper-Components.release.xcconfig */;
+			baseConfigurationReference = AE4A8946569EB84A22BF40D78D7863DC /* Pods-MovieDB-Viper-Components.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1129,7 +1265,7 @@
 		};
 		2FD5D979DE62310CF3EE357C1CFE020D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD4F5BFF25758609E6B9082BA7D2612C /* Pods-MovieDB-Viper-MovieDB-Viper.debug.xcconfig */;
+			baseConfigurationReference = 2B2D95B0A2A6617C7252D94FD77BDD48 /* Pods-MovieDB-Viper-MovieDB-Viper.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1164,9 +1300,47 @@
 			};
 			name = Debug;
 		};
+		30D29E4FFDB6FC69E2FE1ADC2B64A5C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59E6B641AD9E6F0538F3D56605DD9CBA /* Pods-MovieDB-Viper-Home.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MovieDB-Viper-Home/Pods-MovieDB-Viper-Home-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MovieDB-Viper-Home/Pods-MovieDB-Viper-Home.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		3F9D4E16FE4664D850D61A7CBE452CD2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 135284542B143BD5218A53054E702C86 /* Pods-MovieDB-Viper-MovieDB-Viper.release.xcconfig */;
+			baseConfigurationReference = 8DE95555912344D25BBDBA6E7F4F7AA3 /* Pods-MovieDB-Viper-MovieDB-Viper.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1204,7 +1378,7 @@
 		};
 		6AA269FE72768E4429702D860B90876C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40CBE3B3EB049C7FDA0CDDFFD3F1AF0F /* Pods-MovieDB-Viper-Router.debug.xcconfig */;
+			baseConfigurationReference = 749E4F7D05F94C96BC3AF31CDB628D1E /* Pods-MovieDB-Viper-Router.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1402,6 +1576,43 @@
 			};
 			name = Release;
 		};
+		A29A5C13228369F00A0F6A1228750491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 803E273FF081F214C3BD98B373FCCCA9 /* Pods-MovieDB-Viper-Home.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MovieDB-Viper-Home/Pods-MovieDB-Viper-Home-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MovieDB-Viper-Home/Pods-MovieDB-Viper-Home.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		AD81E62ACCB0B7A923FC8AA288F9921E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2BF3B2DD43780EB07116D7467B8D830B /* SwiftLint.release.xcconfig */;
@@ -1421,7 +1632,7 @@
 		};
 		B02EB933CB9FB6B0B18CD6DD97226B46 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3818CE3C9E81036BF491A4BB152715E3 /* Pods-MovieDB-Viper.release.xcconfig */;
+			baseConfigurationReference = ADEB082F23AEB690059B8A67706B3E01 /* Pods-MovieDB-Viper.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1581,7 +1792,7 @@
 		};
 		F3B198F4C16A65826B1627F3D55329CC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F6060DAE8BAA766064B6C7DAA024BDA /* Pods-MovieDB-Viper.debug.xcconfig */;
+			baseConfigurationReference = 4E7C3A93AE413E88F47FA326FE599DC9 /* Pods-MovieDB-Viper.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1654,7 +1865,7 @@
 		};
 		FAC4EEEF8F38CA678D043F4C765B8FC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F82D6A091C315A1A89B0592E3B68066B /* Pods-MovieDB-Viper-Components.debug.xcconfig */;
+			baseConfigurationReference = BCCEFC7B989C7A8425DC3AC97AE0D0CD /* Pods-MovieDB-Viper-Components.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1697,6 +1908,15 @@
 			buildConfigurations = (
 				1F6D3DD34E8A819816BB3E88E22EDACC /* Debug */,
 				DD076AFEEE0A686B597DD62BCA7E46CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4654C2DD9C848CF73983C8A4211808A4 /* Build configuration list for PBXNativeTarget "Pods-MovieDB-Viper-Home" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A29A5C13228369F00A0F6A1228750491 /* Debug */,
+				30D29E4FFDB6FC69E2FE1ADC2B64A5C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

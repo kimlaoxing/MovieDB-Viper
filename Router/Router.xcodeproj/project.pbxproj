@@ -18,6 +18,7 @@
 		EA484184290F6AAF002DB416 /* ModalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484183290F6AAF002DB416 /* ModalTransition.swift */; };
 		EA484186290F6AB6002DB416 /* PushTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484185290F6AB6002DB416 /* PushTransition.swift */; };
 		EA484188290F6ABF002DB416 /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484187290F6ABF002DB416 /* Transition.swift */; };
+		EA4841CD290F6DF5002DB416 /* TabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841CC290F6DF5002DB416 /* TabBarRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		EA484183290F6AAF002DB416 /* ModalTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTransition.swift; sourceTree = "<group>"; };
 		EA484185290F6AB6002DB416 /* PushTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushTransition.swift; sourceTree = "<group>"; };
 		EA484187290F6ABF002DB416 /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
+		EA4841CC290F6DF5002DB416 /* TabBarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		EA484146290F6983002DB416 = {
 			isa = PBXGroup;
 			children = (
+				EA4841CB290F6DEE002DB416 /* TabBar */,
 				EA484152290F6983002DB416 /* Router */,
 				EA484151290F6983002DB416 /* Products */,
 				AF3A4477C05EA248B40C3A5B /* Pods */,
@@ -116,6 +119,14 @@
 				EA48417D290F6A95002DB416 /* FadeAnimatedTransitioning.swift */,
 			);
 			path = Animator;
+			sourceTree = "<group>";
+		};
+		EA4841CB290F6DEE002DB416 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EA4841CC290F6DF5002DB416 /* TabBarRouter.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +239,7 @@
 				EA48417A290F6A82002DB416 /* Router.swift in Sources */,
 				EA484178290F6A78002DB416 /* DefaultRouter.swift in Sources */,
 				EA484186290F6AB6002DB416 /* PushTransition.swift in Sources */,
+				EA4841CD290F6DF5002DB416 /* TabBarRouter.swift in Sources */,
 				EA484182290F6AA5002DB416 /* EmptyTransition.swift in Sources */,
 				EA48417E290F6A95002DB416 /* FadeAnimatedTransitioning.swift in Sources */,
 				EA48417C290F6A8D002DB416 /* AnimatedTransitioning.swift in Sources */,

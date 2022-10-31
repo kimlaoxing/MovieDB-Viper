@@ -27,6 +27,11 @@ project 'Components/Components.project'
 core_pods
 end
 
+target 'Home' do
+project 'Home/Home.project'
+core_pods
+end
+
 target 'MovieDB-Viper' do
 project 'MovieDB-Viper.project'
 core_pods
