@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		848816EE73FDE53624AB702B /* Pods_MovieDB_Viper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF5C0DFEA217B67EA4FFDA0D /* Pods_MovieDB_Viper.framework */; };
 		EA484133290F6827002DB416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484132290F6827002DB416 /* AppDelegate.swift */; };
 		EA484135290F6827002DB416 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484134290F6827002DB416 /* SceneDelegate.swift */; };
 		EA484137290F6827002DB416 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484136290F6827002DB416 /* ViewController.swift */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F191B12CF245B12EA24831A /* Pods-MovieDB-Viper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDB-Viper.release.xcconfig"; path = "Target Support Files/Pods-MovieDB-Viper/Pods-MovieDB-Viper.release.xcconfig"; sourceTree = "<group>"; };
+		83813FECDD340B4B9FB9EE23 /* Pods-MovieDB-Viper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDB-Viper.debug.xcconfig"; path = "Target Support Files/Pods-MovieDB-Viper/Pods-MovieDB-Viper.debug.xcconfig"; sourceTree = "<group>"; };
+		AF5C0DFEA217B67EA4FFDA0D /* Pods_MovieDB_Viper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDB_Viper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA48412F290F6827002DB416 /* MovieDB-Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MovieDB-Viper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA484132290F6827002DB416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA484134290F6827002DB416 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848816EE73FDE53624AB702B /* Pods_MovieDB_Viper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AFA4C32E09E19F102237A327 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AF5C0DFEA217B67EA4FFDA0D /* Pods_MovieDB_Viper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEE4E0670F88DED826E0A7F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83813FECDD340B4B9FB9EE23 /* Pods-MovieDB-Viper.debug.xcconfig */,
+				1F191B12CF245B12EA24831A /* Pods-MovieDB-Viper.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EA484126290F6827002DB416 = {
 			isa = PBXGroup;
 			children = (
 				EA484131290F6827002DB416 /* MovieDB-Viper */,
 				EA484130290F6827002DB416 /* Products */,
+				BEE4E0670F88DED826E0A7F3 /* Pods */,
+				AFA4C32E09E19F102237A327 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +96,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA484143290F6829002DB416 /* Build configuration list for PBXNativeTarget "MovieDB-Viper" */;
 			buildPhases = (
+				CDCCF311DD641840EF5B2AD0 /* [CP] Check Pods Manifest.lock */,
 				EA48412B290F6827002DB416 /* Sources */,
 				EA48412C290F6827002DB416 /* Frameworks */,
 				EA48412D290F6827002DB416 /* Resources */,
@@ -128,6 +154,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CDCCF311DD641840EF5B2AD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MovieDB-Viper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA48412B290F6827002DB416 /* Sources */ = {
@@ -272,6 +323,7 @@
 		};
 		EA484144290F6829002DB416 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83813FECDD340B4B9FB9EE23 /* Pods-MovieDB-Viper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -300,6 +352,7 @@
 		};
 		EA484145290F6829002DB416 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F191B12CF245B12EA24831A /* Pods-MovieDB-Viper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
