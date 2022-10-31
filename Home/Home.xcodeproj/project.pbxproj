@@ -34,6 +34,10 @@
 		EA484217290FA3A6002DB416 /* MovieDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484216290FA3A6002DB416 /* MovieDetailPresenter.swift */; };
 		EA48421C290FA4D1002DB416 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA48421B290FA4D1002DB416 /* MovieDetailViewController.swift */; };
 		EA48421E290FA779002DB416 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA48421D290FA779002DB416 /* MovieDetailView.swift */; };
+		EA484227290FAF1C002DB416 /* ListReviewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484226290FAF1C002DB416 /* ListReviewsResponse.swift */; };
+		EA484229290FB13D002DB416 /* ListReviewsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484228290FB13D002DB416 /* ListReviewsInteractor.swift */; };
+		EA48422B290FB152002DB416 /* ListReviewsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA48422A290FB152002DB416 /* ListReviewsProtocols.swift */; };
+		EA48422D290FB2D1002DB416 /* ListReviewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA48422C290FB2D1002DB416 /* ListReviewsPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,6 +84,10 @@
 		EA484216290FA3A6002DB416 /* MovieDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailPresenter.swift; sourceTree = "<group>"; };
 		EA48421B290FA4D1002DB416 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		EA48421D290FA779002DB416 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		EA484226290FAF1C002DB416 /* ListReviewsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReviewsResponse.swift; sourceTree = "<group>"; };
+		EA484228290FB13D002DB416 /* ListReviewsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReviewsInteractor.swift; sourceTree = "<group>"; };
+		EA48422A290FB152002DB416 /* ListReviewsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReviewsProtocols.swift; sourceTree = "<group>"; };
+		EA48422C290FB2D1002DB416 /* ListReviewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReviewsPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +163,7 @@
 		EA4841DB290F6EC8002DB416 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				EA48421F290FAEC8002DB416 /* ListReviews */,
 				EA4841E0290F6EE6002DB416 /* MovieDetail */,
 				EA4841DF290F6EDF002DB416 /* ListMovieEachGendre */,
 				EA4841DE290F6EDA002DB416 /* ListGendre */,
@@ -347,6 +356,65 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		EA48421F290FAEC8002DB416 /* ListReviews */ = {
+			isa = PBXGroup;
+			children = (
+				EA484225290FAF05002DB416 /* Presenter */,
+				EA484224290FAEFC002DB416 /* Interactor */,
+				EA484223290FAEF8002DB416 /* Entity */,
+				EA484221290FAEF0002DB416 /* Scene */,
+				EA484220290FAEE9002DB416 /* Protocols */,
+			);
+			path = ListReviews;
+			sourceTree = "<group>";
+		};
+		EA484220290FAEE9002DB416 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EA48422A290FB152002DB416 /* ListReviewsProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EA484221290FAEF0002DB416 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EA484222290FAEF4002DB416 /* View */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		EA484222290FAEF4002DB416 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA484223290FAEF8002DB416 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				EA484226290FAF1C002DB416 /* ListReviewsResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		EA484224290FAEFC002DB416 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EA484228290FB13D002DB416 /* ListReviewsInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EA484225290FAF05002DB416 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EA48422C290FB2D1002DB416 /* ListReviewsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -456,7 +524,10 @@
 			files = (
 				EA4841EE290F7215002DB416 /* Gendre.swift in Sources */,
 				EA4841F2290F7521002DB416 /* GendreListInteractor.swift in Sources */,
+				EA484229290FB13D002DB416 /* ListReviewsInteractor.swift in Sources */,
+				EA48422B290FB152002DB416 /* ListReviewsProtocols.swift in Sources */,
 				EA484200290F81BC002DB416 /* MovieCategory.swift in Sources */,
+				EA484227290FAF1C002DB416 /* ListReviewsResponse.swift in Sources */,
 				EA4841D0290F6E5E002DB416 /* HomeTabRoute.swift in Sources */,
 				EA4841E9290F6F5C002DB416 /* GendreListViewController.swift in Sources */,
 				EA48420A290F8534002DB416 /* BaseCollectionViewCell.swift in Sources */,
@@ -470,6 +541,7 @@
 				EA4841EC290F70F6002DB416 /* GendreListTableViewCell.swift in Sources */,
 				EA4841F4290F76A7002DB416 /* GendreListPresenter.swift in Sources */,
 				EA484208290F850C002DB416 /* BaseView.swift in Sources */,
+				EA48422D290FB2D1002DB416 /* ListReviewsPresenter.swift in Sources */,
 				EA484215290FA2E0002DB416 /* MovieDetailInteractor.swift in Sources */,
 				EA48421C290FA4D1002DB416 /* MovieDetailViewController.swift in Sources */,
 				EA4841F0290F7422002DB416 /* BaseListProtocols.swift in Sources */,

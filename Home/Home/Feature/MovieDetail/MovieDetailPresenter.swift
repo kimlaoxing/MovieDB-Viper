@@ -24,9 +24,12 @@ final class MovieDetailPresenter: MovieDetailViewToPresenterProtocol {
         return result
     }
     
-    
     func updateView() {
         interactor?.fetchDetailMovie(with: id)
+    }
+    
+    func toMovieReviews(with id: Int) {
+        router.toListReviews(id: id)
     }
 }
 

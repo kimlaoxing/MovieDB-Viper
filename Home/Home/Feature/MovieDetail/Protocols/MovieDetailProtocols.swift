@@ -26,4 +26,5 @@ protocol MovieDetailViewToPresenterProtocol: AnyObject {
     
     func updateView()
     func getResult() -> MovieDetailResponse?
+    func toMovieReviews(with id: Int)
 }

@@ -2,17 +2,17 @@ import Foundation
 import Alamofire
 import Components
 
-final class ListMovieInteractor: ListMovieEachGendrePresentorToInteractorProtocol {
-    weak var presenter: ListMovieEachGendreInteractorToPresenterProtocol?
-    var response: MovieListResponse?
+final class ListReviewsInteractor: ListReviewsPresentorToInteractorProtocol {
     
-    func fetchListMovie(with page: Int, gendres: String) {
-        let endpoint = "\(APIService.basePath)\(APIService.discover)"
+    weak var presenter: ListReviewsInteractorToPresenterProtocol?
+    var response: ListReviewsResponse?
+    
+    func fetchlistReviews(with id: Int, page: Int) {
+        let endpoint = "\(APIService.basePath)/movie\(id)/reviews"
+        print("endpoint is \(endpoint)")
         let parameters: Parameters = [
             "api_key" : "\(APIService.apiKey)",
-            "sort_by" : "popularity.desc",
-            "page": "\(page)",
-            "with_gendres" : "\(gendres)"
+            "page": "\(page)"
         ]
         self.presenter?.isLoading(isLoading: true)
         AF.request(endpoint,
@@ -21,14 +21,14 @@ final class ListMovieInteractor: ListMovieEachGendrePresentorToInteractorProtoco
                    encoding: URLEncoding.queryString
         )
             .validate(statusCode: 200..<300)
-            .responseDecodable(of: MovieListResponse.self) { data in
+            .responseDecodable(of: ListReviewsResponse.self) { data in
                 self.presenter?.isLoading(isLoading: false)
                 switch data.result {
                 case .success(let data):
                     self.response = data
-                    self.presenter?.movieListFetched()
+                    self.presenter?.listReviewsFetched()
                 case .failure:
-                    self.presenter?.movieListFetchedFailed()
+                    self.presenter?.listReviewsFetchedFailed()
                 }
             }
     }
