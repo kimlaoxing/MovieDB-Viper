@@ -80,6 +80,16 @@ extension BaseViewController: UITableViewDelegate, UITableViewDataSource {
 
 
 extension BaseViewController: BasePresenterToViewProtocol {
+    func showLoading(isLoading: Bool) {
+        switch isLoading {
+        case false:
+            self.manageLoadingActivity(isLoading: false)
+            self.tableView.isHidden = false
+        case true:
+            self.manageLoadingActivity(isLoading: true)
+            self.tableView.isHidden = true
+        }
+    }
     
     func showView() {
         tableView.reloadData()

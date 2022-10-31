@@ -9,13 +9,14 @@ class GendreListInteractor: BaseListPresentorToInteractorProtocol {
     
     func fetchListGendre() {
         let endpoint = "\(APIService.basePath)\(APIService.listGendre)?api_key=\(APIService.apiKey)"
-        print("endpoint is \(endpoint)")
+        self.presenter?.isLoading(isLoading: true)
         AF.request(endpoint,
                    method: .get,
                    encoding: JSONEncoding.default
         )
             .validate(statusCode: 200..<300)
             .responseDecodable(of: GendreResponse.self) { data in
+                self.presenter?.isLoading(isLoading: false)
                 switch data.result {
                 case .success(let data):
                     self.gendre = data.genres

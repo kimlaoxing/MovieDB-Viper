@@ -28,6 +28,10 @@ class GendreListPresenter: BaseListViewToPresenterProtocol {
 }
 
 extension GendreListPresenter: BaseListInteractorToPresenterProtocol {
+    func isLoading(isLoading: Bool) {
+        view?.showLoading(isLoading: isLoading)
+    }
+    
     func gendreListFetched() {
         view?.showView()
     }

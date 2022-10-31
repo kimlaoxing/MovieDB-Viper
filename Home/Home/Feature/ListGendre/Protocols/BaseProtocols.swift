@@ -4,9 +4,11 @@ import UIKit
 protocol BasePresenterToViewProtocol: AnyObject {
     func showView()
     func showError()
+    func showLoading(isLoading: Bool)
 }
 
 protocol BaseListInteractorToPresenterProtocol: AnyObject {
+    func isLoading(isLoading: Bool)
     func gendreListFetched()
     func genreListFetchedFailed()
 }
