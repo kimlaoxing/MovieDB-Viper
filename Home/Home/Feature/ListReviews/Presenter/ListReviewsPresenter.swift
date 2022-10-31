@@ -12,14 +12,19 @@ final class ListReviewsPresenter: ListReviewsViewToPresenterProtocol {
         self.id = id
     }
     
-    func getResult() -> ListReviewsResponse? {
-        let result = interactor?.response
+    func getResult() -> [ListReviewsResponse.Result]? {
+        let result = interactor?.response?.results
         return result
     }
     
     func updateView() {
         interactor?.fetchlistReviews(with: id, page: 1)
     }
+    
+    func getListCount() -> Int? {
+        interactor?.response?.results?.count
+    }
+    
 }
 
 extension ListReviewsPresenter: ListReviewsInteractorToPresenterProtocol {

@@ -65,19 +65,18 @@ extension HomeTabRoute where Self: Router {
     }
     
     func toListReviews(with transition: Transition, id: Int) {
-//        let router = DefaultRouter(rootTransition: ModalTransition())
-//        let vc = MovieDetailViewController()
-//        vc.navigationItem.backButtonTitle = ""
-//        let presenter: MovieDetailViewToPresenterProtocol & MovieDetailInteractorToPresenterProtocol = MovieDetailPresenter(router: router, id: id)
-//        let interactor: MovieDetailPresentorToInteractorProtocol = MovieDetailInteractor()
-//        
-//        vc.presenter = presenter
-//        presenter.view = vc
-//        presenter.interactor = interactor
-//        interactor.presenter = presenter
-//        vc.hidesBottomBarWhenPushed = true
-//        router.root = vc
-//        route(to: vc, as: transition)
+        let router = DefaultRouter(rootTransition: ModalTransition())
+        let vc = ListReviewsViewController()
+        vc.navigationItem.backButtonTitle = ""
+        let presenter: ListReviewsViewToPresenterProtocol & ListReviewsInteractorToPresenterProtocol = ListReviewsPresenter(id: id)
+        let interactor: ListReviewsPresentorToInteractorProtocol = ListReviewsInteractor()
+        vc.presenter = presenter
+        presenter.view = vc
+        presenter.interactor = interactor
+        interactor.presenter = presenter
+        vc.hidesBottomBarWhenPushed = true
+        router.root = vc
+        route(to: vc, as: transition)
     }
 }
 

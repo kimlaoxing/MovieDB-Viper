@@ -8,7 +8,7 @@ final class ListReviewsInteractor: ListReviewsPresentorToInteractorProtocol {
     var response: ListReviewsResponse?
     
     func fetchlistReviews(with id: Int, page: Int) {
-        let endpoint = "\(APIService.basePath)/movie\(id)/reviews"
+        let endpoint = "\(APIService.basePath)/movie/\(id)/reviews"
         print("endpoint is \(endpoint)")
         let parameters: Parameters = [
             "api_key" : "\(APIService.apiKey)",

@@ -38,6 +38,8 @@
 		EA484229290FB13D002DB416 /* ListReviewsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484228290FB13D002DB416 /* ListReviewsInteractor.swift */; };
 		EA48422B290FB152002DB416 /* ListReviewsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA48422A290FB152002DB416 /* ListReviewsProtocols.swift */; };
 		EA48422D290FB2D1002DB416 /* ListReviewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA48422C290FB2D1002DB416 /* ListReviewsPresenter.swift */; };
+		EA48422F290FBA6D002DB416 /* ListReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA48422E290FBA6D002DB416 /* ListReviewsViewController.swift */; };
+		EA484235290FC696002DB416 /* ListReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484234290FC696002DB416 /* ListReviewsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -88,6 +90,8 @@
 		EA484228290FB13D002DB416 /* ListReviewsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReviewsInteractor.swift; sourceTree = "<group>"; };
 		EA48422A290FB152002DB416 /* ListReviewsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReviewsProtocols.swift; sourceTree = "<group>"; };
 		EA48422C290FB2D1002DB416 /* ListReviewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReviewsPresenter.swift; sourceTree = "<group>"; };
+		EA48422E290FBA6D002DB416 /* ListReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReviewsViewController.swift; sourceTree = "<group>"; };
+		EA484234290FC696002DB416 /* ListReviewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReviewsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -380,6 +384,7 @@
 			isa = PBXGroup;
 			children = (
 				EA484222290FAEF4002DB416 /* View */,
+				EA48422E290FBA6D002DB416 /* ListReviewsViewController.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -387,6 +392,7 @@
 		EA484222290FAEF4002DB416 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EA484234290FC696002DB416 /* ListReviewsTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -529,9 +535,11 @@
 				EA484200290F81BC002DB416 /* MovieCategory.swift in Sources */,
 				EA484227290FAF1C002DB416 /* ListReviewsResponse.swift in Sources */,
 				EA4841D0290F6E5E002DB416 /* HomeTabRoute.swift in Sources */,
+				EA484235290FC696002DB416 /* ListReviewsTableViewCell.swift in Sources */,
 				EA4841E9290F6F5C002DB416 /* GendreListViewController.swift in Sources */,
 				EA48420A290F8534002DB416 /* BaseCollectionViewCell.swift in Sources */,
 				EA48421E290FA779002DB416 /* MovieDetailView.swift in Sources */,
+				EA48422F290FBA6D002DB416 /* ListReviewsViewController.swift in Sources */,
 				EA484217290FA3A6002DB416 /* MovieDetailPresenter.swift in Sources */,
 				EA484211290FA25A002DB416 /* MovieDetailResponse.swift in Sources */,
 				EA4841FE290F81A9002DB416 /* MovieListResponse.swift in Sources */,

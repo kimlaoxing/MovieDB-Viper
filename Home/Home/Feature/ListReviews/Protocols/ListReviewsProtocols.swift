@@ -25,5 +25,6 @@ protocol ListReviewsViewToPresenterProtocol: AnyObject {
     var interactor: ListReviewsPresentorToInteractorProtocol? { get set }
     
     func updateView()
-    func getResult() -> ListReviewsResponse?
+    func getResult() -> [ListReviewsResponse.Result]?
+    func getListCount() -> Int?
 }
