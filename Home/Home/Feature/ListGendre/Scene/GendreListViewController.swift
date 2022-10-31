@@ -25,8 +25,6 @@ final class GendreListViewController: UIViewController {
         view.backgroundColor = .white
         view.addSubviews([tableView])
     }
-    
-    private func goToDetailGame(with indexPath: IndexPath) { }
 }
 
 extension GendreListViewController: UITableViewDelegate, UITableViewDataSource {
