@@ -1,7 +1,7 @@
 import Foundation
 import Router
 
-class GendreListPresenter: BaseListViewToPresenterProtocol {
+final class GendreListPresenter: BaseListViewToPresenterProtocol {
    
     weak var view: BasePresenterToViewProtocol?
     var interactor: BaseListPresentorToInteractorProtocol?

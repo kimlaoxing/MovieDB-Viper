@@ -2,20 +2,9 @@ import Declayout
 import UIKit
 import Components
 
-final class BaseViewController: UIViewController {
+final class GendreListViewController: UIViewController {
     
     var presenter: BaseListViewToPresenterProtocol?
-    
-    private lazy var emptyView = EmptyDataView.make {
-        $0.center(to: view)
-        $0.title.text = "Gendre List is Empty."
-        $0.title.font = .systemFont(ofSize: 12, weight: .bold)
-        $0.title.numberOfLines = 0
-        $0.button.isHidden = true
-        $0.image.image = UIImage(systemName: "nosign")
-        $0.image.width(100)
-        $0.image.tintColor = .black
-    }
     
     private lazy var tableView = UITableView.make {
         $0.edges(to: view)
@@ -34,27 +23,12 @@ final class BaseViewController: UIViewController {
     private func subViews() {
         title = "Gendre List"
         view.addSubviews([tableView])
-//        view.addSubviews([emptyView])
     }
-    
-//    private func handleState(with state: BaseViewState) {
-//        switch state {
-//        case .loading:
-//            self.tableView.isHidden = true
-//            self.emptyView.isHidden = true
-//        case .normal:
-//            self.tableView.isHidden = false
-//            self.emptyView.isHidden = true
-//        case .empty:
-//            self.tableView.isHidden = true
-//            self.emptyView.isHidden = false
-//        }
-//    }
     
     private func goToDetailGame(with indexPath: IndexPath) { }
 }
 
-extension BaseViewController: UITableViewDelegate, UITableViewDataSource {
+extension GendreListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return presenter?.getGendreListCount() ?? 0
@@ -66,20 +40,18 @@ extension BaseViewController: UITableViewDelegate, UITableViewDataSource {
         let row = indexPath.row
         let news = presenter?.getGendre(index: row)
         if let data = news {
-            print("data is \(data)")
             cell.setContent(with: data)
         }
         return cell
     }
 
-    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("your id is")
     }
 }
 
 
-extension BaseViewController: BasePresenterToViewProtocol {
+extension GendreListViewController: BasePresenterToViewProtocol {
     func showLoading(isLoading: Bool) {
         switch isLoading {
         case false:

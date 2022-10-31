@@ -14,10 +14,10 @@
 		EA4841D6290F6EB2002DB416 /* Components.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA4841D4290F6EB2002DB416 /* Components.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EA4841D9290F6EB5002DB416 /* Router.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4841D8290F6EB5002DB416 /* Router.framework */; };
 		EA4841DA290F6EB5002DB416 /* Router.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA4841D8290F6EB5002DB416 /* Router.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EA4841E9290F6F5C002DB416 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841E8290F6F5C002DB416 /* BaseViewController.swift */; };
+		EA4841E9290F6F5C002DB416 /* GendreListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841E8290F6F5C002DB416 /* GendreListViewController.swift */; };
 		EA4841EC290F70F6002DB416 /* GendreListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841EB290F70F6002DB416 /* GendreListTableViewCell.swift */; };
 		EA4841EE290F7215002DB416 /* Gendre.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841ED290F7215002DB416 /* Gendre.swift */; };
-		EA4841F0290F7422002DB416 /* BaseProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841EF290F7422002DB416 /* BaseProtocols.swift */; };
+		EA4841F0290F7422002DB416 /* BaseListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841EF290F7422002DB416 /* BaseListProtocols.swift */; };
 		EA4841F2290F7521002DB416 /* GendreListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841F1290F7521002DB416 /* GendreListInteractor.swift */; };
 		EA4841F4290F76A7002DB416 /* GendreListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841F3290F76A7002DB416 /* GendreListPresenter.swift */; };
 /* End PBXBuildFile section */
@@ -46,10 +46,10 @@
 		EA4841CF290F6E5E002DB416 /* HomeTabRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabRoute.swift; sourceTree = "<group>"; };
 		EA4841D4290F6EB2002DB416 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4841D8290F6EB5002DB416 /* Router.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Router.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA4841E8290F6F5C002DB416 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EA4841E8290F6F5C002DB416 /* GendreListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GendreListViewController.swift; sourceTree = "<group>"; };
 		EA4841EB290F70F6002DB416 /* GendreListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GendreListTableViewCell.swift; sourceTree = "<group>"; };
 		EA4841ED290F7215002DB416 /* Gendre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gendre.swift; sourceTree = "<group>"; };
-		EA4841EF290F7422002DB416 /* BaseProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProtocols.swift; sourceTree = "<group>"; };
+		EA4841EF290F7422002DB416 /* BaseListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListProtocols.swift; sourceTree = "<group>"; };
 		EA4841F1290F7521002DB416 /* GendreListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GendreListInteractor.swift; sourceTree = "<group>"; };
 		EA4841F3290F76A7002DB416 /* GendreListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GendreListPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,6 +149,10 @@
 		EA4841DF290F6EDF002DB416 /* ListMovieEachGendre */ = {
 			isa = PBXGroup;
 			children = (
+				EA4841F8290F80F7002DB416 /* Scene */,
+				EA4841F7290F80F3002DB416 /* Interactor */,
+				EA4841F6290F80EC002DB416 /* Presenter */,
+				EA4841F5290F80E7002DB416 /* Protocols */,
 			);
 			path = ListMovieEachGendre;
 			sourceTree = "<group>";
@@ -164,7 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				EA4841EA290F70E4002DB416 /* View */,
-				EA4841E8290F6F5C002DB416 /* BaseViewController.swift */,
+				EA4841E8290F6F5C002DB416 /* GendreListViewController.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -196,7 +200,7 @@
 		EA4841E7290F6F48002DB416 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				EA4841EF290F7422002DB416 /* BaseProtocols.swift */,
+				EA4841EF290F7422002DB416 /* BaseListProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -205,6 +209,42 @@
 			isa = PBXGroup;
 			children = (
 				EA4841EB290F70F6002DB416 /* GendreListTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA4841F5290F80E7002DB416 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EA4841F6290F80EC002DB416 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EA4841F7290F80F3002DB416 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EA4841F8290F80F7002DB416 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EA4841F9290F80FB002DB416 /* View */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		EA4841F9290F80FB002DB416 /* View */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -319,10 +359,10 @@
 				EA4841EE290F7215002DB416 /* Gendre.swift in Sources */,
 				EA4841F2290F7521002DB416 /* GendreListInteractor.swift in Sources */,
 				EA4841D0290F6E5E002DB416 /* HomeTabRoute.swift in Sources */,
-				EA4841E9290F6F5C002DB416 /* BaseViewController.swift in Sources */,
+				EA4841E9290F6F5C002DB416 /* GendreListViewController.swift in Sources */,
 				EA4841EC290F70F6002DB416 /* GendreListTableViewCell.swift in Sources */,
 				EA4841F4290F76A7002DB416 /* GendreListPresenter.swift in Sources */,
-				EA4841F0290F7422002DB416 /* BaseProtocols.swift in Sources */,
+				EA4841F0290F7422002DB416 /* BaseListProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,7 +2,7 @@ import Foundation
 import Alamofire
 import Components
 
-class GendreListInteractor: BaseListPresentorToInteractorProtocol {
+final class GendreListInteractor: BaseListPresentorToInteractorProtocol {
     
     weak var presenter: BaseListInteractorToPresenterProtocol?
     var gendre: [GendreResponse.Genre]?

@@ -5,7 +5,7 @@ import Router
 extension HomeTabRoute where Self: Router {
     public func makeHomeTab() -> UIViewController {
         let router = DefaultRouter(rootTransition: ModalTransition())
-        let vc = BaseViewController()
+        let vc = GendreListViewController()
         vc.navigationItem.backButtonTitle = ""
         
         let presenter: BaseListViewToPresenterProtocol & BaseListInteractorToPresenterProtocol = GendreListPresenter(router: router)
