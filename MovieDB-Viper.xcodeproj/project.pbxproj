@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C8172B992C5B3689ECF598CF /* Pods_MovieDB_Viper_MovieDB_Viper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 948A464F9C07C80956248CF1 /* Pods_MovieDB_Viper_MovieDB_Viper.framework */; };
+		C6B55598B98FCC5DFAF7931F /* Pods_MovieDB_Viper_MovieDB_Viper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8B106FA16D6FE5E8179D83 /* Pods_MovieDB_Viper_MovieDB_Viper.framework */; };
 		EA484133290F6827002DB416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484132290F6827002DB416 /* AppDelegate.swift */; };
 		EA484135290F6827002DB416 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484134290F6827002DB416 /* SceneDelegate.swift */; };
 		EA48413C290F6829002DB416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA48413B290F6829002DB416 /* Assets.xcassets */; };
@@ -46,7 +46,7 @@
 		35DB718D84F0D5479B589362 /* Pods-MovieDB-Viper-MovieDB-Viper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDB-Viper-MovieDB-Viper.release.xcconfig"; path = "Target Support Files/Pods-MovieDB-Viper-MovieDB-Viper/Pods-MovieDB-Viper-MovieDB-Viper.release.xcconfig"; sourceTree = "<group>"; };
 		7458F2E11FC12E03389EA1DC /* Pods-MovieDB-Viper-MovieDB-Viper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDB-Viper-MovieDB-Viper.debug.xcconfig"; path = "Target Support Files/Pods-MovieDB-Viper-MovieDB-Viper/Pods-MovieDB-Viper-MovieDB-Viper.debug.xcconfig"; sourceTree = "<group>"; };
 		83813FECDD340B4B9FB9EE23 /* Pods-MovieDB-Viper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDB-Viper.debug.xcconfig"; path = "Target Support Files/Pods-MovieDB-Viper/Pods-MovieDB-Viper.debug.xcconfig"; sourceTree = "<group>"; };
-		948A464F9C07C80956248CF1 /* Pods_MovieDB_Viper_MovieDB_Viper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDB_Viper_MovieDB_Viper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC8B106FA16D6FE5E8179D83 /* Pods_MovieDB_Viper_MovieDB_Viper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDB_Viper_MovieDB_Viper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA48412F290F6827002DB416 /* MovieDB-Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MovieDB-Viper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA484132290F6827002DB416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA484134290F6827002DB416 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 				EA484173290F6A30002DB416 /* Router.framework in Frameworks */,
 				EA4841D2290F6E9D002DB416 /* Home.framework in Frameworks */,
 				EA4841C2290F6C98002DB416 /* Home.framework in Frameworks */,
-				C8172B992C5B3689ECF598CF /* Pods_MovieDB_Viper_MovieDB_Viper.framework in Frameworks */,
+				C6B55598B98FCC5DFAF7931F /* Pods_MovieDB_Viper_MovieDB_Viper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +84,7 @@
 				EA4841C1290F6C98002DB416 /* Home.framework */,
 				EA484172290F6A30002DB416 /* Router.framework */,
 				EA48416E290F6A2D002DB416 /* Components.framework */,
-				948A464F9C07C80956248CF1 /* Pods_MovieDB_Viper_MovieDB_Viper.framework */,
+				AC8B106FA16D6FE5E8179D83 /* Pods_MovieDB_Viper_MovieDB_Viper.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -168,7 +168,7 @@
 				EA48412C290F6827002DB416 /* Frameworks */,
 				EA48412D290F6827002DB416 /* Resources */,
 				EA484171290F6A2D002DB416 /* Embed Frameworks */,
-				93475AEAE9B81F282EC1653D /* [CP] Embed Pods Frameworks */,
+				1462539B909B1C4E1EEDF37A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -225,7 +225,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		93475AEAE9B81F282EC1653D /* [CP] Embed Pods Frameworks */ = {
+		1462539B909B1C4E1EEDF37A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
