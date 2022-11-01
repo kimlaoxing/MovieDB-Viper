@@ -10,7 +10,6 @@ final class ListMovieInteractor: ListMovieEachGendrePresentorToInteractorProtoco
         let endpoint = "\(APIService.basePath)\(APIService.discover)"
         let parameters: Parameters = [
             "api_key" : "\(APIService.apiKey)",
-            "sort_by" : "popularity.asc",
             "page": "\(page)",
             "with_gendres" : gendres
         ]

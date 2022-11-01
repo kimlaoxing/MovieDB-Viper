@@ -16,6 +16,7 @@ pod 'Toast-Swift', '~> 5.0.1'
 pod 'SwiftLint'
 pod 'Declayout'
 pod 'Alamofire'
+pod 'YoutubeKit'
 end
 
 target 'Router' do

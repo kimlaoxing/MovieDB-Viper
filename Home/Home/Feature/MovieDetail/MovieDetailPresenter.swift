@@ -31,6 +31,10 @@ final class MovieDetailPresenter: MovieDetailViewToPresenterProtocol {
     func toMovieReviews(with id: Int) {
         router.toListReviews(id: id)
     }
+    
+    func toListTrailer(with id: Int) {
+        router.toTrailerList(id: id)
+    }
 }
 
 extension MovieDetailPresenter: MovieDetailInteractorToPresenterProtocol {

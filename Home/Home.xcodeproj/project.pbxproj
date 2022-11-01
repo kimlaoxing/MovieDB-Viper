@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		E3495F4F6AB36E6871C5E30F /* Pods_MovieDB_Viper_Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DEFC13E95309EC7CF65E13C /* Pods_MovieDB_Viper_Home.framework */; };
+		EA30DA4C2910C6CB00BA15B8 /* ListTrailerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30DA4B2910C6CB00BA15B8 /* ListTrailerResponse.swift */; };
+		EA30DA4E2910C7AD00BA15B8 /* ListTrailerProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30DA4D2910C7AD00BA15B8 /* ListTrailerProtocols.swift */; };
+		EA30DA502910C8AF00BA15B8 /* ListTrailerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30DA4F2910C8AF00BA15B8 /* ListTrailerInteractor.swift */; };
+		EA30DA522910CA0400BA15B8 /* ListTrailerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30DA512910CA0400BA15B8 /* ListTrailerPresenter.swift */; };
+		EA30DA562910CB4900BA15B8 /* ListTrailerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30DA552910CB4900BA15B8 /* ListTrailerViewController.swift */; };
+		EA30DA582910CB6C00BA15B8 /* ListTrailerUICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30DA572910CB6C00BA15B8 /* ListTrailerUICollectionViewCell.swift */; };
 		EA4841BB290F6C73002DB416 /* Home.h in Headers */ = {isa = PBXBuildFile; fileRef = EA4841BA290F6C73002DB416 /* Home.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA4841D0290F6E5E002DB416 /* HomeTabRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841CF290F6E5E002DB416 /* HomeTabRoute.swift */; };
 		EA4841D5290F6EB2002DB416 /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4841D4290F6EB2002DB416 /* Components.framework */; };
@@ -62,6 +68,12 @@
 		2FEADD78B139A3DE2C8E6A25 /* Pods-MovieDB-Viper-Home.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDB-Viper-Home.debug.xcconfig"; path = "Target Support Files/Pods-MovieDB-Viper-Home/Pods-MovieDB-Viper-Home.debug.xcconfig"; sourceTree = "<group>"; };
 		5DEFC13E95309EC7CF65E13C /* Pods_MovieDB_Viper_Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDB_Viper_Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FC2531001321038BE1E1852 /* Pods-MovieDB-Viper-Home.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDB-Viper-Home.release.xcconfig"; path = "Target Support Files/Pods-MovieDB-Viper-Home/Pods-MovieDB-Viper-Home.release.xcconfig"; sourceTree = "<group>"; };
+		EA30DA4B2910C6CB00BA15B8 /* ListTrailerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTrailerResponse.swift; sourceTree = "<group>"; };
+		EA30DA4D2910C7AD00BA15B8 /* ListTrailerProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTrailerProtocols.swift; sourceTree = "<group>"; };
+		EA30DA4F2910C8AF00BA15B8 /* ListTrailerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTrailerInteractor.swift; sourceTree = "<group>"; };
+		EA30DA512910CA0400BA15B8 /* ListTrailerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTrailerPresenter.swift; sourceTree = "<group>"; };
+		EA30DA552910CB4900BA15B8 /* ListTrailerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTrailerViewController.swift; sourceTree = "<group>"; };
+		EA30DA572910CB6C00BA15B8 /* ListTrailerUICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTrailerUICollectionViewCell.swift; sourceTree = "<group>"; };
 		EA4841B7290F6C73002DB416 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4841BA290F6C73002DB416 /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
 		EA4841CF290F6E5E002DB416 /* HomeTabRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabRoute.swift; sourceTree = "<group>"; };
@@ -130,6 +142,67 @@
 			path = ../Pods;
 			sourceTree = "<group>";
 		};
+		EA30DA432910C67F00BA15B8 /* ListTrailer */ = {
+			isa = PBXGroup;
+			children = (
+				EA30DA4A2910C6A700BA15B8 /* Protocols */,
+				EA30DA492910C6A300BA15B8 /* Entity */,
+				EA30DA482910C69C00BA15B8 /* Presenter */,
+				EA30DA472910C69800BA15B8 /* Interactor */,
+				EA30DA442910C68A00BA15B8 /* Scene */,
+			);
+			path = ListTrailer;
+			sourceTree = "<group>";
+		};
+		EA30DA442910C68A00BA15B8 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EA30DA452910C68E00BA15B8 /* View */,
+				EA30DA552910CB4900BA15B8 /* ListTrailerViewController.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		EA30DA452910C68E00BA15B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA30DA572910CB6C00BA15B8 /* ListTrailerUICollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA30DA472910C69800BA15B8 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EA30DA4F2910C8AF00BA15B8 /* ListTrailerInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EA30DA482910C69C00BA15B8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EA30DA512910CA0400BA15B8 /* ListTrailerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EA30DA492910C6A300BA15B8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				EA30DA4B2910C6CB00BA15B8 /* ListTrailerResponse.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		EA30DA4A2910C6A700BA15B8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EA30DA4D2910C7AD00BA15B8 /* ListTrailerProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		EA4841AD290F6C73002DB416 = {
 			isa = PBXGroup;
 			children = (
@@ -170,6 +243,7 @@
 		EA4841DB290F6EC8002DB416 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				EA30DA432910C67F00BA15B8 /* ListTrailer */,
 				EA48421F290FAEC8002DB416 /* ListReviews */,
 				EA4841E0290F6EE6002DB416 /* MovieDetail */,
 				EA4841DF290F6EDF002DB416 /* ListMovieEachGendre */,
@@ -554,16 +628,22 @@
 				EA484217290FA3A6002DB416 /* MovieDetailPresenter.swift in Sources */,
 				EA484211290FA25A002DB416 /* MovieDetailResponse.swift in Sources */,
 				EA4841FE290F81A9002DB416 /* MovieListResponse.swift in Sources */,
+				EA30DA502910C8AF00BA15B8 /* ListTrailerInteractor.swift in Sources */,
 				EA4841FB290F816E002DB416 /* ListMovieEachGendreProtocols.swift in Sources */,
 				EA484204290F8350002DB416 /* ListMoviePresenter.swift in Sources */,
 				EA484206290F84A6002DB416 /* ListMovieViewController.swift in Sources */,
+				EA30DA4C2910C6CB00BA15B8 /* ListTrailerResponse.swift in Sources */,
 				EA4841EC290F70F6002DB416 /* GendreListTableViewCell.swift in Sources */,
 				EADDB2242910BEC100CC1AF0 /* RequestExtension.swift in Sources */,
 				EA4841F4290F76A7002DB416 /* GendreListPresenter.swift in Sources */,
 				EA484208290F850C002DB416 /* BaseView.swift in Sources */,
+				EA30DA582910CB6C00BA15B8 /* ListTrailerUICollectionViewCell.swift in Sources */,
+				EA30DA562910CB4900BA15B8 /* ListTrailerViewController.swift in Sources */,
+				EA30DA4E2910C7AD00BA15B8 /* ListTrailerProtocols.swift in Sources */,
 				EA48422D290FB2D1002DB416 /* ListReviewsPresenter.swift in Sources */,
 				EA484215290FA2E0002DB416 /* MovieDetailInteractor.swift in Sources */,
 				EA48421C290FA4D1002DB416 /* MovieDetailViewController.swift in Sources */,
+				EA30DA522910CA0400BA15B8 /* ListTrailerPresenter.swift in Sources */,
 				EA4841F0290F7422002DB416 /* BaseListProtocols.swift in Sources */,
 				EA484202290F8220002DB416 /* ListMovieInteractor.swift in Sources */,
 				EA484213290FA27A002DB416 /* MovieDetailProtocols.swift in Sources */,

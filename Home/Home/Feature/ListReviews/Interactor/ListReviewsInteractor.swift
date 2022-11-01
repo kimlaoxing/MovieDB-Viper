@@ -9,7 +9,6 @@ final class ListReviewsInteractor: ListReviewsPresentorToInteractorProtocol {
     
     func fetchlistReviews(with id: Int, page: Int) {
         let endpoint = "\(APIService.basePath)/movie/\(id)/reviews"
-        print("endpoint is \(endpoint)")
         let parameters: Parameters = [
             "api_key" : "\(APIService.apiKey)",
             "page": "\(page)"

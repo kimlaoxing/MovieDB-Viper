@@ -15,18 +15,39 @@ final class MovieDetailViewController: UIViewController {
         $0.horizontalPadding(to: view)
     }
     
-    private lazy var container = UIView.make {
+    private lazy var buttonStack = UIStackView.make {
+        $0.axis = .horizontal
+        $0.distribution = .equalSpacing
+    }
+    
+    private lazy var listTrailerButtonContainer = UIView.make {
         $0.height(Padding.NORMAL_CONTENT_INSET)
+        $0.width(ScreenSize.width * 0.5)
+    }
+    
+    private lazy var reviewButtonContainer = UIView.make {
+        $0.height(Padding.NORMAL_CONTENT_INSET)
+        $0.width(ScreenSize.width * 0.5)
     }
     
     private lazy var reviewButton = UIButton.make {
-        $0.verticalPadding(to: container)
-        $0.horizontalPadding(to: container, Padding.reguler)
+        $0.verticalPadding(to: reviewButtonContainer)
+        $0.horizontalPadding(to: reviewButtonContainer, Padding.reguler)
         $0.layer.cornerRadius = 15
         $0.titleLabel?.font = .systemFont(ofSize: 14, weight: .semibold)
         $0.setTitle("Review", for: .normal)
         $0.backgroundColor = .black
         $0.addTarget(self, action: #selector(toListReview), for: .touchUpInside)
+    }
+    
+    private lazy var listTrailerButton = UIButton.make {
+        $0.verticalPadding(to: listTrailerButtonContainer)
+        $0.horizontalPadding(to: listTrailerButtonContainer, Padding.reguler)
+        $0.layer.cornerRadius = 15
+        $0.titleLabel?.font = .systemFont(ofSize: 14, weight: .semibold)
+        $0.setTitle("List Trailer", for: .normal)
+        $0.backgroundColor = .black
+        $0.addTarget(self, action: #selector(toListTrailer), for: .touchUpInside)
     }
     
     override func viewDidLoad() {
@@ -40,8 +61,13 @@ final class MovieDetailViewController: UIViewController {
         view.addSubviews([
             vStack.addArrangedSubviews([
                 contentView,
-                container.addSubviews([
-                    reviewButton
+                buttonStack.addArrangedSubviews([
+                    reviewButtonContainer.addSubviews([
+                        reviewButton
+                    ]),
+                    listTrailerButtonContainer.addSubviews([
+                        listTrailerButton
+                    ])
                 ])
             ])
         ])
@@ -55,6 +81,12 @@ final class MovieDetailViewController: UIViewController {
     @objc private func toListReview() {
         if let data = presenter?.getResult()?.id {
             self.presenter?.toMovieReviews(with: data)
+        }
+    }
+    
+    @objc private func toListTrailer() {
+        if let data = presenter?.getResult()?.id {
+            self.presenter?.toListTrailer(with: data)
         }
     }
 }

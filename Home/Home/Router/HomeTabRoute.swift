@@ -78,11 +78,31 @@ extension HomeTabRoute where Self: Router {
         router.root = vc
         route(to: vc, as: transition)
     }
+    
+    func toTrailerList(with transition: Transition, id: Int) {
+        let router = DefaultRouter(rootTransition: ModalTransition())
+        let vc = ListTrailerViewController()
+        let presenter: ListTrailerViewToPresenterProtocol & ListTrailerInteractorToPresenterProtocol = ListTrailerPresenter(id: id)
+        let interactor: ListTrailerPresenterToInteractorProcotol = ListTrailerInteractor()
+        
+        presenter.view = vc
+        presenter.interactor = interactor
+        interactor.presenter = presenter
+        vc.presenter = presenter
+        vc.navigationItem.backButtonTitle = ""
+        vc.hidesBottomBarWhenPushed = true
+        router.root = vc
+        route(to: vc, as: transition)
+    }
 }
 
 extension DefaultRouter: HomeTabRoute {
+    public func toTrailerList(id: Int) {
+        toTrailerList(with: PushTransition(), id: id)
+    }
+    
     public func toListReviews(id: Int) {
-        toListReviews(with: PushTransition(), id: id)
+        toListReviews(with: ModalTransition(), id: id)
     }
     
     public func toMovieListGendre(gendre: Int) {
