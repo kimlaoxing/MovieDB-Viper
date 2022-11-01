@@ -38,7 +38,7 @@ final class MovieDetailView: UIView {
         $0.spacing = Padding.half
     }
     
-    private lazy var gendreStack = UIStackView.make {
+    private lazy var                     genresStack = UIStackView.make {
         $0.axis = .vertical
         $0.spacing = Padding.half
     }
@@ -72,14 +72,14 @@ final class MovieDetailView: UIView {
         $0.numberOfLines = 1
     }
     
-    private lazy var gendreTitle = UILabel.make {
+    private lazy var                         genresTitle = UILabel.make {
         $0.textColor = .black
         $0.font = .systemFont(ofSize: 12, weight: .semibold)
         $0.textAlignment = .left
         $0.numberOfLines = 1
     }
     
-    private lazy var gendreValue = UILabel.make {
+    private lazy var                                                 genresValue = UILabel.make {
         $0.textColor = .black
         $0.font = .systemFont(ofSize: 12, weight: .regular)
         $0.textAlignment = .left
@@ -172,9 +172,9 @@ final class MovieDetailView: UIView {
                     ]),
                     descriptionTitle,
                     decriptionValue,
-                    gendreStack.addArrangedSubviews([
-                        gendreTitle,
-                        gendreValue
+                    genresStack.addArrangedSubviews([
+                        genresTitle,
+                        genresValue
                     ]),
                     productionCompanyStack.addArrangedSubviews([
                         productionCompanyTitle,
@@ -188,14 +188,14 @@ final class MovieDetailView: UIView {
             ])
         ])
     }
-        
+    
     private func setGendre(with data: MovieDetailResponse) {
-        var gendres: String = ""
+        var genres: String = ""
         if data.genres != nil {
-            gendres = data.genres!.map({$0.name ?? ""}).joined(separator: ", ")
+            genres = data.genres!.map({$0.name ?? ""}).joined(separator: ", ")
         }
-        gendreTitle.text = "Gendre:"
-        gendreValue.text = gendres
+        genresTitle.text = "Genres:"
+        genresValue.text = genres
     }
     
     private func setProductionCompany(with data: MovieDetailResponse) {

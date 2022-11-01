@@ -17,7 +17,7 @@ protocol ListMovieEachGendrePresentorToInteractorProtocol: AnyObject {
     var presenter: ListMovieEachGendreInteractorToPresenterProtocol? { get set }
     var response: MovieListResponse? { get }
     
-    func fetchListMovie(with page: Int, gendres: Int)
+    func fetchListMovie(with page: Int, genres: Int)
 }
 
 protocol ListMovieEachGendreViewToPresenterProtocol: AnyObject {

@@ -6,12 +6,12 @@ final class ListMovieInteractor: ListMovieEachGendrePresentorToInteractorProtoco
     weak var presenter: ListMovieEachGendreInteractorToPresenterProtocol?
     var response: MovieListResponse?
     
-    func fetchListMovie(with page: Int, gendres: Int) {
+    func fetchListMovie(with page: Int, genres: Int) {
         let endpoint = "\(APIService.basePath)\(APIService.discover)"
         let parameters: Parameters = [
             "api_key" : "\(APIService.apiKey)",
             "page": "\(page)",
-            "with_gendres" : gendres
+            "with_genres" : genres
         ]
         self.presenter?.isLoading(isLoading: true)
         AF.request(endpoint,

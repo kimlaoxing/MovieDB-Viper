@@ -28,7 +28,7 @@ final class ListMoviePresenter: ListMovieEachGendreViewToPresenterProtocol {
     }
     
     func updateView() {
-        interactor?.fetchListMovie(with: 1, gendres: gendre)
+        interactor?.fetchListMovie(with: 1, genres: gendre)
     }
     
     func toMovieDetail(with id: Int) {
