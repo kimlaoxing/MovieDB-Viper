@@ -25,6 +25,13 @@ final class GendreListViewController: UIViewController {
         view.backgroundColor = .white
         view.addSubviews([tableView])
     }
+    
+    private func didSelectRow(with index: IndexPath) {
+        let row = index.row
+        let data = presenter?.getGendre(index: row)
+        let id = data?.id ?? 0
+        self.presenter?.toMovieListEachGendre(with: id)
+    }
 }
 
 extension GendreListViewController: UITableViewDelegate, UITableViewDataSource {
@@ -45,10 +52,7 @@ extension GendreListViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let row = indexPath.row
-        let data = presenter?.getGendre(index: row)
-        let name = data?.name ?? ""
-        self.presenter?.toMovieListEachGendre(with: name)
+        self.didSelectRow(with: indexPath)
     }
 }
 

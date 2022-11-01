@@ -26,7 +26,7 @@ final class GendreListPresenter: BaseListViewToPresenterProtocol {
         return interactor?.gendre?[index]
     }
     
-    func toMovieListEachGendre(with gendre: String) {
+    func toMovieListEachGendre(with gendre: Int) {
         self.router.toMovieListGendre(gendre: gendre)
     }
 

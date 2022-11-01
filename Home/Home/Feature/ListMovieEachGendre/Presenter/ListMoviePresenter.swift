@@ -6,13 +6,13 @@ final class ListMoviePresenter: ListMovieEachGendreViewToPresenterProtocol {
     var interactor: ListMovieEachGendrePresentorToInteractorProtocol?
     
     private let router: Routes
-    private var gendre: String
+    private var gendre: Int
     
     typealias Routes = HomeTabRoute
     
     init(
         router: Routes,
-        gendre: String
+        gendre: Int
     ) {
         self.router = router
         self.gendre = gendre

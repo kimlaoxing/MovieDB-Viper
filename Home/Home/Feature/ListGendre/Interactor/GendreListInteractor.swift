@@ -14,6 +14,7 @@ final class GendreListInteractor: BaseListPresentorToInteractorProtocol {
                    method: .get,
                    encoding: JSONEncoding.default
         )
+            .debugLog()
             .validate(statusCode: 200..<300)
             .responseDecodable(of: GendreResponse.self) { data in
                 self.presenter?.isLoading(isLoading: false)

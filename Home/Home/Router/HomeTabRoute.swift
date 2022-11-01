@@ -32,7 +32,7 @@ extension HomeTabRoute where Self: Router {
         return navigation
     }
     
-    func toMovieListGendre(with transition: Transition, gendre: String) {
+    func toMovieListGendre(with transition: Transition, gendre: Int) {
         let router = DefaultRouter(rootTransition: ModalTransition())
         let vc = ListMovieViewController()
         vc.navigationItem.backButtonTitle = ""
@@ -85,7 +85,7 @@ extension DefaultRouter: HomeTabRoute {
         toListReviews(with: PushTransition(), id: id)
     }
     
-    public func toMovieListGendre(gendre: String) {
+    public func toMovieListGendre(gendre: Int) {
         toMovieListGendre(with: PushTransition(), gendre: gendre)
     }
     

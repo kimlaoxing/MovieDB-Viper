@@ -20,6 +20,7 @@ final class ListReviewsInteractor: ListReviewsPresentorToInteractorProtocol {
                    parameters: parameters,
                    encoding: URLEncoding.queryString
         )
+            .debugLog()
             .validate(statusCode: 200..<300)
             .responseDecodable(of: ListReviewsResponse.self) { data in
                 self.presenter?.isLoading(isLoading: false)

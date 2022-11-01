@@ -27,5 +27,5 @@ protocol BaseListViewToPresenterProtocol: AnyObject {
     func updateView()
     func getGendre(index: Int) -> GendreResponse.Genre?
     func getGendreListCount() -> Int?
-    func toMovieListEachGendre(with gendre: String)
+    func toMovieListEachGendre(with gendre: Int)
 }

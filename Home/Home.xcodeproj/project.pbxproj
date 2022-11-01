@@ -40,6 +40,7 @@
 		EA48422D290FB2D1002DB416 /* ListReviewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA48422C290FB2D1002DB416 /* ListReviewsPresenter.swift */; };
 		EA48422F290FBA6D002DB416 /* ListReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA48422E290FBA6D002DB416 /* ListReviewsViewController.swift */; };
 		EA484235290FC696002DB416 /* ListReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484234290FC696002DB416 /* ListReviewsTableViewCell.swift */; };
+		EADDB2242910BEC100CC1AF0 /* RequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADDB2232910BEC100CC1AF0 /* RequestExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -92,6 +93,7 @@
 		EA48422C290FB2D1002DB416 /* ListReviewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReviewsPresenter.swift; sourceTree = "<group>"; };
 		EA48422E290FBA6D002DB416 /* ListReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReviewsViewController.swift; sourceTree = "<group>"; };
 		EA484234290FC696002DB416 /* ListReviewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReviewsTableViewCell.swift; sourceTree = "<group>"; };
+		EADDB2232910BEC100CC1AF0 /* RequestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 		EA4841B9290F6C73002DB416 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				EADDB2222910BEB500CC1AF0 /* Extension */,
 				EA4841DB290F6EC8002DB416 /* Feature */,
 				EA4841CE290F6E54002DB416 /* Router */,
 				EA4841BA290F6C73002DB416 /* Home.h */,
@@ -421,6 +424,14 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		EADDB2222910BEB500CC1AF0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EADDB2232910BEC100CC1AF0 /* RequestExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -547,6 +558,7 @@
 				EA484204290F8350002DB416 /* ListMoviePresenter.swift in Sources */,
 				EA484206290F84A6002DB416 /* ListMovieViewController.swift in Sources */,
 				EA4841EC290F70F6002DB416 /* GendreListTableViewCell.swift in Sources */,
+				EADDB2242910BEC100CC1AF0 /* RequestExtension.swift in Sources */,
 				EA4841F4290F76A7002DB416 /* GendreListPresenter.swift in Sources */,
 				EA484208290F850C002DB416 /* BaseView.swift in Sources */,
 				EA48422D290FB2D1002DB416 /* ListReviewsPresenter.swift in Sources */,

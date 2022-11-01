@@ -13,6 +13,7 @@ final class MovieDetailInteractor: MovieDetailPresentorToInteractorProtocol {
                    method: .get,
                    encoding: JSONEncoding.default
         )
+            .debugLog()
             .validate(statusCode: 200..<300)
             .responseDecodable(of: MovieDetailResponse.self) { data in
                 switch data.result {

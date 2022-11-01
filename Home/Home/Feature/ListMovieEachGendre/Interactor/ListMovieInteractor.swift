@@ -6,13 +6,13 @@ final class ListMovieInteractor: ListMovieEachGendrePresentorToInteractorProtoco
     weak var presenter: ListMovieEachGendreInteractorToPresenterProtocol?
     var response: MovieListResponse?
     
-    func fetchListMovie(with page: Int, gendres: String) {
+    func fetchListMovie(with page: Int, gendres: Int) {
         let endpoint = "\(APIService.basePath)\(APIService.discover)"
         let parameters: Parameters = [
             "api_key" : "\(APIService.apiKey)",
-            "sort_by" : "popularity.desc",
+            "sort_by" : "popularity.asc",
             "page": "\(page)",
-            "with_gendres" : "\(gendres)"
+            "with_gendres" : gendres
         ]
         self.presenter?.isLoading(isLoading: true)
         AF.request(endpoint,
@@ -20,6 +20,7 @@ final class ListMovieInteractor: ListMovieEachGendrePresentorToInteractorProtoco
                    parameters: parameters,
                    encoding: URLEncoding.queryString
         )
+            .debugLog()
             .validate(statusCode: 200..<300)
             .responseDecodable(of: MovieListResponse.self) { data in
                 self.presenter?.isLoading(isLoading: false)
