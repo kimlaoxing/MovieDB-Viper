@@ -24,8 +24,8 @@ extension HomeTabRoute where Self: Router {
         navigation.navigationBar.standardAppearance = navBarAppearance
         navigation.navigationBar.scrollEdgeAppearance = navBarAppearance
         navigation.navigationBar.tintColor = .white
-        navigation.tabBarItem.title = "Home"
-        navigation.tabBarItem.image = UIImage(systemName: "house")
+        navigation.tabBarItem.title = "Genre"
+        navigation.tabBarItem.image = UIImage(systemName: "list.bullet")
         navigation.navigationBar.prefersLargeTitles = false
         navigation.navigationBar.barStyle = .default
         navigation.navigationBar.backgroundColor = .gray
