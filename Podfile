@@ -23,6 +23,11 @@ target 'Router' do
 project 'Router/Router.project'
 end
 
+target 'Popular' do
+project 'Popular/Popular.project'
+core_pods
+end
+
 target 'Components' do
 project 'Components/Components.project'
 core_pods

@@ -2,6 +2,7 @@ import Foundation
 import UIKit
 import Router
 import Home
+import Popular
 
 extension SceneDelegate {
     func willConnectTo(with scene: UIScene) {
@@ -9,7 +10,8 @@ extension SceneDelegate {
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         let mainRouter = DefaultRouter(rootTransition: ModalTransition())
         let tabs = [
-            mainRouter.makeHomeTab()
+            mainRouter.makeHomeTab(),
+            mainRouter.makePopularTab()
         ]
         let home = TabBar(vc: tabs)
         home.selectedIndex = 0
