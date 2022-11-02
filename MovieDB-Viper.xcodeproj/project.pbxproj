@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5010BA7E227E7E98B96318AB /* Pods_MovieDB_Viper_MovieDB_Viper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED76520EFABFCC7025790E1 /* Pods_MovieDB_Viper_MovieDB_Viper.framework */; };
+		BAF904F2755033731B23477F /* Pods_MovieDB_Viper_MovieDB_Viper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 073072D2C8019EB0D756B749 /* Pods_MovieDB_Viper_MovieDB_Viper.framework */; };
 		EA484133290F6827002DB416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484132290F6827002DB416 /* AppDelegate.swift */; };
 		EA484135290F6827002DB416 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484134290F6827002DB416 /* SceneDelegate.swift */; };
 		EA48413C290F6829002DB416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA48413B290F6829002DB416 /* Assets.xcassets */; };
@@ -45,11 +45,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		073072D2C8019EB0D756B749 /* Pods_MovieDB_Viper_MovieDB_Viper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDB_Viper_MovieDB_Viper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F191B12CF245B12EA24831A /* Pods-MovieDB-Viper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDB-Viper.release.xcconfig"; path = "Target Support Files/Pods-MovieDB-Viper/Pods-MovieDB-Viper.release.xcconfig"; sourceTree = "<group>"; };
 		35DB718D84F0D5479B589362 /* Pods-MovieDB-Viper-MovieDB-Viper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDB-Viper-MovieDB-Viper.release.xcconfig"; path = "Target Support Files/Pods-MovieDB-Viper-MovieDB-Viper/Pods-MovieDB-Viper-MovieDB-Viper.release.xcconfig"; sourceTree = "<group>"; };
 		7458F2E11FC12E03389EA1DC /* Pods-MovieDB-Viper-MovieDB-Viper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDB-Viper-MovieDB-Viper.debug.xcconfig"; path = "Target Support Files/Pods-MovieDB-Viper-MovieDB-Viper/Pods-MovieDB-Viper-MovieDB-Viper.debug.xcconfig"; sourceTree = "<group>"; };
 		83813FECDD340B4B9FB9EE23 /* Pods-MovieDB-Viper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDB-Viper.debug.xcconfig"; path = "Target Support Files/Pods-MovieDB-Viper/Pods-MovieDB-Viper.debug.xcconfig"; sourceTree = "<group>"; };
-		CED76520EFABFCC7025790E1 /* Pods_MovieDB_Viper_MovieDB_Viper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDB_Viper_MovieDB_Viper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA48412F290F6827002DB416 /* MovieDB-Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MovieDB-Viper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA484132290F6827002DB416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA484134290F6827002DB416 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,7 +75,7 @@
 				EA484173290F6A30002DB416 /* Router.framework in Frameworks */,
 				EA4841D2290F6E9D002DB416 /* Home.framework in Frameworks */,
 				EA4841C2290F6C98002DB416 /* Home.framework in Frameworks */,
-				5010BA7E227E7E98B96318AB /* Pods_MovieDB_Viper_MovieDB_Viper.framework in Frameworks */,
+				BAF904F2755033731B23477F /* Pods_MovieDB_Viper_MovieDB_Viper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 				EA4841C1290F6C98002DB416 /* Home.framework */,
 				EA484172290F6A30002DB416 /* Router.framework */,
 				EA48416E290F6A2D002DB416 /* Components.framework */,
-				CED76520EFABFCC7025790E1 /* Pods_MovieDB_Viper_MovieDB_Viper.framework */,
+				073072D2C8019EB0D756B749 /* Pods_MovieDB_Viper_MovieDB_Viper.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -174,7 +174,7 @@
 				EA48412C290F6827002DB416 /* Frameworks */,
 				EA48412D290F6827002DB416 /* Resources */,
 				EA484171290F6A2D002DB416 /* Embed Frameworks */,
-				6A264988FAB8FE63EA50F97C /* [CP] Embed Pods Frameworks */,
+				0AB4AC1350B22087DF32ED8B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,7 +231,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6A264988FAB8FE63EA50F97C /* [CP] Embed Pods Frameworks */ = {
+		0AB4AC1350B22087DF32ED8B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
