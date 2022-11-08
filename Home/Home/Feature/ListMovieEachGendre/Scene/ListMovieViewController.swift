@@ -5,6 +5,7 @@ import UIKit
 final class ListMovieViewController: UIViewController {
     
     var presenter: ListMovieEachGendreViewToPresenterProtocol?
+    var data: [MovieListResponse.Result]?
     
     private lazy var scrollView = UIStackView.make {
         $0.edges(to: view)
@@ -16,10 +17,23 @@ final class ListMovieViewController: UIViewController {
     
     private lazy var collection = DefaultCollectionView(frame: .zero)
     
+    private lazy var emptyView = EmptyDataView.make {
+        $0.isHidden = true
+        $0.button.isHidden = true
+        $0.center(to: view)
+        $0.title.text = "Reviews is Empty"
+        $0.title.font = .systemFont(ofSize: 12, weight: .bold)
+        $0.title.numberOfLines = 0
+        $0.image.width(100)
+        $0.image.tintColor = .black
+        $0.image.image = UIImage(systemName: "nosign")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         subViews()
         presenter?.updateView()
+        bind()
     }
     
     private func subViews() {
@@ -30,7 +44,17 @@ final class ListMovieViewController: UIViewController {
                 collection
             ])
         ])
+        view.addSubview(emptyView)
         collectionConfigure()
+    }
+    
+    private func bind() {
+        self.presenter?.response.observe(on: self) { [weak self] data in
+            guard let self = self else { return }
+            self.data = data
+            self.collection.reloads()
+            self.updateCollectionViewHeights()
+        }
     }
     
     private func collectionConfigure() {
@@ -49,17 +73,24 @@ final class ListMovieViewController: UIViewController {
 }
 
 extension ListMovieViewController: UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        for cell in collection.visibleCells {
+            let indexPath = collection.indexPath(for: cell)
+            presenter?.loadNextPage(index: indexPath?.row ?? 0)
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.presenter?.getMovieListCount() ?? 0
+        return self.data?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BaseCollectionViewCell",
                                                       for: indexPath) as! BaseCollectionViewCell
         let row = indexPath.row
-        let result = presenter?.getResult(index: row)
-        if let data = result {
-            cell.setContent(with: data)
+        if let data = data {
+            cell.setContent(with: data[row])
         }
         return cell
     }
@@ -74,8 +105,7 @@ extension ListMovieViewController: UICollectionViewDelegateFlowLayout, UICollect
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let row = indexPath.row
-        let data = presenter?.getResult(index: row)
-        if let id = data?.id {
+        if let id = self.data?[row].id {
             self.presenter?.toMovieDetail(with: id)
         }
     }
@@ -83,9 +113,9 @@ extension ListMovieViewController: UICollectionViewDelegateFlowLayout, UICollect
 }
 
 extension ListMovieViewController: ListMovieEachGendrePresenterToViewProtocol {
-    func showView() {
-        self.collection.reloads()
-        self.updateCollectionViewHeights()
+    func showEmptyView() {
+        self.emptyView.isHidden = false
+        self.scrollView.isHidden = true
     }
     
     func showLoading(isLoading: Bool) {

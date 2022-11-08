@@ -1,7 +1,14 @@
 import Foundation
 import Router
+import Components
 
 final class ListMoviePresenter: ListMovieEachGendreViewToPresenterProtocol {
+    var currentPage: Int = 1
+    var totalPage: Int?
+    var isLoadNextPage: Bool = false
+    var isLastPage: Bool = false
+    var response: Observable<[MovieListResponse.Result]> = Observable([])
+
     var view: ListMovieEachGendrePresenterToViewProtocol?
     var interactor: ListMovieEachGendrePresentorToInteractorProtocol?
     
@@ -18,17 +25,33 @@ final class ListMoviePresenter: ListMovieEachGendreViewToPresenterProtocol {
         self.gendre = gendre
     }
     
-    func getResult(index: Int) -> MovieListResponse.Result? {
-        let result = interactor?.response?.results?[index]
-        return result
-    }
-    
-    func getMovieListCount() -> Int? {
-        return interactor?.response?.results?.count
+    func loadNextPage(index: Int) {
+        let lastIndex = (self.response.value.count) - 2
+        self.totalPage = interactor?.totalPages ?? 0
+        if currentPage <= totalPage ?? 0 {
+            if !isLoadNextPage {
+                if lastIndex == index {
+                    updateView()
+                }
+            }
+        }
     }
     
     func updateView() {
-        interactor?.fetchListMovie(with: 1, genres: gendre)
+        interactor?.fetchListMovie(with: self.currentPage, genres: gendre, completion: { data in
+            if self.currentPage == 1 {
+                self.isLastPage = self.currentPage == self.totalPage
+                self.currentPage += 1
+                self.response.value = data
+            } else {
+                self.isLastPage = self.currentPage == self.totalPage
+                self.currentPage += 1
+                var newData: [MovieListResponse.Result] = []
+                newData.append(contentsOf: self.response.value)
+                newData.append(contentsOf: data)
+                self.response.value = newData
+            }
+        })
     }
     
     func toMovieDetail(with id: Int) {
@@ -37,8 +60,8 @@ final class ListMoviePresenter: ListMovieEachGendreViewToPresenterProtocol {
 }
 
 extension ListMoviePresenter: ListMovieEachGendreInteractorToPresenterProtocol {
-    func movieListFetched() {
-        view?.showView()
+    func movieListIsEmpty() {
+        view?.showEmptyView()
     }
     
     func movieListFetchedFailed() {

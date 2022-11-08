@@ -3,10 +3,11 @@ import Alamofire
 import Components
 
 final class ListMovieInteractor: ListMovieEachGendrePresentorToInteractorProtocol {
-    weak var presenter: ListMovieEachGendreInteractorToPresenterProtocol?
-    var response: MovieListResponse?
     
-    func fetchListMovie(with page: Int, genres: Int) {
+    weak var presenter: ListMovieEachGendreInteractorToPresenterProtocol?
+    var totalPages: Int?
+    
+    func fetchListMovie(with page: Int, genres: Int, completion: @escaping ([MovieListResponse.Result]) -> Void) {
         let endpoint = "\(APIService.basePath)\(APIService.discover)"
         let parameters: Parameters = [
             "api_key" : "\(APIService.apiKey)",
@@ -25,8 +26,13 @@ final class ListMovieInteractor: ListMovieEachGendrePresentorToInteractorProtoco
                 self.presenter?.isLoading(isLoading: false)
                 switch data.result {
                 case .success(let data):
-                    self.response = data
-                    self.presenter?.movieListFetched()
+                    self.totalPages = data.total_pages
+                    if let result = data.results {
+                        completion(result)
+                        if result.isEmpty {
+                            self.presenter?.movieListIsEmpty()
+                        }
+                    }
                 case .failure:
                     self.presenter?.movieListFetchedFailed()
                 }
