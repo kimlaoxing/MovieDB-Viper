@@ -1,4 +1,5 @@
 import Components
+import Router
 
 final class ListPopularMoviePresenter: ListPopularMovieViewToPresenterProtocol {
 
@@ -10,6 +11,14 @@ final class ListPopularMoviePresenter: ListPopularMovieViewToPresenterProtocol {
     var isLoadNextPage: Bool = false
     var isLastPage: Bool = false
     var response: Observable<[MovieListResponse.Result]> = Observable([])
+    
+    private let router: Routes
+    
+    typealias Routes = HomeTabRoute
+    
+    init(router: Routes) {
+        self.router = router
+    }
     
     func loadNextPage(index: Int) {
         let lastIndex = (self.response.value.count) - 2
@@ -38,6 +47,10 @@ final class ListPopularMoviePresenter: ListPopularMovieViewToPresenterProtocol {
                 self.response.value = newData
             }
         })
+    }
+    
+    func toDetailMovie(with id: Int) {
+        self.router.toDetailMovie(id: id)
     }
 }
 

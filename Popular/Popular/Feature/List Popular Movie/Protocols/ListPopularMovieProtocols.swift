@@ -29,4 +29,6 @@ protocol ListPopularMovieViewToPresenterProtocol: AnyObject {
     
     func loadNextPage(index: Int)
     func updateView()
+    func toDetailMovie(with id: Int)
 }
+

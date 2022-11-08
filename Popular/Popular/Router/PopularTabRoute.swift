@@ -6,7 +6,7 @@ extension PopularTabRoute where Self: Router {
         let router = DefaultRouter(rootTransition: ModalTransition())
         let vc = PopularMovieViewController()
         vc.navigationItem.backButtonTitle = ""
-        let presenter: ListPopularMovieViewToPresenterProtocol & ListPopularMovieInteractorToPresenterProtocol = ListPopularMoviePresenter()
+        let presenter: ListPopularMovieViewToPresenterProtocol & ListPopularMovieInteractorToPresenterProtocol = ListPopularMoviePresenter(router: router as! HomeTabRoute)
         let interactor: ListPopularMoviePresenterToInteractorProtocol = ListPopularMovieInteractor()
 
         vc.presenter = presenter

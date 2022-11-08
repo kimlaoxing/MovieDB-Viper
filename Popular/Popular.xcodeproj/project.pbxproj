@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		49B0DF83AA99CC7EAECBDB57 /* Pods_MovieDB_Viper_Popular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B2E7FE198AE56040E83351 /* Pods_MovieDB_Viper_Popular.framework */; };
 		EAACAEF42912014E000E3727 /* Popular.h in Headers */ = {isa = PBXBuildFile; fileRef = EAACAEF32912014E000E3727 /* Popular.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EAACAEFB291201A9000E3727 /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAACAEFA291201A9000E3727 /* Home.framework */; };
-		EAACAEFC291201AA000E3727 /* Home.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAACAEFA291201A9000E3727 /* Home.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EAACAEFF291201AE000E3727 /* Components.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAACAEFE291201AE000E3727 /* Components.framework */; };
 		EAACAF00291201AE000E3727 /* Components.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAACAEFE291201AE000E3727 /* Components.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EAACAF02291201B2000E3727 /* Router.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAACAF01291201B2000E3727 /* Router.framework */; };
@@ -34,7 +32,6 @@
 			files = (
 				EAACAF00291201AE000E3727 /* Components.framework in Embed Frameworks */,
 				EAACAF03291201B2000E3727 /* Router.framework in Embed Frameworks */,
-				EAACAEFC291201AA000E3727 /* Home.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,6 +41,7 @@
 /* Begin PBXFileReference section */
 		20906F651AD0736FB9E69C2D /* Pods-MovieDB-Viper-Popular.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDB-Viper-Popular.debug.xcconfig"; path = "Target Support Files/Pods-MovieDB-Viper-Popular/Pods-MovieDB-Viper-Popular.debug.xcconfig"; sourceTree = "<group>"; };
 		84731A59235732FD26FBC650 /* Pods-MovieDB-Viper-Popular.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDB-Viper-Popular.release.xcconfig"; path = "Target Support Files/Pods-MovieDB-Viper-Popular/Pods-MovieDB-Viper-Popular.release.xcconfig"; sourceTree = "<group>"; };
+		EA2DBFAE291A4ADD00C4B9C2 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAACAEF02912014E000E3727 /* Popular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Popular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAACAEF32912014E000E3727 /* Popular.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Popular.h; sourceTree = "<group>"; };
 		EAACAEFA291201A9000E3727 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,7 +66,6 @@
 				49B0DF83AA99CC7EAECBDB57 /* Pods_MovieDB_Viper_Popular.framework in Frameworks */,
 				EAACAF02291201B2000E3727 /* Router.framework in Frameworks */,
 				EAACAEFF291201AE000E3727 /* Components.framework in Frameworks */,
-				EAACAEFB291201A9000E3727 /* Home.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +75,7 @@
 		1E95C917B8D0CDF2BF0CC06F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EA2DBFAE291A4ADD00C4B9C2 /* Home.framework */,
 				EAACAF01291201B2000E3727 /* Router.framework */,
 				EAACAEFE291201AE000E3727 /* Components.framework */,
 				EAACAEFA291201A9000E3727 /* Home.framework */,

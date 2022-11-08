@@ -58,6 +58,12 @@ extension PopularMovieViewController: UITableViewDelegate, UITableViewDataSource
             presenter?.loadNextPage(index: indexPath?.row ?? 0)
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let id = self.result?[indexPath.row].id {
+            self.presenter?.toDetailMovie(with: id)
+        }
+    }
 }
 
 extension PopularMovieViewController: ListPopularMoviePresenterToViewProtocol {
