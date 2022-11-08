@@ -1,30 +1,35 @@
-import Foundation
+import Components
 import UIKit
 
 protocol ListReviewsPresenterToViewProtocol: AnyObject {
-    func showView()
+    func showEmptyView()
     func showError()
     func showLoading(isLoading: Bool)
 }
 
 protocol ListReviewsInteractorToPresenterProtocol: AnyObject {
     func isLoading(isLoading: Bool)
-    func listReviewsFetched()
+    func listReviewsIsEmpty()
     func listReviewsFetchedFailed()
 }
 
 protocol ListReviewsPresentorToInteractorProtocol: AnyObject {
     var presenter: ListReviewsInteractorToPresenterProtocol? { get set }
-    var response: ListReviewsResponse? { get }
+    var totalPages: Int? { get }
     
-    func fetchlistReviews(with id: Int, page: Int)
+    func fetchlistReviews(with id: Int, page: Int, completion: @escaping ([ListReviewsResponse.Result]) -> Void)
 }
 
 protocol ListReviewsViewToPresenterProtocol: AnyObject {
     var view: ListReviewsPresenterToViewProtocol? { get set }
     var interactor: ListReviewsPresentorToInteractorProtocol? { get set }
+    var data: Observable<[ListReviewsResponse.Result]> { get }
     
+    var currentPage: Int { get }
+    var totalPage: Int? { get }
+    var isLoadNextPage: Bool { get }
+    var isLastPage: Bool { get }
+    
+    func loadNextPage(index: Int)
     func updateView()
-    func getResult() -> [ListReviewsResponse.Result]?
-    func getListCount() -> Int?
 }

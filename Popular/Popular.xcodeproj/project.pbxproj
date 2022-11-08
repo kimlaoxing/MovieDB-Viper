@@ -118,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				EAACAF0A291201E2000E3727 /* Router */,
-				EAACAF09291201DC000E3727 /* Extension */,
 				EAACAF08291201D8000E3727 /* Feature */,
 				EAACAEF32912014E000E3727 /* Popular.h */,
 			);
@@ -131,13 +130,6 @@
 				EAACAF0D291201F1000E3727 /* List Popular Movie */,
 			);
 			path = Feature;
-			sourceTree = "<group>";
-		};
-		EAACAF09291201DC000E3727 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		EAACAF0A291201E2000E3727 /* Router */ = {

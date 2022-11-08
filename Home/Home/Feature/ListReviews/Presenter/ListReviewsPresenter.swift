@@ -1,10 +1,17 @@
 import Foundation
 import Router
+import Components
 
 final class ListReviewsPresenter: ListReviewsViewToPresenterProtocol {
-    var view: ListReviewsPresenterToViewProtocol?
     
+    var data: Observable<[ListReviewsResponse.Result]> = Observable([])
+    var view: ListReviewsPresenterToViewProtocol?
     var interactor: ListReviewsPresentorToInteractorProtocol?
+    
+    var currentPage: Int = 1
+    var totalPage: Int?
+    var isLoadNextPage: Bool = false
+    var isLastPage: Bool = false
     
     private var id: Int
 
@@ -12,24 +19,39 @@ final class ListReviewsPresenter: ListReviewsViewToPresenterProtocol {
         self.id = id
     }
     
-    func getResult() -> [ListReviewsResponse.Result]? {
-        let result = interactor?.response?.results
-        return result
+    func loadNextPage(index: Int) {
+        let lastIndex = (self.data.value.count) - 2
+        self.totalPage = interactor?.totalPages ?? 0
+        if currentPage <= totalPage ?? 0 {
+            if !isLoadNextPage {
+                if lastIndex == index {
+                    updateView()
+                }
+            }
+        }
     }
     
     func updateView() {
-        interactor?.fetchlistReviews(with: id, page: 1)
+        interactor?.fetchlistReviews(with: id, page: 1, completion: { data in
+            if self.currentPage == 1 {
+                self.isLastPage = self.currentPage == self.totalPage
+                self.currentPage += 1
+                self.data.value = data
+            } else {
+                self.isLastPage = self.currentPage == self.totalPage
+                self.currentPage += 1
+                var newData: [ListReviewsResponse.Result] = []
+                newData.append(contentsOf: self.data.value)
+                newData.append(contentsOf: data)
+                self.data.value = newData
+            }
+        })
     }
-    
-    func getListCount() -> Int? {
-        interactor?.response?.results?.count
-    }
-    
 }
 
 extension ListReviewsPresenter: ListReviewsInteractorToPresenterProtocol {
-    func listReviewsFetched() {
-        view?.showView()
+    func listReviewsIsEmpty() {
+        view?.showEmptyView()
     }
     
     func listReviewsFetchedFailed() {

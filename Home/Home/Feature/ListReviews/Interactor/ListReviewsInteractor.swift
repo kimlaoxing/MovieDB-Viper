@@ -5,9 +5,9 @@ import Components
 final class ListReviewsInteractor: ListReviewsPresentorToInteractorProtocol {
     
     weak var presenter: ListReviewsInteractorToPresenterProtocol?
-    var response: ListReviewsResponse?
+    var totalPages: Int?
     
-    func fetchlistReviews(with id: Int, page: Int) {
+    func fetchlistReviews(with id: Int, page: Int, completion: @escaping ([ListReviewsResponse.Result]) -> Void) {
         let endpoint = "\(APIService.basePath)/movie/\(id)/reviews"
         let parameters: Parameters = [
             "api_key" : "\(APIService.apiKey)",
@@ -25,8 +25,13 @@ final class ListReviewsInteractor: ListReviewsPresentorToInteractorProtocol {
                 self.presenter?.isLoading(isLoading: false)
                 switch data.result {
                 case .success(let data):
-                    self.response = data
-                    self.presenter?.listReviewsFetched()
+                    self.totalPages = data.total_pages
+                    if let result = data.results {
+                        completion(result)
+                    }
+                    if data.results?.count == 0 {
+                        self.presenter?.listReviewsIsEmpty()
+                    }
                 case .failure:
                     self.presenter?.listReviewsFetchedFailed()
                 }
