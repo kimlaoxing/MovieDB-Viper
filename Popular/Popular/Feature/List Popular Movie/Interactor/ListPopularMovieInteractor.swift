@@ -2,13 +2,14 @@ import Components
 import Alamofire
 
 final class ListPopularMovieInteractor: ListPopularMoviePresenterToInteractorProtocol {
-    
     var presenter: ListPopularMovieInteractorToPresenterProtocol?
-    var response: MovieListResponse?
+    var totalPages: Int?
     
-    func fetchListPopularMovie(with category: MovieCategory) {
-        let endpoint = "\(APIService.basePath)\(category.rawValue)?api_key=\(APIService.apiKey)"
-        let params = [ "page" : 1 ]
+    func fetchListPopularMovie(with category: MovieCategory, page: Int, completion: @escaping ([MovieListResponse.Result]) -> Void) {
+        let endpoint = "\(APIService.basePath)\(category.rawValue)"
+        let params = [ "page" : "\(page)",
+                       "api_key" : "\(APIService.apiKey)"
+        ]
         self.presenter?.isLoading(isLoading: true)
         AF.request(
             endpoint,
@@ -21,8 +22,10 @@ final class ListPopularMovieInteractor: ListPopularMoviePresenterToInteractorPro
                 self.presenter?.isLoading(isLoading: false)
                 switch data.result {
                 case .success(let data):
-                    self.response = data
-                    self.presenter?.listPopularMovieFetched()
+                    self.totalPages = data.total_pages
+                    if let result = data.results {
+                        completion(result)
+                    }
                 case .failure(_):
                     self.presenter?.listPopularMovieFetchedFailed()
                 }

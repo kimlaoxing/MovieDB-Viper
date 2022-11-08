@@ -6,23 +6,20 @@ import Toast_Swift
 final class PopularMovieViewController: UIViewController {
     
     var presenter: ListPopularMovieViewToPresenterProtocol?
+    var result: [MovieListResponse.Result]?
     
     private lazy var tableView = UITableView.make {
         $0.edges(to: view)
         $0.delegate = self
         $0.dataSource = self
         $0.register(PopularMovieTableViewCell.self, forCellReuseIdentifier: "PopularMovieTableViewCell")
-        $0.allowsMultipleSelectionDuringEditing = false
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         subViews()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         presenter?.updateView()
+        bind()
     }
     
     private func subViews() {
@@ -30,34 +27,40 @@ final class PopularMovieViewController: UIViewController {
         view.backgroundColor = .white
         view.addSubviews([tableView])
     }
-
+    
+    private func bind() {
+        presenter?.response.observe(on: self) { [weak self] data in
+            self?.result = data
+            self?.tableView.reloadData()
+        }
+    }
 }
 
 extension PopularMovieViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return presenter?.getNumberOfCount() ?? 0
+        return self.result?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PopularMovieTableViewCell",
                                                  for: indexPath) as! PopularMovieTableViewCell
         let row = indexPath.row
-        if let result = presenter?.getResult() {
+        if let result = self.result {
             cell.setContent(with: result[row])
         }
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("did select row\(indexPath.row)")
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        for cell in tableView.visibleCells {
+            let indexPath = tableView.indexPath(for: cell)
+            presenter?.loadNextPage(index: indexPath?.row ?? 0)
+        }
     }
 }
 
 extension PopularMovieViewController: ListPopularMoviePresenterToViewProtocol {
-    func showView() {
-        self.tableView.reloadData()
-    }
     
     func showError() {
         let alert = UIAlertController(title: "Alert", message: "Internal Server Error", preferredStyle: UIAlertController.Style.alert)
