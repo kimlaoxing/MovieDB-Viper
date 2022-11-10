@@ -37,7 +37,7 @@ final class ListMovieViewController: UIViewController {
     }
     
     private func subViews() {
-        title = "List Movies"
+        title = presenter?.getGenresName()
         view.backgroundColor = .white
         view.addSubviews([
             scrollView.addArrangedSubviews([

@@ -32,11 +32,11 @@ extension HomeTabRoute where Self: Router {
         return navigation
     }
     
-    func toMovieListGendre(with transition: Transition, gendre: Int) {
+    func toMovieListGendre(with transition: Transition, gendre: Int, genresName: String) {
         let router = DefaultRouter(rootTransition: ModalTransition())
         let vc = ListMovieViewController()
         vc.navigationItem.backButtonTitle = ""
-        let presenter: ListMovieEachGendreViewToPresenterProtocol & ListMovieEachGendreInteractorToPresenterProtocol = ListMoviePresenter(router: router, gendre: gendre)
+        let presenter: ListMovieEachGendreViewToPresenterProtocol & ListMovieEachGendreInteractorToPresenterProtocol = ListMoviePresenter(router: router, gendre: gendre, genresName: genresName)
         let interactor: ListMovieEachGendrePresentorToInteractorProtocol = ListMovieInteractor()
         
         vc.presenter = presenter
@@ -105,8 +105,8 @@ extension DefaultRouter: HomeTabRoute {
         toListReviews(with: ModalTransition(), id: id)
     }
     
-    public func toMovieListGendre(gendre: Int) {
-        toMovieListGendre(with: PushTransition(), gendre: gendre)
+    public func toMovieListGendre(gendre: Int, genresName: String) {
+        toMovieListGendre(with: PushTransition(), gendre: gendre, genresName: genresName)
     }
     
     public func toDetailMovie(id: Int) {

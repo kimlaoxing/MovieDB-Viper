@@ -30,7 +30,8 @@ final class GendreListViewController: UIViewController {
         let row = index.row
         let data = presenter?.getGendre(index: row)
         let id = data?.id ?? 0
-        self.presenter?.toMovieListEachGendre(with: id)
+        let genresName = data?.name ?? ""
+        self.presenter?.toMovieListEachGendre(with: id, genresName: genresName)
     }
 }
 

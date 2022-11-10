@@ -14,15 +14,22 @@ final class ListMoviePresenter: ListMovieEachGendreViewToPresenterProtocol {
     
     private let router: Routes
     private var gendre: Int
+    private var genresName: String
     
     typealias Routes = HomeTabRoute
     
     init(
         router: Routes,
-        gendre: Int
+        gendre: Int,
+        genresName: String
     ) {
         self.router = router
         self.gendre = gendre
+        self.genresName = genresName
+    }
+    
+    func getGenresName() -> String {
+        return self.genresName
     }
     
     func loadNextPage(index: Int) {

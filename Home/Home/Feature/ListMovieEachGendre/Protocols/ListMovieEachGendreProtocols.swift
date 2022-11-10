@@ -32,4 +32,5 @@ protocol ListMovieEachGendreViewToPresenterProtocol: AnyObject {
     func loadNextPage(index: Int)
     func updateView()
     func toMovieDetail(with id: Int)
+    func getGenresName() -> String
 }
