@@ -5,7 +5,7 @@ import Components
 final class ListTrailerUICollectionViewCell: UICollectionViewCell {
     
     private lazy var container = UIView.make {
-        $0.backgroundColor = .clear
+        $0.backgroundColor = .white
         $0.edges(to: contentView)
     }
     
@@ -43,6 +43,7 @@ final class ListTrailerUICollectionViewCell: UICollectionViewCell {
     
     private func subViews() {
         player.edges(to: container)
+        contentView.backgroundColor = .white
         contentView.addSubviews([
             container.addSubviews([
                 player

@@ -32,7 +32,7 @@ final class TabBar: UITabBarController {
     private func draw() {
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = createPath().cgPath
-        shapeLayer.fillColor = UIColor.white.cgColor
+        shapeLayer.fillColor = UIColor.black.cgColor
         
         shapeLayer.lineWidth = 1.0
         shapeLayer.strokeColor = UIColor(red: 231 / 255, green: 231 / 255, blue: 240 / 255, alpha: 1).cgColor

@@ -70,6 +70,7 @@ final class ListReviewsTableViewCell: UITableViewCell {
     }
     
     private func subViews() {
+        contentView.backgroundColor = .white
         contentView.addSubviews([
             containerView.addArrangedSubviews([
                 titleStack.addArrangedSubviews([

@@ -12,6 +12,7 @@ final class ListReviewsViewController: UIViewController {
         $0.delegate = self
         $0.dataSource = self
         $0.register(ListReviewsTableViewCell.self, forCellReuseIdentifier: "ListReviewsTableViewCell")
+        $0.backgroundColor = .white
     }
     
     private lazy var emptyView = EmptyDataView.make {

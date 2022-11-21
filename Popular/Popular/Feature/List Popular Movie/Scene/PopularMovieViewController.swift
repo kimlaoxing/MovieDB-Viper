@@ -13,6 +13,7 @@ final class PopularMovieViewController: UIViewController {
         $0.delegate = self
         $0.dataSource = self
         $0.register(PopularMovieTableViewCell.self, forCellReuseIdentifier: "PopularMovieTableViewCell")
+        $0.backgroundColor = .white
     }
     
     override func viewDidLoad() {

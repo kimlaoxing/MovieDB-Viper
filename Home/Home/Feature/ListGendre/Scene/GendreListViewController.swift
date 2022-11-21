@@ -11,7 +11,8 @@ final class GendreListViewController: UIViewController {
         $0.delegate = self
         $0.dataSource = self
         $0.register(GendreListTableViewCell.self, forCellReuseIdentifier: "GendreListTableViewCell")
-        $0.allowsMultipleSelectionDuringEditing = false
+        $0.backgroundColor = .white
+        $0.separatorStyle = .none
     }
     
     override func viewDidLoad() {
@@ -22,7 +23,6 @@ final class GendreListViewController: UIViewController {
     
     private func subViews() {
         title = "Genre"
-        view.backgroundColor = .white
         view.addSubviews([tableView])
     }
     

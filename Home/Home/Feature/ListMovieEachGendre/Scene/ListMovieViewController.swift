@@ -9,6 +9,7 @@ final class ListMovieViewController: UIViewController {
     
     private lazy var scrollView = UIStackView.make {
         $0.edges(to: view)
+        $0.backgroundColor = .white
     }
     
     private var collectionHeight: NSLayoutConstraint? {
@@ -62,6 +63,7 @@ final class ListMovieViewController: UIViewController {
         collection.delegate = self
         collection.dataSource = self
         collection.showsVerticalScrollIndicator = false
+        collection.backgroundColor = .white
         collection.isBouncesVertical = true
         collectionHeight = collection.heightAnchor.constraint(equalToConstant: 0)
     }

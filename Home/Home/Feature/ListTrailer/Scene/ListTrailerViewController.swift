@@ -7,6 +7,7 @@ final class ListTrailerViewController: UIViewController {
     
     private lazy var container = ScrollViewContainer.make {
         $0.edges(to: view)
+        $0.backgroundColor = .white
     }
     
     private lazy var collection = DefaultCollectionView(frame: .zero)
@@ -38,6 +39,7 @@ final class ListTrailerViewController: UIViewController {
         collection.delegate = self
         collection.register(ListTrailerUICollectionViewCell.self, forCellWithReuseIdentifier: "ListTrailerUICollectionViewCell")
         collection.showsHorizontalScrollIndicator = false
+        collection.backgroundColor = .white
         collectionHeight = collection.heightAnchor.constraint(equalToConstant: 0)
     }
     

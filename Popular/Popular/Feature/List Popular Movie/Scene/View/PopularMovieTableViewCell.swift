@@ -81,6 +81,7 @@ final class PopularMovieTableViewCell: UITableViewCell {
     }
     
     private func subViews() {
+        contentView.backgroundColor = .white
         contentView.addSubviews([
             containerView.addArrangedSubviews([
                 hStack.addArrangedSubviews([

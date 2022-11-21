@@ -18,6 +18,7 @@ final class BaseCollectionViewCell: UICollectionViewCell {
     
     private func subViews() {
         contentView.addSubview(baseView)
+        contentView.backgroundColor = .white
     }
     
     func setContent(with data: MovieListResponse.Result) {
