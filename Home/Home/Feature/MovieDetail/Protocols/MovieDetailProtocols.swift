@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+import Networking
 
 protocol MovieDetailPresenterToViewProtocol: AnyObject {
     func showView()
@@ -16,6 +17,7 @@ protocol MovieDetailInteractorToPresenterProtocol: AnyObject {
 protocol MovieDetailPresentorToInteractorProtocol: AnyObject {
     var presenter: MovieDetailInteractorToPresenterProtocol? { get set }
     var response: MovieDetailResponse? { get }
+    var error: APIError? { get }
     
     func fetchDetailMovie(with id: Int)
 }
@@ -28,4 +30,5 @@ protocol MovieDetailViewToPresenterProtocol: AnyObject {
     func getResult() -> MovieDetailResponse?
     func toMovieReviews(with id: Int)
     func toListTrailer(with id: Int)
+    func getError() -> APIError?
 }

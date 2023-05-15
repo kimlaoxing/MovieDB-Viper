@@ -1,0 +1,6 @@
+framework module Pods_MovieDB_Viper_Networking {
+  umbrella header "Pods-MovieDB-Viper-Networking-umbrella.h"
+
+  export *
+  module * { export * }
+}

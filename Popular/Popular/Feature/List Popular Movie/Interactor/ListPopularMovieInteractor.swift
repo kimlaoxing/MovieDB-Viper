@@ -1,34 +1,38 @@
 import Components
-import Alamofire
+import Networking
 
 final class ListPopularMovieInteractor: ListPopularMoviePresenterToInteractorProtocol {
     var presenter: ListPopularMovieInteractorToPresenterProtocol?
     var totalPages: Int?
+    var error: APIError?
+    private let DI: APIDataTransferDI
+    
+    init(injection: APIDataTransferDI) {
+        self.DI = injection
+    }
     
     func fetchListPopularMovie(with category: MovieCategory, page: Int, completion: @escaping ([MovieListResponse.Result]) -> Void) {
-        let endpoint = "\(APIService.basePath)\(category.rawValue)"
-        let params = [ "page" : "\(page)",
-                       "api_key" : "\(APIService.apiKey)"
-        ]
         self.presenter?.isLoading(isLoading: true)
-        AF.request(
-            endpoint,
-            method: .get,
-            parameters: params,
-            encoding: URLEncoding.queryString
-        )
-            .validate(statusCode: 200..<300)
-            .responseDecodable(of: MovieListResponse.self) { data in
-                self.presenter?.isLoading(isLoading: false)
-                switch data.result {
-                case .success(let data):
-                    self.totalPages = data.total_pages
-                    if let result = data.results {
-                        completion(result)
-                    }
-                case .failure(_):
+        let endpoint = APIEndpoints.getPopularMovide(with: category.rawValue, page: page)
+        self.DI.provideApiDataTransfer().request(with: endpoint) { [weak self] result in
+            guard let self else { return }
+            self.presenter?.isLoading(isLoading: false)
+            switch result {
+            case .success(let data):
+                if let error = self.DI.provideErrorHandle(with: data) {
+                    self.error = error
                     self.presenter?.listPopularMovieFetchedFailed()
+                } else {
+                    let response = self.DI.provideDefaultData(type: MovieListResponse.self, with: data)
+                    if let data = response.results {
+                        completion(data)
+                        self.totalPages = response.total_pages
+                    }
                 }
+            case .failure(_):
+                self.error = self.DI.provideDefaultError()
+                self.presenter?.listPopularMovieFetchedFailed()
             }
+        }
     }
 }

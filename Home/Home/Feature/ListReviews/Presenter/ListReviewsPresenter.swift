@@ -1,6 +1,7 @@
 import Foundation
 import Router
 import Components
+import Networking
 
 final class ListReviewsPresenter: ListReviewsViewToPresenterProtocol {
     
@@ -47,6 +48,10 @@ final class ListReviewsPresenter: ListReviewsViewToPresenterProtocol {
             }
         })
     }
+    
+    func getError() -> APIError? {
+        return interactor?.error
+    }
 }
 
 extension ListReviewsPresenter: ListReviewsInteractorToPresenterProtocol {
@@ -61,5 +66,6 @@ extension ListReviewsPresenter: ListReviewsInteractorToPresenterProtocol {
     func isLoading(isLoading: Bool) {
         view?.showLoading(isLoading: isLoading)
     }
+    
 }
 

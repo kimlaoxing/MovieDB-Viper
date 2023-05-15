@@ -1,5 +1,6 @@
 import Components
 import UIKit
+import Networking
 
 protocol ListPopularMoviePresenterToViewProtocol: AnyObject {
     func showError()
@@ -14,6 +15,7 @@ protocol ListPopularMovieInteractorToPresenterProtocol: AnyObject {
 protocol ListPopularMoviePresenterToInteractorProtocol: AnyObject {
     var presenter: ListPopularMovieInteractorToPresenterProtocol? { get set }
     var totalPages: Int? { get }
+    var error: APIError? { get }
     
     func fetchListPopularMovie(with category: MovieCategory, page: Int, completion: @escaping([MovieListResponse.Result]) -> Void)
 }
@@ -30,5 +32,6 @@ protocol ListPopularMovieViewToPresenterProtocol: AnyObject {
     func loadNextPage(index: Int)
     func updateView()
     func toDetailMovie(with id: Int)
+    func getError() -> APIError?
 }
 

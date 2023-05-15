@@ -1,5 +1,6 @@
 import Components
 import UIKit
+import Networking
 
 protocol ListReviewsPresenterToViewProtocol: AnyObject {
     func showEmptyView()
@@ -16,6 +17,7 @@ protocol ListReviewsInteractorToPresenterProtocol: AnyObject {
 protocol ListReviewsPresentorToInteractorProtocol: AnyObject {
     var presenter: ListReviewsInteractorToPresenterProtocol? { get set }
     var totalPages: Int? { get }
+    var error: APIError? { get }
     
     func fetchlistReviews(with id: Int, page: Int, completion: @escaping ([ListReviewsResponse.Result]) -> Void)
 }
@@ -32,4 +34,5 @@ protocol ListReviewsViewToPresenterProtocol: AnyObject {
     
     func loadNextPage(index: Int)
     func updateView()
+    func getError() -> APIError?
 }

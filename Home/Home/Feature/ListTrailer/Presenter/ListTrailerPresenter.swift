@@ -1,3 +1,5 @@
+import Networking
+
 final class ListTrailerPresenter: ListTrailerViewToPresenterProtocol {
     
     var view: ListTrailerPresenterToViewProtocol?
@@ -18,6 +20,10 @@ final class ListTrailerPresenter: ListTrailerViewToPresenterProtocol {
     
     func getNumberOfCount() -> Int? {
         return interactor?.response?.results?.count
+    }
+    
+    func getError() -> APIError? {
+        return interactor?.error
     }
 }
 

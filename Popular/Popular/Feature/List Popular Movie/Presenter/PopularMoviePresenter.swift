@@ -1,5 +1,6 @@
 import Components
 import Router
+import Networking
 
 final class ListPopularMoviePresenter: ListPopularMovieViewToPresenterProtocol {
 
@@ -51,6 +52,10 @@ final class ListPopularMoviePresenter: ListPopularMovieViewToPresenterProtocol {
     
     func toDetailMovie(with id: Int) {
         self.router.toDetailMovie(id: id)
+    }
+    
+    func getError() -> APIError? {
+        return self.interactor?.error
     }
 }
 

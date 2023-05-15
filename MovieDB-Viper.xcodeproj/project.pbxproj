@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A805C58D5460BF192479A9E3 /* Pods_MovieDB_Viper_MovieDB_Viper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1377EB99D360A28BEF9404 /* Pods_MovieDB_Viper_MovieDB_Viper.framework */; };
+		4C094C71E05096C0AF90B7C9 /* Pods_MovieDB_Viper_MovieDB_Viper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C3215E7958557E36C29B0F4 /* Pods_MovieDB_Viper_MovieDB_Viper.framework */; };
 		EA484133290F6827002DB416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484132290F6827002DB416 /* AppDelegate.swift */; };
 		EA484135290F6827002DB416 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484134290F6827002DB416 /* SceneDelegate.swift */; };
 		EA48413C290F6829002DB416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA48413B290F6829002DB416 /* Assets.xcassets */; };
@@ -24,6 +24,8 @@
 		EA4841D3290F6E9D002DB416 /* Home.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA4841D1290F6E9D002DB416 /* Home.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EAACAF05291201BC000E3727 /* Popular.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAACAF04291201BC000E3727 /* Popular.framework */; };
 		EAACAF06291201BC000E3727 /* Popular.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EAACAF04291201BC000E3727 /* Popular.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F51614952A11C64C00483556 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F51614942A11C64C00483556 /* Networking.framework */; };
+		F51614962A11C64C00483556 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F51614942A11C64C00483556 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +37,7 @@
 			files = (
 				EA484170290F6A2D002DB416 /* Components.framework in Embed Frameworks */,
 				EA484174290F6A30002DB416 /* Router.framework in Embed Frameworks */,
+				F51614962A11C64C00483556 /* Networking.framework in Embed Frameworks */,
 				EAACAF06291201BC000E3727 /* Popular.framework in Embed Frameworks */,
 				EA4841C3290F6C98002DB416 /* Home.framework in Embed Frameworks */,
 				EA4841D3290F6E9D002DB416 /* Home.framework in Embed Frameworks */,
@@ -46,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		1F191B12CF245B12EA24831A /* Pods-MovieDB-Viper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDB-Viper.release.xcconfig"; path = "Target Support Files/Pods-MovieDB-Viper/Pods-MovieDB-Viper.release.xcconfig"; sourceTree = "<group>"; };
+		2C3215E7958557E36C29B0F4 /* Pods_MovieDB_Viper_MovieDB_Viper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDB_Viper_MovieDB_Viper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35DB718D84F0D5479B589362 /* Pods-MovieDB-Viper-MovieDB-Viper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDB-Viper-MovieDB-Viper.release.xcconfig"; path = "Target Support Files/Pods-MovieDB-Viper-MovieDB-Viper/Pods-MovieDB-Viper-MovieDB-Viper.release.xcconfig"; sourceTree = "<group>"; };
 		7458F2E11FC12E03389EA1DC /* Pods-MovieDB-Viper-MovieDB-Viper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDB-Viper-MovieDB-Viper.debug.xcconfig"; path = "Target Support Files/Pods-MovieDB-Viper-MovieDB-Viper/Pods-MovieDB-Viper-MovieDB-Viper.debug.xcconfig"; sourceTree = "<group>"; };
 		83813FECDD340B4B9FB9EE23 /* Pods-MovieDB-Viper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieDB-Viper.debug.xcconfig"; path = "Target Support Files/Pods-MovieDB-Viper/Pods-MovieDB-Viper.debug.xcconfig"; sourceTree = "<group>"; };
@@ -62,7 +66,7 @@
 		EA4841C9290F6D37002DB416 /* SceneDelegateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateExtension.swift; sourceTree = "<group>"; };
 		EA4841D1290F6E9D002DB416 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAACAF04291201BC000E3727 /* Popular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Popular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA1377EB99D360A28BEF9404 /* Pods_MovieDB_Viper_MovieDB_Viper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDB_Viper_MovieDB_Viper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F51614942A11C64C00483556 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +79,8 @@
 				EA484173290F6A30002DB416 /* Router.framework in Frameworks */,
 				EA4841D2290F6E9D002DB416 /* Home.framework in Frameworks */,
 				EA4841C2290F6C98002DB416 /* Home.framework in Frameworks */,
-				A805C58D5460BF192479A9E3 /* Pods_MovieDB_Viper_MovieDB_Viper.framework in Frameworks */,
+				F51614952A11C64C00483556 /* Networking.framework in Frameworks */,
+				4C094C71E05096C0AF90B7C9 /* Pods_MovieDB_Viper_MovieDB_Viper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,12 +90,13 @@
 		AFA4C32E09E19F102237A327 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F51614942A11C64C00483556 /* Networking.framework */,
 				EAACAF04291201BC000E3727 /* Popular.framework */,
 				EA4841D1290F6E9D002DB416 /* Home.framework */,
 				EA4841C1290F6C98002DB416 /* Home.framework */,
 				EA484172290F6A30002DB416 /* Router.framework */,
 				EA48416E290F6A2D002DB416 /* Components.framework */,
-				FA1377EB99D360A28BEF9404 /* Pods_MovieDB_Viper_MovieDB_Viper.framework */,
+				2C3215E7958557E36C29B0F4 /* Pods_MovieDB_Viper_MovieDB_Viper.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -174,7 +180,7 @@
 				EA48412C290F6827002DB416 /* Frameworks */,
 				EA48412D290F6827002DB416 /* Resources */,
 				EA484171290F6A2D002DB416 /* Embed Frameworks */,
-				1534EE32D3890EABAEAB28EE /* [CP] Embed Pods Frameworks */,
+				EE145378F6DC0E17BAA81E72 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,23 +237,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1534EE32D3890EABAEAB28EE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MovieDB-Viper-MovieDB-Viper/Pods-MovieDB-Viper-MovieDB-Viper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MovieDB-Viper-MovieDB-Viper/Pods-MovieDB-Viper-MovieDB-Viper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MovieDB-Viper-MovieDB-Viper/Pods-MovieDB-Viper-MovieDB-Viper-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CDCCF311DD641840EF5B2AD0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,6 +257,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE145378F6DC0E17BAA81E72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MovieDB-Viper-MovieDB-Viper/Pods-MovieDB-Viper-MovieDB-Viper-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MovieDB-Viper-MovieDB-Viper/Pods-MovieDB-Viper-MovieDB-Viper-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MovieDB-Viper-MovieDB-Viper/Pods-MovieDB-Viper-MovieDB-Viper-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -435,7 +441,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.personal.MovieDB-Viper";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.personal.MovieDB-Viper2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -464,7 +470,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.personal.MovieDB-Viper";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.personal.MovieDB-Viper2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

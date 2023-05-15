@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+import Networking
 
 protocol ListTrailerPresenterToViewProtocol: AnyObject {
     func showView()
@@ -16,6 +17,7 @@ protocol ListTrailerInteractorToPresenterProtocol: AnyObject {
 protocol ListTrailerPresenterToInteractorProcotol: AnyObject {
     var presenter: ListTrailerInteractorToPresenterProtocol? { get set }
     var response: ListTrailerResponse? { get }
+    var error: APIError? { get }
     
     func fetchListTrailer(with id: Int)
 }
@@ -27,4 +29,5 @@ protocol ListTrailerViewToPresenterProtocol: AnyObject {
     func updateView()
     func getResult() -> [ListTrailerResponse.Result]?
     func getNumberOfCount() -> Int?
+    func getError() -> APIError?
 }

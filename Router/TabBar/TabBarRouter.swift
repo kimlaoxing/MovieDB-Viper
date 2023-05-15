@@ -5,7 +5,7 @@ public protocol HomeTabRoute {
     func makeHomeTab() -> UIViewController
     func toDetailMovie(id: Int)
     func toListReviews(id: Int)
-    func toMovieListGendre(gendre: Int, genresName: String)
+    func toMovieListGenre(genre: Int, genresName: String)
     func toTrailerList(id: Int)
 }
 

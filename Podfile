@@ -15,7 +15,6 @@ def core_pods
 pod 'Toast-Swift', '~> 5.0.1'
 pod 'SwiftLint'
 pod 'Declayout'
-pod 'Alamofire'
 pod 'YoutubeKit'
 end
 
@@ -36,6 +35,10 @@ end
 target 'Home' do
 project 'Home/Home.project'
 core_pods
+end
+
+target 'Networking' do
+project 'Networking/Networking.project'
 end
 
 target 'MovieDB-Viper' do

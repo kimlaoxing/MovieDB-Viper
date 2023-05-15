@@ -189,7 +189,7 @@ final class MovieDetailView: UIView {
         ])
     }
     
-    private func setGendre(with data: MovieDetailResponse) {
+    private func setGenre(with data: MovieDetailResponse) {
         var genres: String = ""
         if data.genres != nil {
             genres = data.genres!.map({$0.name ?? ""}).joined(separator: ", ")
@@ -233,7 +233,7 @@ final class MovieDetailView: UIView {
     func setContent(with data: MovieDetailResponse) {
         backgroundImage.downloaded(from: data.backdrop_path ?? "")
         self.setReleaseDate(with: data)
-        self.setGendre(with: data)
+        self.setGenre(with: data)
         self.setProductionCompany(with: data)
         self.setLanguage(with: data)
         self.setDescription(with: data)

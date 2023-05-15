@@ -1,40 +1,47 @@
 import Foundation
-import Alamofire
+import Networking
 import Components
 
 final class ListReviewsInteractor: ListReviewsPresentorToInteractorProtocol {
     
     weak var presenter: ListReviewsInteractorToPresenterProtocol?
     var totalPages: Int?
+    var error: APIError?
+    private let DI: APIDataTransferDI
+    
+    init(injection: APIDataTransferDI) {
+        self.DI = injection
+    }
     
     func fetchlistReviews(with id: Int, page: Int, completion: @escaping ([ListReviewsResponse.Result]) -> Void) {
-        let endpoint = "\(APIService.basePath)/movie/\(id)/reviews"
-        let parameters: Parameters = [
-            "api_key" : "\(APIService.apiKey)",
-            "page": "\(page)"
-        ]
+        let endpoint = APIEndpoints.getListReviews(with: id, page: page)
         self.presenter?.isLoading(isLoading: true)
-        AF.request(endpoint,
-                   method: .get,
-                   parameters: parameters,
-                   encoding: URLEncoding.queryString
-        )
-            .debugLog()
-            .validate(statusCode: 200..<300)
-            .responseDecodable(of: ListReviewsResponse.self) { data in
-                self.presenter?.isLoading(isLoading: false)
-                switch data.result {
-                case .success(let data):
+        self.DI.provideApiDataTransfer().request(with: endpoint) { [weak self] result in
+            guard let self else { return }
+            self.presenter?.isLoading(isLoading: false)
+            switch result {
+            case .success(let data):
+                let error = self.DI.provideErrorHandle(with: data)
+                if error != nil {
+                    self.error = error
+                    self.presenter?.listReviewsFetchedFailed()
+                } else {
+                    let data = self.DI.provideDefaultData(type: ListReviewsResponse.self, with: data)
                     self.totalPages = data.total_pages
                     if let result = data.results {
-                        completion(result)
+                        if result.count == 0 {
+                            self.presenter?.listReviewsIsEmpty()
+                        } else {
+                            completion(result)
+                        }
+                    } else {
+                        self.presenter?.listReviewsFetchedFailed()
                     }
-                    if data.results?.count == 0 {
-                        self.presenter?.listReviewsIsEmpty()
-                    }
-                case .failure:
-                    self.presenter?.listReviewsFetchedFailed()
                 }
+            case .failure(_):
+                self.presenter?.listReviewsFetchedFailed()
+                self.error = self.DI.provideDefaultError()
             }
+        }
     }
 }

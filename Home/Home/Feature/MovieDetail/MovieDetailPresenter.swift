@@ -1,5 +1,6 @@
 import Foundation
 import Router
+import Networking
 
 final class MovieDetailPresenter: MovieDetailViewToPresenterProtocol {
     var view: MovieDetailPresenterToViewProtocol?
@@ -34,6 +35,10 @@ final class MovieDetailPresenter: MovieDetailViewToPresenterProtocol {
     
     func toListTrailer(with id: Int) {
         router.toTrailerList(id: id)
+    }
+    
+    func getError() -> APIError? {
+        return self.interactor?.error
     }
 }
 

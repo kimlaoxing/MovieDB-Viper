@@ -20,12 +20,12 @@
 		EA4841D6290F6EB2002DB416 /* Components.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA4841D4290F6EB2002DB416 /* Components.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EA4841D9290F6EB5002DB416 /* Router.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA4841D8290F6EB5002DB416 /* Router.framework */; };
 		EA4841DA290F6EB5002DB416 /* Router.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EA4841D8290F6EB5002DB416 /* Router.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EA4841E9290F6F5C002DB416 /* GendreListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841E8290F6F5C002DB416 /* GendreListViewController.swift */; };
-		EA4841EC290F70F6002DB416 /* GendreListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841EB290F70F6002DB416 /* GendreListTableViewCell.swift */; };
+		EA4841E9290F6F5C002DB416 /* GenreListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841E8290F6F5C002DB416 /* GenreListViewController.swift */; };
+		EA4841EC290F70F6002DB416 /* GenreListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841EB290F70F6002DB416 /* GenreListTableViewCell.swift */; };
 		EA4841EE290F7215002DB416 /* Gendre.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841ED290F7215002DB416 /* Gendre.swift */; };
 		EA4841F0290F7422002DB416 /* BaseListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841EF290F7422002DB416 /* BaseListProtocols.swift */; };
-		EA4841F2290F7521002DB416 /* GendreListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841F1290F7521002DB416 /* GendreListInteractor.swift */; };
-		EA4841F4290F76A7002DB416 /* GendreListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841F3290F76A7002DB416 /* GendreListPresenter.swift */; };
+		EA4841F2290F7521002DB416 /* GenreListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841F1290F7521002DB416 /* GenreListInteractor.swift */; };
+		EA4841F4290F76A7002DB416 /* GenreListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841F3290F76A7002DB416 /* GenreListPresenter.swift */; };
 		EA4841FB290F816E002DB416 /* ListMovieEachGendreProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841FA290F816E002DB416 /* ListMovieEachGendreProtocols.swift */; };
 		EA4841FE290F81A9002DB416 /* MovieListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841FD290F81A9002DB416 /* MovieListResponse.swift */; };
 		EA484200290F81BC002DB416 /* MovieCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4841FF290F81BC002DB416 /* MovieCategory.swift */; };
@@ -46,7 +46,8 @@
 		EA48422D290FB2D1002DB416 /* ListReviewsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA48422C290FB2D1002DB416 /* ListReviewsPresenter.swift */; };
 		EA48422F290FBA6D002DB416 /* ListReviewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA48422E290FBA6D002DB416 /* ListReviewsViewController.swift */; };
 		EA484235290FC696002DB416 /* ListReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA484234290FC696002DB416 /* ListReviewsTableViewCell.swift */; };
-		EADDB2242910BEC100CC1AF0 /* RequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADDB2232910BEC100CC1AF0 /* RequestExtension.swift */; };
+		F51614922A11C64500483556 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F51614912A11C64500483556 /* Networking.framework */; };
+		F51614932A11C64500483556 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F51614912A11C64500483556 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +59,7 @@
 			files = (
 				EA4841D6290F6EB2002DB416 /* Components.framework in Embed Frameworks */,
 				EA4841DA290F6EB5002DB416 /* Router.framework in Embed Frameworks */,
+				F51614932A11C64500483556 /* Networking.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,12 +81,12 @@
 		EA4841CF290F6E5E002DB416 /* HomeTabRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabRoute.swift; sourceTree = "<group>"; };
 		EA4841D4290F6EB2002DB416 /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA4841D8290F6EB5002DB416 /* Router.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Router.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA4841E8290F6F5C002DB416 /* GendreListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GendreListViewController.swift; sourceTree = "<group>"; };
-		EA4841EB290F70F6002DB416 /* GendreListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GendreListTableViewCell.swift; sourceTree = "<group>"; };
+		EA4841E8290F6F5C002DB416 /* GenreListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreListViewController.swift; sourceTree = "<group>"; };
+		EA4841EB290F70F6002DB416 /* GenreListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreListTableViewCell.swift; sourceTree = "<group>"; };
 		EA4841ED290F7215002DB416 /* Gendre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gendre.swift; sourceTree = "<group>"; };
 		EA4841EF290F7422002DB416 /* BaseListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseListProtocols.swift; sourceTree = "<group>"; };
-		EA4841F1290F7521002DB416 /* GendreListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GendreListInteractor.swift; sourceTree = "<group>"; };
-		EA4841F3290F76A7002DB416 /* GendreListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GendreListPresenter.swift; sourceTree = "<group>"; };
+		EA4841F1290F7521002DB416 /* GenreListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreListInteractor.swift; sourceTree = "<group>"; };
+		EA4841F3290F76A7002DB416 /* GenreListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreListPresenter.swift; sourceTree = "<group>"; };
 		EA4841FA290F816E002DB416 /* ListMovieEachGendreProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListMovieEachGendreProtocols.swift; sourceTree = "<group>"; };
 		EA4841FD290F81A9002DB416 /* MovieListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListResponse.swift; sourceTree = "<group>"; };
 		EA4841FF290F81BC002DB416 /* MovieCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCategory.swift; sourceTree = "<group>"; };
@@ -105,7 +107,7 @@
 		EA48422C290FB2D1002DB416 /* ListReviewsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReviewsPresenter.swift; sourceTree = "<group>"; };
 		EA48422E290FBA6D002DB416 /* ListReviewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReviewsViewController.swift; sourceTree = "<group>"; };
 		EA484234290FC696002DB416 /* ListReviewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListReviewsTableViewCell.swift; sourceTree = "<group>"; };
-		EADDB2232910BEC100CC1AF0 /* RequestExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestExtension.swift; sourceTree = "<group>"; };
+		F51614912A11C64500483556 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F51614922A11C64500483556 /* Networking.framework in Frameworks */,
 				EA4841D5290F6EB2002DB416 /* Components.framework in Frameworks */,
 				EA4841D9290F6EB5002DB416 /* Router.framework in Frameworks */,
 				E3495F4F6AB36E6871C5E30F /* Pods_MovieDB_Viper_Home.framework in Frameworks */,
@@ -125,6 +128,7 @@
 		5790FA494A34BBEB5C8C6F5F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F51614912A11C64500483556 /* Networking.framework */,
 				EA4841D8290F6EB5002DB416 /* Router.framework */,
 				EA4841D4290F6EB2002DB416 /* Components.framework */,
 				5DEFC13E95309EC7CF65E13C /* Pods_MovieDB_Viper_Home.framework */,
@@ -246,13 +250,13 @@
 				EA30DA432910C67F00BA15B8 /* ListTrailer */,
 				EA48421F290FAEC8002DB416 /* ListReviews */,
 				EA4841E0290F6EE6002DB416 /* MovieDetail */,
-				EA4841DF290F6EDF002DB416 /* ListMovieEachGendre */,
-				EA4841DE290F6EDA002DB416 /* ListGendre */,
+				EA4841DF290F6EDF002DB416 /* ListMovieEachGenre */,
+				EA4841DE290F6EDA002DB416 /* ListGenre */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
 		};
-		EA4841DE290F6EDA002DB416 /* ListGendre */ = {
+		EA4841DE290F6EDA002DB416 /* ListGenre */ = {
 			isa = PBXGroup;
 			children = (
 				EA4841E7290F6F48002DB416 /* Protocols */,
@@ -261,10 +265,10 @@
 				EA4841E4290F6F34002DB416 /* Interactor */,
 				EA4841E3290F6F30002DB416 /* Scene */,
 			);
-			path = ListGendre;
+			path = ListGenre;
 			sourceTree = "<group>";
 		};
-		EA4841DF290F6EDF002DB416 /* ListMovieEachGendre */ = {
+		EA4841DF290F6EDF002DB416 /* ListMovieEachGenre */ = {
 			isa = PBXGroup;
 			children = (
 				EA4841FC290F819F002DB416 /* Entity */,
@@ -273,7 +277,7 @@
 				EA4841F6290F80EC002DB416 /* Presenter */,
 				EA4841F5290F80E7002DB416 /* Protocols */,
 			);
-			path = ListMovieEachGendre;
+			path = ListMovieEachGenre;
 			sourceTree = "<group>";
 		};
 		EA4841E0290F6EE6002DB416 /* MovieDetail */ = {
@@ -292,7 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				EA4841EA290F70E4002DB416 /* View */,
-				EA4841E8290F6F5C002DB416 /* GendreListViewController.swift */,
+				EA4841E8290F6F5C002DB416 /* GenreListViewController.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -300,7 +304,7 @@
 		EA4841E4290F6F34002DB416 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				EA4841F1290F7521002DB416 /* GendreListInteractor.swift */,
+				EA4841F1290F7521002DB416 /* GenreListInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -316,7 +320,7 @@
 		EA4841E6290F6F3D002DB416 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				EA4841F3290F76A7002DB416 /* GendreListPresenter.swift */,
+				EA4841F3290F76A7002DB416 /* GenreListPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -332,7 +336,7 @@
 		EA4841EA290F70E4002DB416 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EA4841EB290F70F6002DB416 /* GendreListTableViewCell.swift */,
+				EA4841EB290F70F6002DB416 /* GenreListTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -501,7 +505,6 @@
 		EADDB2222910BEB500CC1AF0 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				EADDB2232910BEC100CC1AF0 /* RequestExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -614,14 +617,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA4841EE290F7215002DB416 /* Gendre.swift in Sources */,
-				EA4841F2290F7521002DB416 /* GendreListInteractor.swift in Sources */,
+				EA4841F2290F7521002DB416 /* GenreListInteractor.swift in Sources */,
 				EA484229290FB13D002DB416 /* ListReviewsInteractor.swift in Sources */,
 				EA48422B290FB152002DB416 /* ListReviewsProtocols.swift in Sources */,
 				EA484200290F81BC002DB416 /* MovieCategory.swift in Sources */,
 				EA484227290FAF1C002DB416 /* ListReviewsResponse.swift in Sources */,
 				EA4841D0290F6E5E002DB416 /* HomeTabRoute.swift in Sources */,
 				EA484235290FC696002DB416 /* ListReviewsTableViewCell.swift in Sources */,
-				EA4841E9290F6F5C002DB416 /* GendreListViewController.swift in Sources */,
+				EA4841E9290F6F5C002DB416 /* GenreListViewController.swift in Sources */,
 				EA48420A290F8534002DB416 /* BaseCollectionViewCell.swift in Sources */,
 				EA48421E290FA779002DB416 /* MovieDetailView.swift in Sources */,
 				EA48422F290FBA6D002DB416 /* ListReviewsViewController.swift in Sources */,
@@ -633,9 +636,8 @@
 				EA484204290F8350002DB416 /* ListMoviePresenter.swift in Sources */,
 				EA484206290F84A6002DB416 /* ListMovieViewController.swift in Sources */,
 				EA30DA4C2910C6CB00BA15B8 /* ListTrailerResponse.swift in Sources */,
-				EA4841EC290F70F6002DB416 /* GendreListTableViewCell.swift in Sources */,
-				EADDB2242910BEC100CC1AF0 /* RequestExtension.swift in Sources */,
-				EA4841F4290F76A7002DB416 /* GendreListPresenter.swift in Sources */,
+				EA4841EC290F70F6002DB416 /* GenreListTableViewCell.swift in Sources */,
+				EA4841F4290F76A7002DB416 /* GenreListPresenter.swift in Sources */,
 				EA484208290F850C002DB416 /* BaseView.swift in Sources */,
 				EA30DA582910CB6C00BA15B8 /* ListTrailerUICollectionViewCell.swift in Sources */,
 				EA30DA562910CB4900BA15B8 /* ListTrailerViewController.swift in Sources */,

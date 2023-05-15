@@ -21,6 +21,8 @@
 		EAACAF1D291206EC000E3727 /* ListPopularMovieProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAACAF1C291206EC000E3727 /* ListPopularMovieProtocols.swift */; };
 		EAACAF1F291207B7000E3727 /* ListPopularMovieInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAACAF1E291207B7000E3727 /* ListPopularMovieInteractor.swift */; };
 		EAACAF222912094E000E3727 /* PopularMoviePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAACAF212912094D000E3727 /* PopularMoviePresenter.swift */; };
+		F51614982A11C65300483556 /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F51614972A11C65300483556 /* Networking.framework */; };
+		F51614992A11C65300483556 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F51614972A11C65300483556 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +34,7 @@
 			files = (
 				EAACAF00291201AE000E3727 /* Components.framework in Embed Frameworks */,
 				EAACAF03291201B2000E3727 /* Router.framework in Embed Frameworks */,
+				F51614992A11C65300483556 /* Networking.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +59,7 @@
 		EAACAF1E291207B7000E3727 /* ListPopularMovieInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPopularMovieInteractor.swift; sourceTree = "<group>"; };
 		EAACAF212912094D000E3727 /* PopularMoviePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularMoviePresenter.swift; sourceTree = "<group>"; };
 		F4B2E7FE198AE56040E83351 /* Pods_MovieDB_Viper_Popular.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieDB_Viper_Popular.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F51614972A11C65300483556 /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F51614982A11C65300483556 /* Networking.framework in Frameworks */,
 				49B0DF83AA99CC7EAECBDB57 /* Pods_MovieDB_Viper_Popular.framework in Frameworks */,
 				EAACAF02291201B2000E3727 /* Router.framework in Frameworks */,
 				EAACAEFF291201AE000E3727 /* Components.framework in Frameworks */,
@@ -75,6 +80,7 @@
 		1E95C917B8D0CDF2BF0CC06F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F51614972A11C65300483556 /* Networking.framework */,
 				EA2DBFAE291A4ADD00C4B9C2 /* Home.framework */,
 				EAACAF01291201B2000E3727 /* Router.framework */,
 				EAACAEFE291201AE000E3727 /* Components.framework */,

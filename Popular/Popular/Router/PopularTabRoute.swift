@@ -1,5 +1,7 @@
 import Router
 import UIKit
+import Networking
+
 
 extension PopularTabRoute where Self: Router {
     public func makePopularTab() -> UIViewController {
@@ -7,7 +9,8 @@ extension PopularTabRoute where Self: Router {
         let vc = PopularMovieViewController()
         vc.navigationItem.backButtonTitle = ""
         let presenter: ListPopularMovieViewToPresenterProtocol & ListPopularMovieInteractorToPresenterProtocol = ListPopularMoviePresenter(router: router as! HomeTabRoute)
-        let interactor: ListPopularMoviePresenterToInteractorProtocol = ListPopularMovieInteractor()
+        let injection = APIDataTransferDI.init()
+        let interactor: ListPopularMoviePresenterToInteractorProtocol = ListPopularMovieInteractor(injection: injection)
 
         vc.presenter = presenter
         presenter.view = vc

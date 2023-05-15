@@ -1,15 +1,17 @@
 import Foundation
 import UIKit
 import Router
+import Networking
 
 extension HomeTabRoute where Self: Router {
     public func makeHomeTab() -> UIViewController {
         let router = DefaultRouter(rootTransition: ModalTransition())
-        let vc = GendreListViewController()
+        let vc = GenreListViewController()
         vc.navigationItem.backButtonTitle = ""
         
-        let presenter: BaseListViewToPresenterProtocol & BaseListInteractorToPresenterProtocol = GendreListPresenter(router: router)
-        let interactor: BaseListPresentorToInteractorProtocol = GendreListInteractor()
+        let presenter: BaseListViewToPresenterProtocol & BaseListInteractorToPresenterProtocol = GenreListPresenter(router: router)
+        let injection = APIDataTransferDI.init()
+        let interactor: BaseListPresentorToInteractorProtocol = GenreListInteractor(injection: injection)
         
         vc.presenter = presenter
         presenter.view = vc
@@ -32,12 +34,13 @@ extension HomeTabRoute where Self: Router {
         return navigation
     }
     
-    func toMovieListGendre(with transition: Transition, gendre: Int, genresName: String) {
+    func toMovieListGenre(with transition: Transition, genre: Int, genresName: String) {
         let router = DefaultRouter(rootTransition: ModalTransition())
         let vc = ListMovieViewController()
         vc.navigationItem.backButtonTitle = ""
-        let presenter: ListMovieEachGendreViewToPresenterProtocol & ListMovieEachGendreInteractorToPresenterProtocol = ListMoviePresenter(router: router, gendre: gendre, genresName: genresName)
-        let interactor: ListMovieEachGendrePresentorToInteractorProtocol = ListMovieInteractor()
+        let presenter: ListMovieEachGenreViewToPresenterProtocol & ListMovieEachGenreInteractorToPresenterProtocol = ListMoviePresenter(router: router, genre: genre, genresName: genresName)
+        let injection = APIDataTransferDI.init()
+        let interactor: ListMovieEachGenrePresentorToInteractorProtocol = ListMovieInteractor(injection: injection)
         
         vc.presenter = presenter
         presenter.view = vc
@@ -53,7 +56,8 @@ extension HomeTabRoute where Self: Router {
         let vc = MovieDetailViewController()
         vc.navigationItem.backButtonTitle = ""
         let presenter: MovieDetailViewToPresenterProtocol & MovieDetailInteractorToPresenterProtocol = MovieDetailPresenter(router: router, id: id)
-        let interactor: MovieDetailPresentorToInteractorProtocol = MovieDetailInteractor()
+        let injection = APIDataTransferDI.init()
+        let interactor: MovieDetailPresentorToInteractorProtocol = MovieDetailInteractor(injection: injection)
         
         vc.presenter = presenter
         presenter.view = vc
@@ -69,7 +73,8 @@ extension HomeTabRoute where Self: Router {
         let vc = ListReviewsViewController()
         vc.navigationItem.backButtonTitle = ""
         let presenter: ListReviewsViewToPresenterProtocol & ListReviewsInteractorToPresenterProtocol = ListReviewsPresenter(id: id)
-        let interactor: ListReviewsPresentorToInteractorProtocol = ListReviewsInteractor()
+        let injection = APIDataTransferDI.init()
+        let interactor: ListReviewsPresentorToInteractorProtocol = ListReviewsInteractor(injection: injection)
         vc.presenter = presenter
         presenter.view = vc
         presenter.interactor = interactor
@@ -83,12 +88,12 @@ extension HomeTabRoute where Self: Router {
         let router = DefaultRouter(rootTransition: ModalTransition())
         let vc = ListTrailerViewController()
         let presenter: ListTrailerViewToPresenterProtocol & ListTrailerInteractorToPresenterProtocol = ListTrailerPresenter(id: id)
-        let interactor: ListTrailerPresenterToInteractorProcotol = ListTrailerInteractor()
-        
+        let injection = APIDataTransferDI.init()
+        let interactor: ListTrailerPresenterToInteractorProcotol = ListTrailerInteractor(injection: injection)
+        vc.presenter = presenter
         presenter.view = vc
         presenter.interactor = interactor
         interactor.presenter = presenter
-        vc.presenter = presenter
         vc.navigationItem.backButtonTitle = ""
         vc.hidesBottomBarWhenPushed = true
         router.root = vc
@@ -105,8 +110,8 @@ extension DefaultRouter: HomeTabRoute {
         toListReviews(with: ModalTransition(), id: id)
     }
     
-    public func toMovieListGendre(gendre: Int, genresName: String) {
-        toMovieListGendre(with: PushTransition(), gendre: gendre, genresName: genresName)
+    public func toMovieListGenre(genre: Int, genresName: String) {
+        toMovieListGenre(with: PushTransition(), genre: genre, genresName: genresName)
     }
     
     public func toDetailMovie(id: Int) {
