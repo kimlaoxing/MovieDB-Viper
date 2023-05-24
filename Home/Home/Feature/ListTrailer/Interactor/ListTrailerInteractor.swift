@@ -26,8 +26,12 @@ final class ListTrailerInteractor: ListTrailerPresenterToInteractorProcotol {
                     self.presenter?.listTrailerFetchedFailed()
                 } else {
                     let data = self.DI.provideDefaultData(type: ListTrailerResponse.self, with: data)
-                    self.response = data
-                    self.presenter?.listTrailerFetched()
+                    if data.results?.count == 0 {
+                        self.presenter?.listTrailerIsEmpty()
+                    } else {
+                        self.response = data
+                        self.presenter?.listTrailerFetched()
+                    }
                 }
             case .failure(_):
                 self.error = self.DI.provideDefaultError()

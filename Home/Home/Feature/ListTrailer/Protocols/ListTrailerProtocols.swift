@@ -6,12 +6,14 @@ protocol ListTrailerPresenterToViewProtocol: AnyObject {
     func showView()
     func showError()
     func showLoading(isLoading: Bool)
+    func showEmptyView()
 }
 
 protocol ListTrailerInteractorToPresenterProtocol: AnyObject {
     func isLoading(isLoading: Bool)
     func listTrailerFetched()
     func listTrailerFetchedFailed()
+    func listTrailerIsEmpty()
 }
 
 protocol ListTrailerPresenterToInteractorProcotol: AnyObject {

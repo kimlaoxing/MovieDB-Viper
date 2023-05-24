@@ -4,6 +4,8 @@ import Components
 
 final class ListTrailerUICollectionViewCell: UICollectionViewCell {
     
+    var playerIsReady: ((Bool) -> Void)?
+    
     private lazy var container = UIView.make {
         $0.backgroundColor = .white
         $0.edges(to: contentView)
@@ -55,8 +57,7 @@ final class ListTrailerUICollectionViewCell: UICollectionViewCell {
 extension ListTrailerUICollectionViewCell: YTSwiftyPlayerDelegate {
     func playerReady(_ player: YTSwiftyPlayer) {
         print(#function)
-        // Player API is available after loading a video.
-        // e.g. player.mute()
+        self.playerIsReady?(false)
     }
     
     func player(_ player: YTSwiftyPlayer, didUpdateCurrentTime currentTime: Double) {
@@ -85,6 +86,7 @@ extension ListTrailerUICollectionViewCell: YTSwiftyPlayerDelegate {
     
     func youtubeIframeAPIReady(_ player: YTSwiftyPlayer) {
         print(#function)
+        self.playerIsReady?(true)
     }
     
     func youtubeIframeAPIFailedToLoad(_ player: YTSwiftyPlayer) {

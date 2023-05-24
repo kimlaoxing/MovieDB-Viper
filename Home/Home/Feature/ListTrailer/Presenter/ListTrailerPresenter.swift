@@ -28,6 +28,10 @@ final class ListTrailerPresenter: ListTrailerViewToPresenterProtocol {
 }
 
 extension ListTrailerPresenter: ListTrailerInteractorToPresenterProtocol {
+    func listTrailerIsEmpty() {
+        view?.showEmptyView()
+    }
+    
     func isLoading(isLoading: Bool) {
         view?.showLoading(isLoading: isLoading)
     }

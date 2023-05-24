@@ -10,6 +10,18 @@ final class ListTrailerViewController: UIViewController {
         $0.backgroundColor = .white
     }
     
+    private lazy var emptyView = EmptyDataView.make {
+        $0.isHidden = true
+        $0.button.isHidden = true
+        $0.center(to: view)
+        $0.title.text = "Trailer is Empty"
+        $0.title.font = .systemFont(ofSize: 12, weight: .bold)
+        $0.title.numberOfLines = 0
+        $0.image.width(100)
+        $0.image.tintColor = .black
+        $0.image.image = UIImage(systemName: "nosign")
+    }
+    
     private lazy var collection = DefaultCollectionView(frame: .zero)
     
     private var collectionHeight: NSLayoutConstraint? {
@@ -27,7 +39,8 @@ final class ListTrailerViewController: UIViewController {
         title = "List Trailer"
         view.addSubviews([
             container.addArrangedSubViews([
-                collection
+                collection,
+                emptyView
             ])
         ])
         configureCollection()
@@ -47,15 +60,33 @@ final class ListTrailerViewController: UIViewController {
         self.collectionHeight?.constant = self.collection.layoutContentSizeHeight
         self.view.layoutIfNeeded()
     }
+    
+    private func handleLoadingYoutube(isLoading: Bool) {
+        switch isLoading {
+        case false:
+            self.manageLoadingActivity(isLoading: false)
+            self.container.isHidden = false
+        case true:
+            self.manageLoadingActivity(isLoading: true)
+            self.container.isHidden = true
+        }
+    }
 }
 
 extension ListTrailerViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ListTrailerUICollectionViewCell",
-                                                      for: indexPath) as! ListTrailerUICollectionViewCell
+        let cell = collectionView.dequeueReusableCell(
+            withReuseIdentifier: "ListTrailerUICollectionViewCell",
+            for: indexPath
+        ) as! ListTrailerUICollectionViewCell
+        
         let result = presenter?.getResult()
         if let data = result {
             cell.setContent(with: data[indexPath.row])
+        }
+        
+        cell.playerIsReady = { isLoading in
+            self.handleLoadingYoutube(isLoading: isLoading)
         }
         return cell
     }
@@ -105,5 +136,10 @@ extension ListTrailerViewController: ListTrailerPresenterToViewProtocol {
             )
         )
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    func showEmptyView() {
+        self.collection.isHidden = true
+        self.emptyView.isHidden = false
     }
 }
